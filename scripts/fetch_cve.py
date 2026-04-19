@@ -16,7 +16,7 @@ from pathlib import Path
 
 OUTPUT = Path(__file__).parent.parent / "data" / "cve.json"
 CHECKPOINT = Path(__file__).parent.parent / "data" / ".cve_checkpoint.json"
-NVD_BASE = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+NVD_BASE = "https://services.nvd.nist.gov/rest/json/cves/2.0/"
 PAGE_SIZE = 2000
 MIN_CVSS = 4.0
 SLEEP_WITH_KEY = 0.6
