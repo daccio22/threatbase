@@ -31,6 +31,8 @@ jobs:
         run: python scripts/fetch_sparta.py
       - name: Fetch ESA SHIELD
         run: python scripts/fetch_esa_shield.py
+      - name: Fetch CAPEC→ATT&CK mapping
+        run: python scripts/fetch_capec.py
       - name: Build unified index
         run: python scripts/build_index.py
       - name: Install Git LFS

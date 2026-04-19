@@ -6,10 +6,9 @@ import { SOURCE_CONFIG, cvssColor } from '../sourceConfig.js'
 
 export default function DetailPanel({ entry, entryMap, onClose, onSelect }) {
   const [view, setView] = useState('list')
-  const [killChainOpen, setKillChainOpen] = useState(false)
   const [copied, setCopied] = useState(false)
 
-  useEffect(() => { setView('list'); setKillChainOpen(false) }, [entry?.id])
+  useEffect(() => { setView('list') }, [entry?.id])
 
   useEffect(() => {
     function onKey(e) { if (e.key === 'Escape') onClose() }
@@ -146,24 +145,7 @@ export default function DetailPanel({ entry, entryMap, onClose, onSelect }) {
               <RelatedChips crossRefs={entry.cross_refs} entryMap={entryMap} onSelect={onSelect} />
 
               {/* Kill Chain */}
-              {hasConnections && (
-                <section>
-                  <button
-                    onClick={() => setKillChainOpen(v => !v)}
-                    className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 transition-colors"
-                  >
-                    <svg className={`w-3.5 h-3.5 transition-transform ${killChainOpen ? 'rotate-90' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                    {killChainOpen ? 'Hide' : 'Trace'} kill chain
-                  </button>
-                  {killChainOpen && (
-                    <div className="mt-3">
-                      <KillChainView entry={entry} entryMap={entryMap} onSelect={onSelect} />
-                    </div>
-                  )}
-                </section>
-              )}
+              <KillChainView entry={entry} entryMap={entryMap} onSelect={onSelect} />
 
               {/* External link */}
               {entry.url && (

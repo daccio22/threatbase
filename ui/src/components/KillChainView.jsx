@@ -21,32 +21,29 @@ function buildKillChain(entry, entryMap) {
     defenses = dedup(techniques.flatMap(t => crossBySource(t, 'D3FEND')))
   } else if (entry.source === 'ATT&CK') {
     techniques = [entry]
-    cves = crossBySource(entry, 'CVE')
-    cwes = dedup(cves.flatMap(c => crossBySource(c, 'CWE')))
+    cwes = crossBySource(entry, 'CWE')
+    cves = dedup(cwes.flatMap(c => crossBySource(c, 'CVE')))
     defenses = crossBySource(entry, 'D3FEND')
   } else if (entry.source === 'CWE') {
     cwes = [entry]
     cves = crossBySource(entry, 'CVE')
-    techniques = dedup([
-      ...crossBySource(entry, 'ATT&CK'),
-      ...cves.flatMap(c => crossBySource(c, 'ATT&CK')),
-    ])
+    techniques = crossBySource(entry, 'ATT&CK')
     defenses = dedup(techniques.flatMap(t => crossBySource(t, 'D3FEND')))
   } else if (entry.source === 'D3FEND') {
     defenses = [entry]
     techniques = crossBySource(entry, 'ATT&CK')
-    cves = dedup(techniques.flatMap(t => crossBySource(t, 'CVE')))
-    cwes = dedup(cves.flatMap(c => crossBySource(c, 'CWE')))
+    cwes = dedup(techniques.flatMap(t => crossBySource(t, 'CWE')))
+    cves = dedup(cwes.flatMap(c => crossBySource(c, 'CVE')))
   } else if (entry.source === 'SPARTA') {
     techniques = crossBySource(entry, 'ATT&CK')
-    cves = dedup(techniques.flatMap(t => crossBySource(t, 'CVE')))
-    cwes = dedup(cves.flatMap(c => crossBySource(c, 'CWE')))
+    cwes = dedup(techniques.flatMap(t => crossBySource(t, 'CWE')))
+    cves = dedup(cwes.flatMap(c => crossBySource(c, 'CVE')))
     defenses = dedup(techniques.flatMap(t => crossBySource(t, 'D3FEND')))
   } else {
     // ESA SHIELD or other
     techniques = crossBySource(entry, 'ATT&CK')
-    cves = dedup(techniques.flatMap(t => crossBySource(t, 'CVE')))
-    cwes = dedup(cves.flatMap(c => crossBySource(c, 'CWE')))
+    cwes = dedup(techniques.flatMap(t => crossBySource(t, 'CWE')))
+    cves = dedup(cwes.flatMap(c => crossBySource(c, 'CVE')))
     defenses = dedup(techniques.flatMap(t => crossBySource(t, 'D3FEND')))
   }
 

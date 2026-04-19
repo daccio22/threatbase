@@ -9,6 +9,8 @@ function relLabel(srcEntry, tgtEntry) {
   const t = tgtEntry?.source
   if (s === 'CVE' && t === 'CWE') return 'weakness-of'
   if (s === 'CWE' && t === 'CVE') return 'exploited-by'
+  if (s === 'CWE' && t === 'ATT&CK') return 'enables'
+  if (s === 'ATT&CK' && t === 'CWE') return 'enabled-by'
   if (s === 'D3FEND' && t === 'ATT&CK') return 'mitigates'
   if (s === 'ATT&CK' && t === 'D3FEND') return 'mitigated-by'
   if (s === 'SPARTA' && t === 'ATT&CK') return 'maps-to'

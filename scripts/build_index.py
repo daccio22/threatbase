@@ -22,6 +22,8 @@ SOURCE_FILES = {
     "ESA SHIELD": DATA_DIR / "esa_shield.json",
 }
 
+CAPEC_MAP_FILE = DATA_DIR / "capec_attack_map.json"
+
 SIZE_LIMIT_BYTES = 50 * 1024 * 1024  # 50 MB
 
 
@@ -45,12 +47,36 @@ def build_id_index(entries: list[dict]) -> dict[str, dict]:
     return {e["id"]: e for e in entries if e.get("id")}
 
 
+def load_capec_attack_map() -> dict[str, list[str]]:
+    """Load CAPEC→ATT&CK mapping, return empty dict if unavailable."""
+    if not CAPEC_MAP_FILE.exists():
+        print("  WARNING: capec_attack_map.json not found — CWE→ATT&CK links disabled")
+        return {}
+    try:
+        return json.loads(CAPEC_MAP_FILE.read_text())
+    except Exception as exc:
+        print(f"  WARNING: could not load capec_attack_map.json: {exc}")
+        return {}
+
+
 def add_cross_refs(entries: list[dict]) -> None:
     """
     Build bidirectional cross_refs for each entry by scanning
     known relationship fields across all entries.
     """
     id_map = build_id_index(entries)
+    capec_attack_map = load_capec_attack_map()
+
+    # Build CWE → ATT&CK lookup via CAPEC intermediate
+    cwe_to_attack: dict[str, list[str]] = {}
+    for entry in entries:
+        if entry.get("source") != "CWE":
+            continue
+        attack_ids = []
+        for capec_id in entry.get("capec_ids", []):
+            attack_ids.extend(capec_attack_map.get(capec_id, []))
+        if attack_ids:
+            cwe_to_attack[entry["id"]] = list(dict.fromkeys(attack_ids))
 
     # forward_refs: entry_id -> set of referenced IDs
     forward: dict[str, set[str]] = {e["id"]: set() for e in entries if e.get("id")}
@@ -69,6 +95,10 @@ def add_cross_refs(entries: list[dict]) -> None:
         # CVE → CWE
         if src == "CVE":
             link(eid, entry.get("cwe_ids", []))
+
+        # CWE → ATT&CK (via CAPEC)
+        if src == "CWE":
+            link(eid, cwe_to_attack.get(eid, []))
 
         # D3FEND → ATT&CK
         if src == "D3FEND":

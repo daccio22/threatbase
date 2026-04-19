@@ -94,6 +94,17 @@ def parse_cwe(xml_bytes: bytes) -> list[dict]:
             if name_val:
                 platforms.append(name_val)
 
+        # CAPEC references (attack patterns)
+        capec_ids = []
+        for rap in (
+            w.findall(".//cwe:Related_Attack_Patterns/cwe:Related_Attack_Pattern", NS)
+            or w.findall(".//{http://cwe.mitre.org/cwe-7}Related_Attack_Pattern")
+            or w.findall(".//Related_Attack_Pattern")
+        ):
+            capec_id = rap.get("CAPEC_ID", "")
+            if capec_id:
+                capec_ids.append(f"CAPEC-{capec_id}")
+
         # Common consequences
         consequences = []
         for cc in w.findall(".//cwe:Consequence", NS) or w.findall(".//{http://cwe.mitre.org/cwe-7}Consequence") or w.findall(".//Consequence"):
@@ -121,6 +132,7 @@ def parse_cwe(xml_bytes: bytes) -> list[dict]:
             "platforms": list(dict.fromkeys(platforms)),
             "consequences": consequences,
             "mitigations": mitigations,
+            "capec_ids": capec_ids,
             "url": f"https://cwe.mitre.org/data/definitions/{cwe_num}.html",
             "source": "CWE",
         })
