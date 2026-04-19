@@ -1,0 +1,4 @@
+requests>=2.31
+stix2>=3.0
+lxml>=4.9
+pandas>=2.0

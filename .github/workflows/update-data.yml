@@ -1,0 +1,50 @@
+name: Update threat data
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # 3am UTC daily
+  workflow_dispatch:        # allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch ATT&CK
+        run: python scripts/fetch_attack.py
+
+      - name: Fetch D3FEND
+        run: python scripts/fetch_d3fend.py
+
+      - name: Fetch CVE
+        run: python scripts/fetch_cve.py
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+
+      - name: Fetch CWE
+        run: python scripts/fetch_cwe.py
+
+      - name: Fetch SPARTA
+        run: python scripts/fetch_sparta.py
+
+      - name: Fetch ESA SHIELD
+        run: python scripts/fetch_esa_shield.py
+
+      - name: Build unified index
+        run: python scripts/build_index.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "threatbase-bot"
+          git config user.email "bot@threatbase"
+          git add data/
+          git diff --staged --quiet || git commit -m "chore: update threat data $(date -u +%Y-%m-%d)"
+          git push
