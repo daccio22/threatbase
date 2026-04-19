@@ -11,7 +11,7 @@ import urllib.request
 from pathlib import Path
 
 OUTPUT = Path(__file__).parent.parent / "data" / "capec_attack_map.json"
-CAPEC_STIX_URL = "https://raw.githubusercontent.com/mitre/cti/master/capec/2.0/stix-bundle.json"
+CAPEC_STIX_URL = "https://raw.githubusercontent.com/mitre/cti/master/capec/2.1/stix-capec.json"
 
 ATTACK_ID_RE = re.compile(r"^T\d{4}(\.\d{3})?$")
 
