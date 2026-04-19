@@ -33,6 +33,11 @@ jobs:
         run: python scripts/fetch_esa_shield.py
       - name: Build unified index
         run: python scripts/build_index.py
+      - name: Install Git LFS
+        run: |
+          git lfs install
+          git lfs track "data/cves_index.json"
+          git lfs track "data/cve.json"
       - name: Commit updated data
         run: |
           git config user.name "threatbase-bot"
