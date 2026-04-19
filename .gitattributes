@@ -1,2 +1,2 @@
-data/cves.json filter=lfs diff=lfs merge=lfs -text
+data/cves_index.json filter=lfs diff=lfs merge=lfs -text
 data/cve.json filter=lfs diff=lfs merge=lfs -text
