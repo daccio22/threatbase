@@ -7,7 +7,7 @@ import urllib.request
 from pathlib import Path
 
 OUTPUT = Path(__file__).parent.parent / "data" / "d3fend.json"
-D3FEND_URL = "https://d3fend.mitre.org/api/full.json"
+D3FEND_URL = "https://d3fend.mitre.org/ontologies/d3fend.json"
 
 
 def fetch_d3fend():

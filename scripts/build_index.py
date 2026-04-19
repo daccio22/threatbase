@@ -186,13 +186,13 @@ def main():
 
     if size_mb > 50:
         print(f"Size {size_mb:.1f} MB exceeds 50 MB limit — splitting CVEs to cves_index.json")
+        metadata["split"] = True
         # Write non-CVE unified index
         meta_payload = {"metadata": metadata, "entries": non_cve_entries}
         (DATA_DIR / "unified_index.json").write_text(json.dumps(meta_payload))
         # Write separate CVE index
         cve_payload = {"metadata": {"generated_at": now, "total": len(cve_entries)}, "entries": cve_entries}
         (DATA_DIR / "cves_index.json").write_text(json.dumps(cve_payload))
-        metadata["split"] = True
         print(f"Wrote unified_index.json ({len(non_cve_entries):,} entries) + cves_index.json ({len(cve_entries):,} entries)")
     else:
         (DATA_DIR / "unified_index.json").write_text(unified_json)
