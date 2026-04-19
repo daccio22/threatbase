@@ -200,12 +200,25 @@ def main():
     cve_entries = [e for e in all_entries if e.get("source") == "CVE"]
     non_cve_entries = [e for e in all_entries if e.get("source") != "CVE"]
 
+    # Detect LFS pointer: if cves_index.json exists but is tiny (<1 KB), CVE data
+    # wasn't fetched locally. Preserve total_cve from the existing file if available.
+    cves_path = DATA_DIR / "cves_index.json"
+    existing_total_cve = len(cve_entries)
+    cve_is_lfs_pointer = cves_path.exists() and cves_path.stat().st_size < 1024
+    if cve_is_lfs_pointer and not cve_entries:
+        try:
+            existing_meta = json.loads((DATA_DIR / "unified_index.json").read_text()).get("metadata", {})
+            existing_total_cve = existing_meta.get("total_cve", 0)
+            print(f"  NOTE: cves_index.json appears to be an LFS pointer — preserving existing total_cve={existing_total_cve}")
+        except Exception:
+            pass
+
     metadata = {
         "generated_at": now,
         "counts_by_source": counts_by_source,
-        "total": len(all_entries),
+        "total": len(non_cve_entries) + existing_total_cve,
         "total_non_cve": len(non_cve_entries),
-        "total_cve": len(cve_entries),
+        "total_cve": existing_total_cve,
     }
 
     # Check if unified would exceed 50 MB
@@ -214,19 +227,23 @@ def main():
     size_mb = len(unified_json.encode()) / (1024 * 1024)
     print(f"Unified index size: {size_mb:.1f} MB")
 
-    if size_mb > 50:
-        print(f"Size {size_mb:.1f} MB exceeds 50 MB limit — splitting CVEs to cves_index.json")
+    if size_mb > 50 or cve_is_lfs_pointer:
+        if cve_is_lfs_pointer:
+            print(f"LFS pointer detected — writing non-CVE unified index with split=True (CVEs stay in cves_index.json)")
+        else:
+            print(f"Size {size_mb:.1f} MB exceeds 50 MB limit — splitting CVEs to cves_index.json")
         metadata["split"] = True
-        # Write non-CVE unified index
         meta_payload = {"metadata": metadata, "entries": non_cve_entries}
         (DATA_DIR / "unified_index.json").write_text(json.dumps(meta_payload))
-        # Write separate CVE index
-        cve_payload = {"metadata": {"generated_at": now, "total": len(cve_entries)}, "entries": cve_entries}
-        (DATA_DIR / "cves_index.json").write_text(json.dumps(cve_payload))
-        print(f"Wrote unified_index.json ({len(non_cve_entries):,} entries) + cves_index.json ({len(cve_entries):,} entries)")
+        if cve_entries:
+            cve_payload = {"metadata": {"generated_at": now, "total": len(cve_entries)}, "entries": cve_entries}
+            (DATA_DIR / "cves_index.json").write_text(json.dumps(cve_payload))
+            print(f"Wrote unified_index.json ({len(non_cve_entries):,} entries) + cves_index.json ({len(cve_entries):,} entries)")
+        else:
+            print(f"Wrote unified_index.json ({len(non_cve_entries):,} entries, cves_index.json unchanged)")
     else:
-        (DATA_DIR / "unified_index.json").write_text(unified_json)
         metadata["split"] = False
+        (DATA_DIR / "unified_index.json").write_text(unified_json)
         print(f"Wrote unified_index.json ({len(all_entries):,} entries, {size_mb:.1f} MB)")
 
     # Update last_run.json
