@@ -1,0 +1,196 @@
+[
+  {
+    "id": "SPA-0001",
+    "name": "Reconnaissance",
+    "description": "Adversary gathers information about the target space system including orbital parameters, frequency bands, and ground station locations.",
+    "tactic": "Reconnaissance",
+    "countermeasures": [
+      "RF Monitoring",
+      "OPSEC"
+    ],
+    "attack_ids": [
+      "T1595",
+      "T1592"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0002",
+    "name": "Resource Development",
+    "description": "Adversary establishes resources to support space operations targeting, including jamming equipment and cyber tools.",
+    "tactic": "Resource Development",
+    "countermeasures": [
+      "Signal Authentication",
+      "Encryption"
+    ],
+    "attack_ids": [
+      "T1583",
+      "T1587"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0003",
+    "name": "Initial Access - Ground Segment",
+    "description": "Adversary gains access to ground control systems via phishing, vulnerable internet-facing services, or supply chain compromise.",
+    "tactic": "Initial Access",
+    "countermeasures": [
+      "MFA",
+      "Network Segmentation",
+      "Patch Management"
+    ],
+    "attack_ids": [
+      "T1190",
+      "T1566",
+      "T1195"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0004",
+    "name": "Initial Access - Space Segment",
+    "description": "Adversary gains access to the space vehicle via malicious commands over RF link or compromised firmware.",
+    "tactic": "Initial Access",
+    "countermeasures": [
+      "Command Authentication",
+      "Encrypted Uplinks"
+    ],
+    "attack_ids": [
+      "T1190",
+      "T1200"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0005",
+    "name": "Execution - Command Injection",
+    "description": "Adversary injects unauthorized commands into the spacecraft command queue.",
+    "tactic": "Execution",
+    "countermeasures": [
+      "Command Validation",
+      "Message Authentication Codes"
+    ],
+    "attack_ids": [
+      "T1059",
+      "T1203"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0006",
+    "name": "Persistence - Firmware Modification",
+    "description": "Adversary modifies spacecraft firmware to maintain persistent access across power cycles.",
+    "tactic": "Persistence",
+    "countermeasures": [
+      "Firmware Signing",
+      "Secure Boot"
+    ],
+    "attack_ids": [
+      "T1542",
+      "T1601"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0007",
+    "name": "Defense Evasion - Safe Mode Trigger",
+    "description": "Adversary intentionally triggers safe mode to disrupt operations or mask malicious activity.",
+    "tactic": "Defense Evasion",
+    "countermeasures": [
+      "Anomaly Detection",
+      "Fault Management Review"
+    ],
+    "attack_ids": [
+      "T1562"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0008",
+    "name": "Denial of Service - Jamming",
+    "description": "Adversary jams the uplink or downlink frequencies to deny communication with the spacecraft.",
+    "tactic": "Impact",
+    "countermeasures": [
+      "Spread Spectrum",
+      "Anti-Jam Receivers",
+      "Frequency Hopping"
+    ],
+    "attack_ids": [
+      "T1498",
+      "T1499"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0009",
+    "name": "Exfiltration - Downlink Interception",
+    "description": "Adversary intercepts unencrypted downlink data to collect telemetry, imagery, or sensitive payload data.",
+    "tactic": "Exfiltration",
+    "countermeasures": [
+      "Downlink Encryption",
+      "Data Classification"
+    ],
+    "attack_ids": [
+      "T1020",
+      "T1030"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0010",
+    "name": "Impact - Orbit Modification",
+    "description": "Adversary sends unauthorized commands to alter spacecraft orbit, potentially causing collision or mission failure.",
+    "tactic": "Impact",
+    "countermeasures": [
+      "Command Authentication",
+      "Dual-Control Procedures"
+    ],
+    "attack_ids": [
+      "T1485",
+      "T1489"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0011",
+    "name": "Lateral Movement - Ground to Space",
+    "description": "Adversary pivots from ground segment compromise to issue commands to the space segment.",
+    "tactic": "Lateral Movement",
+    "countermeasures": [
+      "Network Segmentation",
+      "Privileged Access Management"
+    ],
+    "attack_ids": [
+      "T1210",
+      "T1021"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  },
+  {
+    "id": "SPA-0012",
+    "name": "Collection - Telemetry Harvesting",
+    "description": "Adversary collects spacecraft telemetry to understand system state, vulnerabilities, and operations schedule.",
+    "tactic": "Collection",
+    "countermeasures": [
+      "Telemetry Encryption",
+      "OPSEC"
+    ],
+    "attack_ids": [
+      "T1119",
+      "T1005"
+    ],
+    "url": "https://github.com/mitre/SPARTA",
+    "source": "SPARTA"
+  }
+]
