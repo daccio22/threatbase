@@ -104,6 +104,33 @@ def add_cross_refs(entries: list[dict]) -> None:
         entry["cross_refs"] = sorted(refs)
 
 
+def add_connection_scores(entries: list[dict]) -> None:
+    """Add connection_score (0-100) and connection_rank based on cross_ref count."""
+    scores = {e["id"]: len(e.get("cross_refs", [])) for e in entries if e.get("id")}
+    max_s = max(scores.values(), default=1) or 1
+
+    sorted_vals = sorted(scores.values())
+    n = len(sorted_vals)
+    p95 = sorted_vals[min(n - 1, max(0, int(n * 0.95)))] if sorted_vals else 0
+    p80 = sorted_vals[min(n - 1, max(0, int(n * 0.80)))] if sorted_vals else 0
+    p50 = sorted_vals[min(n - 1, max(0, int(n * 0.50)))] if sorted_vals else 0
+
+    for entry in entries:
+        eid = entry.get("id", "")
+        if not eid:
+            continue
+        raw = scores.get(eid, 0)
+        entry["connection_score"] = round((raw / max_s) * 100)
+        if raw >= p95 and p95 > 0:
+            entry["connection_rank"] = "critical"
+        elif raw >= p80 and p80 > 0:
+            entry["connection_rank"] = "high"
+        elif raw >= p50 and p50 > 0:
+            entry["connection_rank"] = "medium"
+        else:
+            entry["connection_rank"] = "low"
+
+
 def add_tags(entry: dict) -> None:
     """Add a flat tags list for Fuse.js indexing."""
     tags = set()
@@ -165,6 +192,9 @@ def main():
 
     print(f"Building cross-references for {len(all_entries):,} total entries...")
     add_cross_refs(all_entries)
+
+    print(f"Computing connection scores...")
+    add_connection_scores(all_entries)
 
     # Separate CVEs to manage file size
     cve_entries = [e for e in all_entries if e.get("source") == "CVE"]
