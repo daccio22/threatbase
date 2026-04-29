@@ -1,33 +1,33 @@
 {
   "ATT&CK": {
-    "last_fetch": "2026-04-28T10:33:30.178202+00:00",
-    "count": 691,
+    "last_fetch": "2026-04-29T10:29:39.597849+00:00",
+    "count": 697,
     "error": null
   },
   "D3FEND": {
-    "last_fetch": "2026-04-28T10:33:30.178202+00:00",
+    "last_fetch": "2026-04-29T10:29:39.597849+00:00",
     "count": 5609,
     "error": null
   },
   "CVE": {
-    "last_fetch": "2026-04-28T10:33:30.178202+00:00",
-    "count": 1971,
-    "error": null
+    "last_fetch": "2026-04-29T10:29:39.597849+00:00",
+    "count": 0,
+    "error": "cve.json missing or empty"
   },
   "CWE": {
-    "last_fetch": "2026-04-28T10:33:30.178202+00:00",
+    "last_fetch": "2026-04-29T10:29:39.597849+00:00",
     "count": 969,
     "error": null
   },
   "SPARTA": {
-    "last_fetch": "2026-04-28T10:33:30.178202+00:00",
+    "last_fetch": "2026-04-29T10:29:39.597849+00:00",
     "count": 12,
     "error": null
   },
   "ESA SHIELD": {
-    "last_fetch": "2026-04-28T10:33:30.178202+00:00",
+    "last_fetch": "2026-04-29T10:29:39.597849+00:00",
     "count": 12,
     "error": null
   },
-  "_generated_at": "2026-04-28T10:33:30.178202+00:00"
+  "_generated_at": "2026-04-29T10:29:39.597849+00:00"
 }
