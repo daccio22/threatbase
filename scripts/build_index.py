@@ -225,6 +225,14 @@ def main():
         except Exception:
             pass
 
+    cve_path = SOURCE_FILES["CVE"]
+    cve_is_lfs = cve_path.exists() and cve_path.stat().st_size < 1024
+    if cve_is_lfs:
+        print("  WARNING: cve.json appears to be a Git LFS pointer — cannot build without full CVE data.")
+        print("  Aborting to avoid dropping CVE reverse links from existing unified_index.json.")
+        print("  Run this script only after fetching real CVE data (fetch_cve.py).")
+        sys.exit(1)
+
     for source_name, path in SOURCE_FILES.items():
         entries = load_source(path, source_name)
         counts_by_source[source_name] = len(entries)
