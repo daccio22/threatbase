@@ -18,7 +18,11 @@ function buildKillChain(entry, entryMap) {
     cves = [entry]
     cwes = crossBySource(entry, 'CWE')
     techniques = dedup(cwes.flatMap(c => crossBySource(c, 'ATT&CK')))
+    // Fall back to ATT&CK IDs stored directly on the CVE (build_index adds these transitively)
+    if (techniques.length === 0) techniques = crossBySource(entry, 'ATT&CK')
     defenses = dedup(techniques.flatMap(t => crossBySource(t, 'D3FEND')))
+    // Also include any D3FEND refs stored directly on the CVE
+    if (defenses.length === 0) defenses = crossBySource(entry, 'D3FEND')
   } else if (entry.source === 'ATT&CK') {
     techniques = [entry]
     cwes = crossBySource(entry, 'CWE')
@@ -86,7 +90,7 @@ function KillChainColumn({ label, source, entries, onSelect }) {
                 style={{ backgroundColor: cfg?.hex + '18', borderColor: cfg?.hex + '50', color: '#d1d5db' }}
               >
                 <div className="font-mono text-gray-400 text-[9px] truncate">{e.id}</div>
-                <div className="truncate text-[10px] leading-tight mt-0.5">{e.name}</div>
+                <div className="truncate text-[10px] leading-tight mt-0.5">{e.name || e.description?.slice(0, 80)}</div>
                 {e.source === 'CVE' && e.cvss_score != null && (
                   <div className="text-[9px] mt-0.5" style={{ color: cvssColor(e.cvss_score) }}>
                     CVSS {e.cvss_score.toFixed(1)}
@@ -123,17 +127,21 @@ export default function KillChainView({ entry, entryMap, onSelect }) {
   const chain = useMemo(() => buildKillChain(entry, entryMap), [entry, entryMap])
   const [copied, setCopied] = useState(false)
 
+  function displayName(e) {
+    return e.name || e.description?.slice(0, 120) || e.id
+  }
+
   function exportMarkdown() {
     const cve = chain.cves[0]
     const cwe = chain.cwes[0]
     const tech = chain.techniques[0]
     const lines = [
-      `## Kill Chain: ${entry.id} — ${entry.name}`,
+      `## Kill Chain: ${entry.id} — ${displayName(entry)}`,
       '',
-      `**Vulnerability:** ${cve ? `${cve.id} — ${cve.name}${cve.cvss_score != null ? ` (CVSS ${cve.cvss_score})` : ''}` : 'N/A'}`,
-      `**Weakness:** ${cwe ? `${cwe.id} — ${cwe.name}` : 'N/A'}`,
-      `**Technique:** ${tech ? `${tech.id} — ${tech.name}` : 'N/A'}`,
-      `**Defenses:** ${chain.defenses.length > 0 ? chain.defenses.slice(0, 5).map(d => `${d.id} (${d.name})`).join(', ') : 'N/A'}`,
+      `**Vulnerability:** ${cve ? `${cve.id} — ${displayName(cve)}${cve.cvss_score != null ? ` (CVSS ${cve.cvss_score})` : ''}` : 'N/A'}`,
+      `**Weakness:** ${cwe ? `${cwe.id} — ${displayName(cwe)}` : 'N/A'}`,
+      `**Technique:** ${tech ? `${tech.id} — ${displayName(tech)}` : 'N/A'}`,
+      `**Defenses:** ${chain.defenses.length > 0 ? chain.defenses.slice(0, 5).map(d => `${d.id} (${displayName(d)})`).join(', ') : 'N/A'}`,
     ]
     navigator.clipboard.writeText(lines.join('\n'))
     setCopied(true)

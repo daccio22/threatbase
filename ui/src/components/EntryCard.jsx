@@ -48,7 +48,7 @@ export default function EntryCard({ entry, onClick, onCompare, inCompare }) {
 
         <div className="font-mono text-xs text-gray-400 mb-1">{entry.id}</div>
         <div className="font-semibold text-gray-100 text-sm leading-snug mb-2 group-hover:text-white">
-          {entry.name}
+          {entry.name || entry.description?.slice(0, 120)}
         </div>
 
         {desc && (

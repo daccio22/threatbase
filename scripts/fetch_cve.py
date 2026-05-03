@@ -104,8 +104,12 @@ def extract_cve(item: dict) -> dict | None:
     # References (top 3)
     refs = [r.get("url", "") for r in cve.get("references", [])[:3]]
 
+    # CVEs have no short name — derive one from the description for UI display
+    name = (desc[:120] + "…") if len(desc) > 120 else desc
+
     return {
         "id": cve_id,
+        "name": name,
         "description": desc,
         "cvss_score": cvss_score,
         "cvss_severity": cvss_severity,
