@@ -7568,7 +7568,7 @@
   },
   {
     "id": "CWE-1290",
-    "name": "Incorrect Decoding of Security Identifiers ",
+    "name": "Incorrect Decoding of Security Identifiers",
     "description": "",
     "extended_description": "In a System-On-Chip (SoC), various integrated circuits and hardware engines generate transactions such as to access (reads/writes) assets or perform certain actions (e.g., reset, fetch, compute, etc.). Among various types of message information, a typical transaction is comprised of source identity (to identify the originator of the transaction) and a destination identity (to route the transaction to the respective entity). Sometimes the transactions are qualified with a security identifier. The security identifier helps the destination agent decide on the set of allowed actions (e.g., access an asset for read and writes). A decoder decodes the bus transactions to map security identifiers into necessary access-controls/protections. A common weakness that can exist in this scenario is incorrect decoding because an untrusted agent's security identifier is decoded into a trusted agent's security identifier. Thus, an untrusted agent previously without access to an asset can now gain access to the asset.",
     "related_weaknesses": [
@@ -9267,7 +9267,7 @@
     "id": "CWE-1333",
     "name": "Inefficient Regular Expression Complexity",
     "description": "",
-    "extended_description": "Some regular expression engines have a feature called \"backtracking\". If the token cannot match, the engine \"backtracks\" to a position that may result in a different token that can match. Backtracking becomes a weakness if all of these conditions are met: The number of possible backtracking attempts are exponential relative to the length of the input. The input can fail to match the regular expression. The input can be long enough. Attackers can create crafted inputs that\n\t\t  intentionally cause the regular expression to use\n\t\t  excessive backtracking in a way that causes the CPU\n\t\t  consumption to spike.",
+    "extended_description": "",
     "related_weaknesses": [
       {
         "nature": "ChildOf",
@@ -9878,7 +9878,7 @@
     "id": "CWE-1386",
     "name": "Insecure Operation on Windows Junction / Mount Point",
     "description": "",
-    "extended_description": "Depending on the intended action\n\t\t\t  being performed, this could allow an\n\t\t\t  attacker to cause the product to read,\n\t\t\t  write, delete, or otherwise operate on\n\t\t\t  unauthorized files. In Windows, NTFS5 allows for file\n\t\t\t  system objects called reparse points.\n\t\t\t  Applications can create a hard link from one\n\t\t\t  directory to another directory, called a\n\t\t\t  junction point. They can also create a\n\t\t\t  mapping from a directory to a drive letter,\n\t\t\t  called a mount point. If a file is used by a\n\t\t\t  privileged program, but it can be replaced\n\t\t\t  with a hard link to a sensitive file (e.g.,\n\t\t\t  AUTOEXEC.BAT), an attacker could excalate\n\t\t\t  privileges. When the process opens the file,\n\t\t\t  the attacker can assume the privileges of\n\t\t\t  that process, tricking the privileged\n\t\t\t  process to read, modify, or delete the\n\t\t\t  sensitive file, preventing the program from\n\t\t\t  accurately processing data. Note that one\n\t\t\t  can also point to registries and\n\t\t\t  semaphores.",
+    "extended_description": "Depending on the intended action\n\t\t\t  being performed, this could allow an\n\t\t\t  attacker to cause the product to read,\n\t\t\t  write, delete, or otherwise operate on\n\t\t\t  unauthorized files. In Windows, NTFS5 allows for file\n\t\t\t  system objects called reparse points.\n\t\t\t  Applications can create a hard link from one\n\t\t\t  directory to another directory, called a\n\t\t\t  junction point. They can also create a\n\t\t\t  mapping from a directory to a drive letter,\n\t\t\t  called a mount point. If a file is used by a\n\t\t\t  privileged program, but it can be replaced\n\t\t\t  with a hard link to a sensitive file (e.g.,\n\t\t\t  AUTOEXEC.BAT), an attacker could escalate\n\t\t\t  privileges. When the process opens the file,\n\t\t\t  the attacker can assume the privileges of\n\t\t\t  that process, tricking the privileged\n\t\t\t  process to read, modify, or delete the\n\t\t\t  sensitive file, preventing the program from\n\t\t\t  accurately processing data. Note that one\n\t\t\t  can also point to registries and\n\t\t\t  semaphores.",
     "related_weaknesses": [
       {
         "nature": "ChildOf",
@@ -10121,8 +10121,12 @@
     "id": "CWE-1395",
     "name": "Dependency on Vulnerable Third-Party Component",
     "description": "",
-    "extended_description": "Many products are large enough or complex enough that part of their functionality uses libraries, modules, or other intellectual property developed by third parties who are not the product creator. For example, even an entire operating system might be from a third-party supplier in some hardware products. Whether open or closed source, these components may contain publicly known vulnerabilities that could be exploited by adversaries to compromise the product.",
+    "extended_description": "Many products are large enough or complex enough that part of their functionality uses libraries, modules, or other intellectual property developed by third parties who are not the product creator. For example, even an entire operating system might be from a third-party supplier in some hardware products. Whether open or closed source, these components may contain publicly known vulnerabilities or hidden functionality such as malware that could be exploited by adversaries to compromise the product.",
     "related_weaknesses": [
+      {
+        "nature": "ChildOf",
+        "id": "CWE-1357"
+      },
       {
         "nature": "ChildOf",
         "id": "CWE-657"
@@ -11098,7 +11102,8 @@
       }
     ],
     "platforms": [
-      "Not Language-Specific"
+      "Not Language-Specific",
+      "AI/ML"
     ],
     "consequences": [
       {
@@ -11106,6 +11111,8 @@
           "Integrity"
         ],
         "impacts": [
+          "Execute Unauthorized Code or Commands",
+          "Hide Activities",
           "Unexpected State"
         ]
       }
@@ -13041,7 +13048,8 @@
       }
     ],
     "platforms": [
-      "Not Language-Specific"
+      "Not Language-Specific",
+      "AI/ML"
     ],
     "consequences": [
       {
@@ -14973,6 +14981,7 @@
     ],
     "platforms": [
       "Not Language-Specific",
+      "AI/ML",
       "Mobile"
     ],
     "consequences": [
@@ -15978,7 +15987,7 @@
   },
   {
     "id": "CWE-280",
-    "name": "Improper Handling of Insufficient Permissions or Privileges ",
+    "name": "Improper Handling of Insufficient Permissions or Privileges",
     "description": "",
     "extended_description": "",
     "related_weaknesses": [
@@ -16632,7 +16641,7 @@
     "id": "CWE-296",
     "name": "Improper Following of a Certificate's Chain of Trust",
     "description": "",
-    "extended_description": "If a system does not follow the chain of trust of a certificate to a root server, the certificate loses all usefulness as a metric of trust. Essentially, the trust gained from a certificate is derived from a chain of trust -- with a reputable trusted entity at the end of that list. The end user must trust that reputable source, and this reputable source must vouch for the resource in question through the medium of the certificate. In some cases, this trust traverses several entities who vouch for one another. The entity trusted by the end user is at one end of this trust chain, while the certificate-wielding resource is at the other end of the chain. If the user receives a certificate at the end of one of these trust chains and then proceeds to check only that the first link in the chain, no real trust has been derived, since the entire chain must be traversed back to a trusted source to verify the certificate. There are several ways in which the chain of trust might be broken, including but not limited to: Any certificate in the chain is self-signed, unless it the root. Not every intermediate certificate is checked, starting from the original certificate all the way up to the root certificate. An intermediate, CA-signed certificate does not have the expected Basic Constraints or other important extensions. The root certificate has been compromised or authorized to the wrong party.",
+    "extended_description": "There are several ways in which the chain of trust might be broken, including but not limited to: Any certificate in the chain is self-signed, unless it is the root. Not every intermediate certificate is checked, starting from the original certificate all the way up to the root certificate. An intermediate, CA-signed certificate does not have the expected Basic Constraints or other important extensions. The root certificate has been compromised or authorized to the wrong party.",
     "related_weaknesses": [
       {
         "nature": "ChildOf",
@@ -16679,7 +16688,7 @@
     "id": "CWE-297",
     "name": "Improper Validation of Certificate with Host Mismatch",
     "description": "",
-    "extended_description": "Even if a certificate is well-formed, signed, and follows the chain of trust, it may simply be a valid certificate for a different site than the site that the product is interacting with. If the certificate's host-specific data is not properly checked - such as the Common Name (CN) in the Subject or the Subject Alternative Name (SAN) extension of an X.509 certificate - it may be possible for a redirection or spoofing attack to allow a malicious host with a valid certificate to provide data, impersonating a trusted host. In order to ensure data integrity, the certificate must be valid and it must pertain to the site that is being accessed. Even if the product attempts to check the hostname, it is still possible to incorrectly check the hostname. For example, attackers could create a certificate with a name that begins with a trusted name followed by a NUL byte, which could cause some string-based comparisons to only examine the portion that contains the trusted name. This weakness can occur even when the product uses Certificate Pinning, if the product does not verify the hostname at the time a certificate is pinned.",
+    "extended_description": "Even if a certificate is well-formed, signed, and follows the chain of trust, it may simply be a valid certificate for a different site than the site that the product is interacting with. In order to ensure data integrity, the certificate must be valid, and it must pertain to the site that is being accessed. Even if the product attempts to check the hostname, it is still possible to incorrectly check the hostname. For example, attackers could create a certificate with a name that begins with a trusted name followed by a NUL byte, which could cause some string-based comparisons to only examine the portion that contains the trusted name.",
     "related_weaknesses": [
       {
         "nature": "ChildOf",
@@ -16711,6 +16720,16 @@
           "Other"
         ],
         "impacts": [
+          "Other"
+        ]
+      },
+      {
+        "scopes": [
+          "Access Control",
+          "Other"
+        ],
+        "impacts": [
+          "Gain Privileges or Assume Identity",
           "Other"
         ]
       }
@@ -20773,7 +20792,8 @@
     ],
     "platforms": [
       "Not Language-Specific",
-      "Not Technology-Specific"
+      "Not Technology-Specific",
+      "AI/ML"
     ],
     "consequences": [
       {
@@ -21443,6 +21463,14 @@
       },
       {
         "scopes": [
+          "Confidentiality"
+        ],
+        "impacts": [
+          "Read Memory"
+        ]
+      },
+      {
+        "scopes": [
           "Integrity",
           "Confidentiality",
           "Availability"
@@ -22079,7 +22107,8 @@
       "ASP.NET",
       "PHP",
       "Not Language-Specific",
-      "Web Server"
+      "Web Server",
+      "AI/ML"
     ],
     "consequences": [
       {
@@ -27661,7 +27690,7 @@
   },
   {
     "id": "CWE-598",
-    "name": "Use of GET Request Method With Sensitive Query Strings",
+    "name": "Use of HTTP Request With Sensitive Query String",
     "description": "",
     "extended_description": "",
     "related_weaknesses": [
@@ -27772,7 +27801,7 @@
   },
   {
     "id": "CWE-600",
-    "name": "Uncaught Exception in Servlet ",
+    "name": "Uncaught Exception in Servlet",
     "description": "",
     "extended_description": "",
     "related_weaknesses": [

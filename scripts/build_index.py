@@ -226,7 +226,7 @@ def main():
             pass
 
     cve_path = SOURCE_FILES["CVE"]
-    cve_is_lfs = cve_path.exists() and cve_path.stat().st_size < 1024
+    cve_is_lfs = cve_path.exists() and cve_path.read_bytes()[:20] == b"version https://git-"
     if cve_is_lfs:
         print("  WARNING: cve.json appears to be a Git LFS pointer — cannot build without full CVE data.")
         print("  Aborting to avoid dropping CVE reverse links from existing unified_index.json.")
