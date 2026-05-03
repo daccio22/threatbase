@@ -237,13 +237,17 @@ def main():
             pass
 
     try:
-        if not existing and not CHECKPOINT.exists():
-            print("No existing data — performing full ingest (this will take 10-20 minutes)...")
+        if CHECKPOINT.exists():
+            # An interrupted full ingest left a checkpoint — resume it.
+            print("Checkpoint found — resuming interrupted full ingest...")
             entries = full_ingest(api_key)
-        else:
+        elif existing:
             print("Existing data found — performing incremental update...")
             entries, added, updated, unchanged = incremental_update(existing, api_key)
             print(f"  Added: {added:,}  Updated: {updated:,}  Unchanged: {unchanged:,}")
+        else:
+            print("No existing data — performing full ingest (this will take 10-20 minutes)...")
+            entries = full_ingest(api_key)
 
         # Sort by modified date descending
         entries.sort(key=lambda e: e.get("modified", ""), reverse=True)
@@ -256,6 +260,10 @@ def main():
         import traceback; traceback.print_exc()
         if existing:
             print("Falling back to existing data.")
+            OUTPUT.write_text(json.dumps(existing, indent=2))
+        elif CHECKPOINT.exists():
+            # Preserve whatever the checkpoint has so the next run can resume.
+            print("Keeping checkpoint for next run to resume from.")
         else:
             OUTPUT.parent.mkdir(parents=True, exist_ok=True)
             OUTPUT.write_text("[]")

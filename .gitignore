@@ -1,0 +1,10 @@
+node_modules/
+ui/dist/
+ui/.vite/
+__pycache__/
+*.pyc
+.env
+
+# CVE ingest checkpoint — never commit, it causes incremental updates to
+# run against an empty dataset and wipe the full 300k CVE archive.
+data/.cve_checkpoint.json
