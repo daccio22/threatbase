@@ -40,7 +40,7 @@ def build_mapping(bundle: dict) -> dict[str, list[str]]:
             if source == "capec" and ext_id:
                 capec_id = f"CAPEC-{ext_id}" if not ext_id.startswith("CAPEC-") else ext_id
 
-            if source in ("mitre-attack", "mitre-mobile-attack", "mitre-ics-attack"):
+            if source in ("mitre-attack", "mitre-mobile-attack", "mitre-ics-attack", "ATTACK"):
                 if ATTACK_ID_RE.match(ext_id):
                     attack_ids.append(ext_id)
 

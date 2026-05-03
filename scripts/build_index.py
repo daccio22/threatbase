@@ -78,6 +78,14 @@ def add_cross_refs(entries: list[dict]) -> None:
         if attack_ids:
             cwe_to_attack[entry["id"]] = list(dict.fromkeys(attack_ids))
 
+    # Build ATT&CK → D3FEND reverse lookup
+    attack_to_d3fend: dict[str, list[str]] = {}
+    for entry in entries:
+        if entry.get("source") != "D3FEND":
+            continue
+        for att_id in entry.get("counters_attack_ids", []):
+            attack_to_d3fend.setdefault(att_id, []).append(entry["id"])
+
     # forward_refs: entry_id -> set of referenced IDs
     forward: dict[str, set[str]] = {e["id"]: set() for e in entries if e.get("id")}
 
@@ -92,13 +100,27 @@ def add_cross_refs(entries: list[dict]) -> None:
         eid = entry.get("id", "")
         src = entry.get("source", "")
 
-        # CVE → CWE
+        # CVE → CWE, ATT&CK (via CWE→CAPEC), D3FEND (via ATT&CK)
         if src == "CVE":
             link(eid, entry.get("cwe_ids", []))
+            cve_attack_ids: list[str] = []
+            for cwe_id in entry.get("cwe_ids", []):
+                cve_attack_ids.extend(cwe_to_attack.get(cwe_id, []))
+            cve_attack_ids = list(dict.fromkeys(cve_attack_ids))
+            link(eid, cve_attack_ids)
+            cve_d3fend_ids: list[str] = []
+            for att_id in cve_attack_ids:
+                cve_d3fend_ids.extend(attack_to_d3fend.get(att_id, []))
+            link(eid, list(dict.fromkeys(cve_d3fend_ids)))
 
-        # CWE → ATT&CK (via CAPEC)
+        # CWE → ATT&CK (via CAPEC), D3FEND (via ATT&CK)
         if src == "CWE":
-            link(eid, cwe_to_attack.get(eid, []))
+            cwe_attack_ids = cwe_to_attack.get(eid, [])
+            link(eid, cwe_attack_ids)
+            cwe_d3fend_ids: list[str] = []
+            for att_id in cwe_attack_ids:
+                cwe_d3fend_ids.extend(attack_to_d3fend.get(att_id, []))
+            link(eid, list(dict.fromkeys(cwe_d3fend_ids)))
 
         # D3FEND → ATT&CK
         if src == "D3FEND":
