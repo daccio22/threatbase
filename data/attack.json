@@ -11,10 +11,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
+      "Execution Prevention",
       "Behavior Prevention on Endpoint",
       "User Account Management",
-      "Execution Prevention"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1047",
@@ -78,8 +78,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Registry Permissions",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Restrict Registry Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1037",
@@ -128,13 +128,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Encrypt Sensitive Information",
-      "Limit Access to Resource Over Network",
-      "Disable or Remove Feature or Program",
-      "User Training",
       "Network Intrusion Prevention",
-      "Network Segmentation"
+      "Limit Access to Resource Over Network",
+      "Filter Network Traffic",
+      "User Training",
+      "Network Segmentation",
+      "Disable or Remove Feature or Program",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1557",
@@ -254,8 +254,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
       "Limit Access to Resource Over Network",
+      "Network Segmentation",
       "User Account Management"
     ],
     "data_sources": [],
@@ -406,11 +406,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
-      "Software Configuration",
-      "Network Segmentation",
-      "Filter Network Traffic",
       "Network Intrusion Prevention",
+      "Filter Network Traffic",
+      "Network Segmentation",
+      "Software Configuration",
+      "Update Software",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -462,8 +462,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Software Configuration",
       "User Account Management",
+      "Software Configuration",
       "Audit"
     ],
     "data_sources": [],
@@ -525,15 +525,15 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Behavior Prevention on Endpoint",
       "Limit Software Installation",
-      "Privileged Account Management",
       "Operating System Configuration",
-      "Audit",
-      "Software Configuration",
+      "Code Signing",
+      "Behavior Prevention on Endpoint",
+      "User Account Management",
       "Restrict File and Directory Permissions",
-      "Code Signing"
+      "Privileged Account Management",
+      "Software Configuration",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1543",
@@ -582,11 +582,11 @@
     ],
     "detection": "",
     "mitigations": [
+      "Limit Access to Resource Over Network",
       "Restrict Web-Based Content",
       "Network Segmentation",
-      "Disable or Remove Feature or Program",
-      "Limit Access to Resource Over Network",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1133",
@@ -609,12 +609,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "Software Configuration",
       "Restrict Web-Based Content",
+      "User Training",
       "Multi-factor Authentication",
-      "Update Software",
-      "User Training"
+      "Software Configuration",
+      "Audit",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1539",
@@ -741,10 +741,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
       "Out-of-Band Communications Channel",
-      "Encrypt Sensitive Information",
-      "Audit"
+      "Multi-factor Authentication",
+      "Audit",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1114",
@@ -993,11 +993,11 @@
     ],
     "detection": "",
     "mitigations": [
+      "Out-of-Band Communications Channel",
       "Network Segmentation",
       "User Account Management",
-      "Out-of-Band Communications Channel",
-      "Restrict Registry Permissions",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Restrict Registry Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1489",
@@ -1041,8 +1041,8 @@
     "mitigations": [
       "Limit Software Installation",
       "Application Developer Guidance",
-      "Audit",
-      "Antivirus/Antimalware"
+      "Antivirus/Antimalware",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1564",
@@ -1136,9 +1136,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Antivirus/Antimalware",
       "Execution Prevention",
       "Restrict File and Directory Permissions",
+      "Antivirus/Antimalware",
       "Exploit Protection"
     ],
     "data_sources": [],
@@ -1159,10 +1159,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
       "Behavior Prevention on Endpoint",
+      "Software Configuration",
       "Update Software",
-      "Software Configuration"
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1137",
@@ -1321,10 +1321,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Network Segmentation",
       "User Account Management",
       "Multi-factor Authentication",
-      "Encrypt Sensitive Information",
-      "Network Segmentation"
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1040",
@@ -1345,12 +1345,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Encrypt Sensitive Information",
-      "Restrict File and Directory Permissions",
       "Filter Network Traffic",
+      "User Account Management",
+      "Restrict File and Directory Permissions",
+      "Multi-factor Authentication",
       "Audit",
-      "Multi-factor Authentication"
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1530",
@@ -1488,8 +1488,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
       "Operating System Configuration",
+      "User Account Management",
       "Restrict File and Directory Permissions",
       "Privileged Account Management",
       "Audit"
@@ -1540,10 +1540,10 @@
     "detection": "",
     "mitigations": [
       "Limit Software Installation",
-      "Audit",
       "User Training",
-      "Update Software",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Audit",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1176",
@@ -1613,9 +1613,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
       "Limit Hardware Installation",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1091",
@@ -1680,12 +1680,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Boot Integrity",
-      "Application Developer Guidance",
-      "Update Software",
-      "User Account Management",
       "Vulnerability Scanning",
-      "Limit Software Installation"
+      "Limit Software Installation",
+      "Application Developer Guidance",
+      "Boot Integrity",
+      "User Account Management",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1195",
@@ -1726,13 +1726,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "Application Isolation and Sandboxing",
+      "Vulnerability Scanning",
+      "Limit Access to Resource Over Network",
       "Filter Network Traffic",
       "Network Segmentation",
-      "Vulnerability Scanning",
       "Privileged Account Management",
+      "Application Isolation and Sandboxing",
       "Exploit Protection",
-      "Limit Access to Resource Over Network",
       "Update Software"
     ],
     "data_sources": [],
@@ -1807,9 +1807,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Password Policies",
       "Privileged Account Management",
-      "Update Software",
-      "Password Policies"
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1555",
@@ -1907,10 +1907,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
+      "Network Intrusion Prevention",
       "Filter Network Traffic",
       "Limit Hardware Installation",
-      "Network Intrusion Prevention",
+      "Execution Prevention",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -1950,9 +1950,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Account Use Policies",
+      "User Training",
       "Audit",
-      "User Training"
+      "Account Use Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1684",
@@ -1986,14 +1986,14 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "User Account Management",
       "User Training",
+      "Execution Prevention",
       "Code Signing",
       "Behavior Prevention on Endpoint",
+      "User Account Management",
       "Restrict File and Directory Permissions",
       "Antivirus/Antimalware",
-      "Execution Prevention"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1036",
@@ -2081,17 +2081,17 @@
     ],
     "detection": "",
     "mitigations": [
-      "Encrypt Sensitive Information",
-      "Update Software",
-      "User Training",
-      "Active Directory Configuration",
-      "Password Policies",
-      "Operating System Configuration",
-      "Filter Network Traffic",
-      "Restrict File and Directory Permissions",
       "Limit Access to Resource Over Network",
+      "Filter Network Traffic",
+      "User Training",
+      "Operating System Configuration",
+      "Password Policies",
+      "Restrict File and Directory Permissions",
+      "Privileged Account Management",
       "Audit",
-      "Privileged Account Management"
+      "Active Directory Configuration",
+      "Update Software",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552",
@@ -2177,8 +2177,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1055",
@@ -2296,12 +2296,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Exploit Protection",
       "Filter Network Traffic",
-      "Privileged Account Management",
+      "Restrict Web-Based Content",
       "Execution Prevention",
-      "Disable or Remove Feature or Program",
-      "Restrict Web-Based Content"
+      "Privileged Account Management",
+      "Exploit Protection",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218",
@@ -2413,10 +2413,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
       "Execution Prevention",
-      "Application Isolation and Sandboxing",
       "Privileged Account Management",
+      "Application Isolation and Sandboxing",
+      "Update Software",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -2501,8 +2501,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1572",
@@ -2527,13 +2527,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "Password Policies",
-      "Account Use Policies",
-      "Privileged Account Management",
-      "Active Directory Configuration",
       "Application Developer Guidance",
-      "User Account Management"
+      "Password Policies",
+      "User Account Management",
+      "Privileged Account Management",
+      "Audit",
+      "Active Directory Configuration",
+      "Account Use Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1550",
@@ -2575,8 +2575,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Operating System Configuration"
+      "Operating System Configuration",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1011",
@@ -2698,11 +2698,11 @@
     "detection": "",
     "mitigations": [
       "Limit Access to Resource Over Network",
-      "Audit",
+      "Password Policies",
       "User Account Management",
-      "Disable or Remove Feature or Program",
       "Multi-factor Authentication",
-      "Password Policies"
+      "Audit",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021",
@@ -2941,10 +2941,10 @@
     "detection": "",
     "mitigations": [
       "Network Segmentation",
-      "Disable or Remove Feature or Program",
       "Password Policies",
       "User Account Management",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1563",
@@ -3036,8 +3036,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Operating System Configuration"
+      "Operating System Configuration",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1092",
@@ -3130,14 +3130,14 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Operating System Configuration",
-      "Update Software",
       "User Account Control",
-      "Privileged Account Management",
+      "Operating System Configuration",
+      "Execution Prevention",
       "User Account Management",
+      "Restrict File and Directory Permissions",
+      "Privileged Account Management",
       "Audit",
-      "Restrict File and Directory Permissions"
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1548",
@@ -3310,8 +3310,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
       "Network Intrusion Prevention",
+      "Filter Network Traffic",
       "SSL/TLS Inspection"
     ],
     "data_sources": [],
@@ -3361,15 +3361,15 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Software Installation",
-      "Code Signing",
-      "Disable or Remove Feature or Program",
-      "Execution Prevention",
-      "Antivirus/Antimalware",
-      "Privileged Account Management",
-      "Audit",
       "Restrict Web-Based Content",
-      "Behavior Prevention on Endpoint"
+      "Limit Software Installation",
+      "Execution Prevention",
+      "Code Signing",
+      "Behavior Prevention on Endpoint",
+      "Privileged Account Management",
+      "Antivirus/Antimalware",
+      "Audit",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059",
@@ -3474,8 +3474,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "Network Segmentation"
+      "Network Segmentation",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1482",
@@ -3526,9 +3526,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Encrypt Sensitive Information",
       "Remote Data Storage",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1070",
@@ -3588,11 +3588,11 @@
     ],
     "detection": "",
     "mitigations": [
+      "Limit Access to Resource Over Network",
+      "Execution Prevention",
       "User Account Management",
       "Privileged Account Management",
-      "Disable or Remove Feature or Program",
-      "Limit Access to Resource Over Network",
-      "Execution Prevention"
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1609",
@@ -3725,10 +3725,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Audit",
       "Active Directory Configuration",
       "Disable or Remove Feature or Program",
-      "Encrypt Sensitive Information",
-      "Audit"
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1649",
@@ -3834,10 +3834,10 @@
     "detection": "",
     "mitigations": [
       "Limit Access to Resource Over Network",
-      "Audit",
-      "Update Software",
+      "Boot Integrity",
       "Privileged Account Management",
-      "Boot Integrity"
+      "Audit",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1542",
@@ -3883,8 +3883,8 @@
     "detection": "",
     "mitigations": [
       "Limit Access to Resource Over Network",
-      "Privileged Account Management",
       "Network Segmentation",
+      "Privileged Account Management",
       "Audit"
     ],
     "data_sources": [],
@@ -4190,9 +4190,9 @@
     "detection": "",
     "mitigations": [
       "Restrict Web-Based Content",
-      "Audit",
       "User Training",
-      "User Account Management"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1528",
@@ -4215,12 +4215,12 @@
     ],
     "detection": "",
     "mitigations": [
+      "Network Intrusion Prevention",
+      "Restrict Web-Based Content",
+      "Limit Software Installation",
       "User Training",
       "Execution Prevention",
-      "Behavior Prevention on Endpoint",
-      "Restrict Web-Based Content",
-      "Network Intrusion Prevention",
-      "Limit Software Installation"
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1204",
@@ -4291,16 +4291,16 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Active Directory Configuration",
-      "Update Software",
-      "Privileged Account Management",
-      "Password Policies",
+      "Remote Data Storage",
       "Limit Software Installation",
-      "Network Segmentation",
       "User Training",
+      "Network Segmentation",
+      "Password Policies",
+      "User Account Management",
+      "Privileged Account Management",
       "Multi-factor Authentication",
-      "Remote Data Storage"
+      "Active Directory Configuration",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1072",
@@ -4388,10 +4388,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Account Management",
       "Privileged Account Management",
       "Software Configuration",
-      "Audit",
-      "User Account Management"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1606",
@@ -4427,9 +4427,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Training",
       "Multi-factor Authentication",
-      "Account Use Policies",
-      "User Training"
+      "Account Use Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1621",
@@ -4490,11 +4490,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Exploit Protection",
-      "Update Software",
       "Application Developer Guidance",
       "Threat Intelligence Program",
-      "Application Isolation and Sandboxing"
+      "Application Isolation and Sandboxing",
+      "Exploit Protection",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1212",
@@ -4566,14 +4566,14 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
       "Vulnerability Scanning",
-      "Exploit Protection",
       "Network Segmentation",
       "Threat Intelligence Program",
-      "Application Isolation and Sandboxing",
       "Privileged Account Management",
-      "Update Software"
+      "Application Isolation and Sandboxing",
+      "Exploit Protection",
+      "Update Software",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1210",
@@ -4619,9 +4619,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
+      "Network Segmentation",
       "User Account Management",
-      "Network Segmentation"
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1199",
@@ -4640,8 +4640,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "Application Developer Guidance"
+      "Application Developer Guidance",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1593",
@@ -4686,13 +4686,13 @@
     ],
     "detection": "",
     "mitigations": [
+      "Operating System Configuration",
       "Network Segmentation",
-      "Disable or Remove Feature or Program",
       "User Account Management",
       "Restrict File and Directory Permissions",
-      "Multi-factor Authentication",
       "Privileged Account Management",
-      "Operating System Configuration"
+      "Multi-factor Authentication",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1098",
@@ -4754,12 +4754,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
-      "Data Loss Prevention",
-      "Filter Network Traffic",
       "Network Intrusion Prevention",
-      "Restrict File and Directory Permissions",
-      "User Account Management"
+      "Filter Network Traffic",
+      "Data Loss Prevention",
+      "Network Segmentation",
+      "User Account Management",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1048",
@@ -4848,12 +4848,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
       "Network Intrusion Prevention",
-      "Software Configuration",
       "Restrict Web-Based Content",
+      "User Training",
       "Antivirus/Antimalware",
-      "User Training"
+      "Software Configuration",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1566",
@@ -4902,10 +4902,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Password Policies",
       "User Account Management",
-      "Account Use Policies",
       "Multi-factor Authentication",
-      "Password Policies"
+      "Account Use Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1110",
@@ -4947,10 +4947,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Encrypt Sensitive Information",
       "Remote Data Storage",
       "Network Segmentation",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1565",
@@ -4987,12 +4987,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
+      "Application Developer Guidance",
+      "Behavior Prevention on Endpoint",
+      "Privileged Account Management",
       "Software Configuration",
       "Application Isolation and Sandboxing",
-      "Privileged Account Management",
-      "Behavior Prevention on Endpoint",
-      "Application Developer Guidance"
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1559",
@@ -5084,12 +5084,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
-      "Password Policies",
       "Credential Access Protection",
       "Code Signing",
       "Boot Integrity",
-      "Privileged Account Management"
+      "Password Policies",
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1601",
@@ -5122,16 +5122,16 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Control",
-      "Behavior Prevention on Endpoint",
-      "Restrict Library Loading",
-      "Audit",
       "Application Developer Guidance",
-      "User Account Management",
-      "Update Software",
+      "User Account Control",
       "Execution Prevention",
+      "Behavior Prevention on Endpoint",
+      "User Account Management",
       "Restrict File and Directory Permissions",
-      "Restrict Registry Permissions"
+      "Restrict Registry Permissions",
+      "Audit",
+      "Update Software",
+      "Restrict Library Loading"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574",
@@ -5223,12 +5223,12 @@
     ],
     "detection": "",
     "mitigations": [
+      "Application Developer Guidance",
+      "User Training",
       "Password Policies",
       "User Account Management",
       "Privileged Account Management",
       "Multi-factor Authentication",
-      "Application Developer Guidance",
-      "User Training",
       "Active Directory Configuration",
       "Account Use Policies"
     ],
@@ -5273,8 +5273,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Network Segmentation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1571",
@@ -5296,11 +5296,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
-      "Exploit Protection",
-      "Application Isolation and Sandboxing",
+      "Execution Prevention",
       "Threat Intelligence Program",
-      "Execution Prevention"
+      "Application Isolation and Sandboxing",
+      "Exploit Protection",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1068",
@@ -5346,10 +5346,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "Behavior Prevention on Endpoint",
       "User Training",
-      "Antivirus/Antimalware"
+      "Behavior Prevention on Endpoint",
+      "Antivirus/Antimalware",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1027",
@@ -5632,8 +5632,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
-      "Filter Network Traffic"
+      "Filter Network Traffic",
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1187",
@@ -5652,11 +5652,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
+      "Filter Network Traffic",
+      "Credential Access Protection",
       "Password Policies",
       "Privileged Account Management",
-      "Filter Network Traffic",
-      "Credential Access Protection"
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1599",
@@ -5685,8 +5685,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
-      "Data Backup"
+      "Data Backup",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1486",
@@ -5709,8 +5709,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Environment Variable Permissions",
-      "Operating System Configuration"
+      "Operating System Configuration",
+      "Environment Variable Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1690",
@@ -5731,8 +5731,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
       "Operating System Configuration",
+      "Execution Prevention",
       "Privileged Account Management",
       "Restrict Registry Permissions",
       "Software Configuration"
@@ -5868,13 +5868,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Audit",
-      "Restrict File and Directory Permissions",
-      "Disable or Remove Feature or Program",
-      "Software Configuration",
       "Execution Prevention",
-      "Restrict Registry Permissions"
+      "User Account Management",
+      "Restrict File and Directory Permissions",
+      "Restrict Registry Permissions",
+      "Software Configuration",
+      "Audit",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1685",
@@ -5926,9 +5926,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Application Isolation and Sandboxing",
       "Exploit Protection",
-      "Update Software",
-      "Application Isolation and Sandboxing"
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1203",
@@ -5973,8 +5973,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1570",
@@ -5998,9 +5998,9 @@
     "detection": "",
     "mitigations": [
       "Network Intrusion Prevention",
-      "Audit",
       "Filter Network Traffic",
-      "Network Segmentation"
+      "Network Segmentation",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1095",
@@ -6020,8 +6020,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Audit"
+      "Audit",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1671",
@@ -6123,8 +6123,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Software Configuration",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Software Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1688",
@@ -6171,9 +6171,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
       "Filter Network Traffic",
-      "Operating System Configuration"
+      "Operating System Configuration",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1197",
@@ -6401,10 +6401,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "User Account Management",
       "Behavior Prevention on Endpoint",
-      "Restrict File and Directory Permissions"
+      "User Account Management",
+      "Restrict File and Directory Permissions",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1569",
@@ -6463,11 +6463,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
-      "Out-of-Band Communications Channel",
       "User Training",
-      "Software Configuration",
+      "Out-of-Band Communications Channel",
       "User Account Management",
+      "Multi-factor Authentication",
+      "Software Configuration",
       "Audit",
       "Encrypt Sensitive Information"
     ],
@@ -6546,12 +6546,12 @@
     "detection": "",
     "mitigations": [
       "Code Signing",
-      "Audit",
-      "Restrict Registry Permissions",
-      "Disable or Remove Feature or Program",
       "Boot Integrity",
       "User Account Management",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Restrict Registry Permissions",
+      "Audit",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505",
@@ -6606,9 +6606,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
       "Data Backup",
-      "User Account Management"
+      "User Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1485",
@@ -6635,10 +6635,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Filter Network Traffic",
       "Data Loss Prevention",
       "User Account Management",
-      "Software Configuration",
-      "Filter Network Traffic"
+      "Software Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1537",
@@ -6660,11 +6660,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Exploit Protection",
-      "Update Software",
-      "Application Isolation and Sandboxing",
       "Restrict Web-Based Content",
-      "User Training"
+      "User Training",
+      "Application Isolation and Sandboxing",
+      "Exploit Protection",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1189",
@@ -6736,9 +6736,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Antivirus/Antimalware",
       "Network Intrusion Prevention",
       "User Training",
+      "Antivirus/Antimalware",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -6854,10 +6854,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
       "Operating System Configuration",
-      "Multi-factor Authentication",
-      "Privileged Account Management"
+      "Network Segmentation",
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1136",
@@ -6938,9 +6938,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
       "Network Intrusion Prevention",
-      "Network Segmentation"
+      "Network Segmentation",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1046",
@@ -7035,8 +7035,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Data Loss Prevention",
       "Limit Hardware Installation",
+      "Data Loss Prevention",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -7088,8 +7088,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Account Use Policies",
-      "User Account Management"
+      "User Account Management",
+      "Account Use Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1648",
@@ -7153,9 +7153,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
+      "User Account Management",
       "Privileged Account Management",
-      "User Account Management"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1484",
@@ -7248,10 +7248,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "Restrict Registry Permissions",
+      "User Account Management",
       "Restrict File and Directory Permissions",
-      "User Account Management"
+      "Restrict Registry Permissions",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1686",
@@ -7359,15 +7359,15 @@
     ],
     "detection": "",
     "mitigations": [
+      "Operating System Configuration",
+      "Privileged Process Integrity",
+      "Password Policies",
+      "User Account Management",
+      "Restrict File and Directory Permissions",
+      "Privileged Account Management",
       "Restrict Registry Permissions",
       "Multi-factor Authentication",
-      "Password Policies",
-      "Restrict File and Directory Permissions",
-      "User Account Management",
-      "Privileged Account Management",
-      "Privileged Process Integrity",
-      "Audit",
-      "Operating System Configuration"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556",
@@ -7435,9 +7435,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
+      "Boot Integrity",
       "Privileged Account Management",
-      "Boot Integrity"
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1495",
@@ -7462,10 +7462,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
       "Operating System Configuration",
-      "User Account Management",
-      "Data Backup"
+      "Data Backup",
+      "Execution Prevention",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1490",
@@ -7517,8 +7517,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
       "Network Segmentation",
+      "Multi-factor Authentication",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -7542,10 +7542,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Exploit Protection",
-      "Update Software",
       "Threat Intelligence Program",
-      "Application Isolation and Sandboxing"
+      "Application Isolation and Sandboxing",
+      "Exploit Protection",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1211",
@@ -7565,8 +7565,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
       "Restrict Web-Based Content",
+      "Execution Prevention",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -7645,10 +7645,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
+      "Operating System Configuration",
       "User Account Management",
-      "Audit",
-      "Operating System Configuration"
+      "Privileged Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1053/005",
@@ -7713,10 +7713,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
       "Filter Network Traffic",
+      "Limit Software Installation",
       "Audit",
-      "Limit Software Installation"
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/005",
@@ -7817,8 +7817,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Antivirus/Antimalware",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Antivirus/Antimalware"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1027/009",
@@ -7840,8 +7840,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/003",
@@ -7919,8 +7919,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Antivirus/Antimalware",
-      "Application Developer Guidance"
+      "Application Developer Guidance",
+      "Antivirus/Antimalware"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1564/012",
@@ -7969,9 +7969,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
-      "Multi-factor Authentication",
       "Password Policies",
+      "Multi-factor Authentication",
+      "Update Software",
       "Account Use Policies"
     ],
     "data_sources": [],
@@ -8077,8 +8077,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
       "Execution Prevention",
+      "Restrict File and Directory Permissions",
       "Audit"
     ],
     "data_sources": [],
@@ -8099,9 +8099,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
+      "User Training",
       "User Account Management",
-      "User Training"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1213/002",
@@ -8185,8 +8185,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Antivirus/Antimalware",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Antivirus/Antimalware"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1027/013",
@@ -8269,10 +8269,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
+      "Restrict Web-Based Content",
       "Execution Prevention",
-      "Disable or Remove Feature or Program",
-      "Restrict Web-Based Content"
+      "Behavior Prevention on Endpoint",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/007",
@@ -8331,8 +8331,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Data Backup"
+      "Data Backup",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1485/001",
@@ -8352,9 +8352,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
       "Execution Prevention",
-      "Code Signing"
+      "Code Signing",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1546/006",
@@ -8438,10 +8438,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
-      "Audit",
       "User Account Control",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Audit",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1548/002",
@@ -8500,8 +8500,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
       "Operating System Configuration",
+      "Restrict File and Directory Permissions",
       "Privileged Account Management"
     ],
     "data_sources": [],
@@ -8522,9 +8522,9 @@
     "detection": "",
     "mitigations": [
       "User Account Management",
-      "Audit",
+      "Restrict File and Directory Permissions",
       "Restrict Registry Permissions",
-      "Restrict File and Directory Permissions"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1685/001",
@@ -8600,10 +8600,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
-      "Privileged Account Management",
+      "User Training",
       "Operating System Configuration",
-      "User Training"
+      "Password Policies",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1003/002",
@@ -8644,8 +8644,8 @@
     "detection": "",
     "mitigations": [
       "Boot Integrity",
-      "Update Software",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1542/001",
@@ -8747,10 +8747,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Software Installation",
       "Vulnerability Scanning",
-      "Update Software",
-      "Application Developer Guidance"
+      "Limit Software Installation",
+      "Application Developer Guidance",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1195/001",
@@ -8811,8 +8811,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1071/004",
@@ -8832,8 +8832,8 @@
     "detection": "",
     "mitigations": [
       "Limit Access to Resource Over Network",
-      "Disable or Remove Feature or Program",
-      "Filter Network Traffic"
+      "Filter Network Traffic",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552/005",
@@ -8892,8 +8892,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/013",
@@ -8936,9 +8936,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
       "Execution Prevention",
-      "Code Signing"
+      "Code Signing",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1036/005",
@@ -8978,8 +8978,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
       "Remote Data Storage",
+      "Restrict File and Directory Permissions",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -9063,9 +9063,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Training",
       "Password Policies",
-      "Privileged Account Management",
-      "User Training"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1003/004",
@@ -9088,10 +9088,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Active Directory Configuration",
-      "Audit",
       "User Account Management",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Audit",
+      "Active Directory Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1606/002",
@@ -9112,9 +9112,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Execution Prevention",
       "Behavior Prevention on Endpoint",
-      "Antivirus/Antimalware",
-      "Execution Prevention"
+      "Antivirus/Antimalware"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1036/008",
@@ -9192,8 +9192,8 @@
     "detection": "",
     "mitigations": [
       "Behavior Prevention on Endpoint",
-      "Application Isolation and Sandboxing",
       "Software Configuration",
+      "Application Isolation and Sandboxing",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -9215,9 +9215,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Training",
       "Execution Prevention",
-      "Behavior Prevention on Endpoint",
-      "User Training"
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1204/002",
@@ -9278,8 +9278,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1071/005",
@@ -9319,8 +9319,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "User Account Management"
+      "User Account Management",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1484/002",
@@ -9344,10 +9344,10 @@
     "detection": "",
     "mitigations": [
       "User Training",
-      "Encrypt Sensitive Information",
-      "Software Configuration",
       "User Account Management",
-      "Audit"
+      "Software Configuration",
+      "Audit",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1213/006",
@@ -9433,10 +9433,10 @@
     "detection": "",
     "mitigations": [
       "Limit Software Installation",
-      "Audit",
-      "Update Software",
       "User Training",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Audit",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1176/001",
@@ -9457,11 +9457,11 @@
     "detection": "",
     "mitigations": [
       "Network Intrusion Prevention",
-      "Operating System Configuration",
-      "Privileged Account Management",
       "Limit Access to Resource Over Network",
-      "Audit",
-      "Boot Integrity"
+      "Operating System Configuration",
+      "Boot Integrity",
+      "Privileged Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1542/005",
@@ -9480,9 +9480,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Account Management",
       "Restrict File and Directory Permissions",
       "Restrict Registry Permissions",
-      "User Account Management",
       "Audit"
     ],
     "data_sources": [],
@@ -9503,11 +9503,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
       "Operating System Configuration",
-      "Audit",
       "Code Signing",
-      "User Account Management"
+      "Behavior Prevention on Endpoint",
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1543/003",
@@ -9570,8 +9570,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "User Account Management"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1053/003",
@@ -9633,11 +9633,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Software Configuration",
       "Restrict Web-Based Content",
-      "Audit",
+      "User Training",
       "User Account Management",
-      "User Training"
+      "Software Configuration",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1566/002",
@@ -9720,9 +9720,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
+      "User Account Management",
       "Multi-factor Authentication",
-      "User Account Management"
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/004",
@@ -9745,9 +9745,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Account Management",
       "Privileged Account Management",
-      "Multi-factor Authentication",
-      "User Account Management"
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1098/003",
@@ -9788,13 +9788,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "Antivirus/Antimalware",
-      "User Account Management",
-      "Audit",
       "Network Intrusion Prevention",
-      "Software Configuration",
+      "Restrict Web-Based Content",
       "User Training",
-      "Restrict Web-Based Content"
+      "User Account Management",
+      "Antivirus/Antimalware",
+      "Software Configuration",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1566/001",
@@ -9854,11 +9854,11 @@
     ],
     "detection": "",
     "mitigations": [
+      "Application Developer Guidance",
       "Execution Prevention",
-      "Restrict Library Loading",
-      "Update Software",
       "Audit",
-      "Application Developer Guidance"
+      "Update Software",
+      "Restrict Library Loading"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574/001",
@@ -9918,11 +9918,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
-      "User Account Management",
       "User Training",
+      "Password Policies",
+      "User Account Management",
       "Software Configuration",
-      "Password Policies"
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1555/005",
@@ -10096,8 +10096,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1222/001",
@@ -10159,9 +10159,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Code Signing",
       "Privileged Account Management",
-      "Audit",
-      "Code Signing"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505/002",
@@ -10222,8 +10222,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
-      "User Account Management"
+      "User Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1098/006",
@@ -10242,8 +10242,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/007",
@@ -10324,8 +10324,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "Restrict Registry Permissions"
+      "Restrict Registry Permissions",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505/005",
@@ -10344,8 +10344,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Code Signing",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Code Signing"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/002",
@@ -10451,8 +10451,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
       "Password Policies",
+      "Audit",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -10532,8 +10532,8 @@
     "detection": "",
     "mitigations": [
       "Remote Data Storage",
-      "Restrict File and Directory Permissions",
-      "Environment Variable Permissions"
+      "Environment Variable Permissions",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1070/003",
@@ -10553,8 +10553,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1137/005",
@@ -10750,9 +10750,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Remote Data Storage",
       "Restrict File and Directory Permissions",
-      "Audit",
-      "Remote Data Storage"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1070/008",
@@ -10955,8 +10955,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
       "Execution Prevention",
+      "User Account Management",
       "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
@@ -11054,10 +11054,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
-      "Disable or Remove Feature or Program",
       "Password Policies",
-      "Privileged Account Management"
+      "Restrict File and Directory Permissions",
+      "Privileged Account Management",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1563/001",
@@ -11076,10 +11076,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
       "Limit Access to Resource Over Network",
       "Filter Network Traffic",
-      "Password Policies"
+      "Password Policies",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/002",
@@ -11098,8 +11098,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/002",
@@ -11118,11 +11118,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
+      "Filter Network Traffic",
       "Credential Access Protection",
-      "Multi-factor Authentication",
+      "Password Policies",
       "Privileged Account Management",
-      "Filter Network Traffic"
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1599/001",
@@ -11216,12 +11216,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Encrypt Sensitive Information",
-      "Network Segmentation",
       "Network Intrusion Prevention",
-      "Software Configuration",
       "Filter Network Traffic",
-      "Update Software"
+      "Network Segmentation",
+      "Software Configuration",
+      "Update Software",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1602/002",
@@ -11241,8 +11241,8 @@
     "detection": "",
     "mitigations": [
       "Execution Prevention",
-      "Restrict Registry Permissions",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Restrict Registry Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1553/003",
@@ -11264,8 +11264,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1071/003",
@@ -11290,9 +11290,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Privileged Account Management",
       "Multi-factor Authentication",
-      "Audit",
-      "Privileged Account Management"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/007",
@@ -11355,9 +11355,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Execution Prevention",
       "Exploit Protection",
-      "Disable or Remove Feature or Program",
-      "Execution Prevention"
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/015",
@@ -11377,8 +11377,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
       "Boot Integrity",
+      "Privileged Account Management",
       "Restrict Registry Permissions"
     ],
     "data_sources": [],
@@ -11421,11 +11421,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
-      "User Account Management",
-      "User Training",
       "Restrict Web-Based Content",
-      "Password Policies"
+      "User Training",
+      "Password Policies",
+      "User Account Management",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1555/003",
@@ -11469,8 +11469,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1557/003",
@@ -11528,8 +11528,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "User Account Management"
+      "User Account Management",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505/003",
@@ -11549,8 +11549,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "User Account Management"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1484/001",
@@ -11570,8 +11570,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
       "Remote Data Storage",
+      "Restrict File and Directory Permissions",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -11635,9 +11635,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
+      "Network Segmentation",
       "Privileged Account Management",
-      "Network Segmentation"
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/006",
@@ -11690,8 +11690,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
-      "Password Policies"
+      "Password Policies",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1078/001",
@@ -11711,8 +11711,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Registry Permissions",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Restrict Registry Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1547/003",
@@ -11777,8 +11777,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1136/001",
@@ -11817,10 +11817,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
       "Network Intrusion Prevention",
+      "Filter Network Traffic",
       "Network Segmentation",
-      "Filter Network Traffic"
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1557/001",
@@ -11839,13 +11839,13 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Training",
       "Operating System Configuration",
       "Credential Access Protection",
       "Privileged Process Integrity",
-      "Privileged Account Management",
-      "User Training",
+      "Password Policies",
       "Behavior Prevention on Endpoint",
-      "Password Policies"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1003/001",
@@ -11866,11 +11866,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Update Software",
-      "Audit",
       "Limit Software Installation",
-      "User Training"
+      "User Training",
+      "Execution Prevention",
+      "Audit",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1176/002",
@@ -11911,8 +11911,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "User Account Management"
+      "User Account Management",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1134/002",
@@ -11972,10 +11972,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Application Isolation and Sandboxing",
       "Network Segmentation",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Application Isolation and Sandboxing",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/003",
@@ -12003,8 +12003,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
       "Password Policies",
+      "Multi-factor Authentication",
       "Account Use Policies"
     ],
     "data_sources": [],
@@ -12127,11 +12127,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Active Directory Configuration",
       "User Training",
-      "Password Policies",
       "Operating System Configuration",
-      "Privileged Account Management"
+      "Password Policies",
+      "Privileged Account Management",
+      "Active Directory Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1003/005",
@@ -12213,8 +12213,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/008",
@@ -12353,9 +12353,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
       "User Account Control",
-      "User Account Management"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574/005",
@@ -12419,8 +12419,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Software Installation",
       "Network Intrusion Prevention",
+      "Limit Software Installation",
       "User Training"
     ],
     "data_sources": [],
@@ -12441,8 +12441,8 @@
     "detection": "",
     "mitigations": [
       "Remote Data Storage",
-      "Encrypt Sensitive Information",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1685/005",
@@ -12463,10 +12463,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
       "Operating System Configuration",
       "Network Segmentation",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1136/002",
@@ -12668,8 +12668,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
       "Network Intrusion Prevention",
+      "Filter Network Traffic",
       "Network Segmentation"
     ],
     "data_sources": [],
@@ -12730,8 +12730,8 @@
     "detection": "",
     "mitigations": [
       "User Training",
-      "Audit",
-      "User Account Management"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1213/001",
@@ -12750,9 +12750,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
       "Password Policies",
       "User Account Management",
+      "Privileged Account Management",
       "Active Directory Configuration"
     ],
     "data_sources": [],
@@ -12812,9 +12812,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Encrypt Sensitive Information",
+      "Data Loss Prevention",
       "User Account Management",
-      "Data Loss Prevention"
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1020/001",
@@ -12877,10 +12877,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Encrypt Sensitive Information",
+      "Out-of-Band Communications Channel",
       "Audit",
-      "Out-of-Band Communications Channel"
+      "Disable or Remove Feature or Program",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1114/003",
@@ -12920,8 +12920,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1553/005",
@@ -12977,8 +12977,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
       "Filter Network Traffic",
+      "Execution Prevention",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -13037,8 +13037,8 @@
     "detection": "",
     "mitigations": [
       "Execution Prevention",
-      "Privileged Account Management",
-      "User Account Management"
+      "User Account Management",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/008",
@@ -13102,9 +13102,9 @@
     "detection": "",
     "mitigations": [
       "User Training",
-      "Audit",
+      "Password Policies",
       "Restrict File and Directory Permissions",
-      "Password Policies"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552/001",
@@ -13204,8 +13204,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "Software Configuration"
+      "Software Configuration",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1606/001",
@@ -13270,8 +13270,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/007",
@@ -13314,8 +13314,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Antivirus/Antimalware",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Antivirus/Antimalware"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1027/012",
@@ -13376,10 +13376,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
-      "User Account Management",
       "Network Segmentation",
+      "User Account Management",
       "Privileged Account Management",
+      "Multi-factor Authentication",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -13443,8 +13443,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "User Account Management"
+      "User Account Management",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1134/003",
@@ -13464,8 +13464,8 @@
     "detection": "",
     "mitigations": [
       "Audit",
-      "Update Software",
-      "Active Directory Configuration"
+      "Active Directory Configuration",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552/006",
@@ -13488,9 +13488,9 @@
     "detection": "",
     "mitigations": [
       "Network Intrusion Prevention",
-      "Network Segmentation",
       "Filter Network Traffic",
-      "Data Loss Prevention"
+      "Data Loss Prevention",
+      "Network Segmentation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1048/002",
@@ -13512,8 +13512,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "User Account Management"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1087/004",
@@ -13553,9 +13553,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Operating System Configuration",
       "Restrict Registry Permissions",
-      "Audit",
-      "Operating System Configuration"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/008",
@@ -13575,9 +13575,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Behavior Prevention on Endpoint",
       "User Account Management",
-      "Privileged Account Management",
-      "Behavior Prevention on Endpoint"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1546/003",
@@ -13690,8 +13690,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "User Training"
+      "User Training",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552/008",
@@ -13710,11 +13710,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Antivirus/Antimalware",
+      "Execution Prevention",
       "Code Signing",
       "Privileged Account Management",
-      "Execution Prevention"
+      "Antivirus/Antimalware",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/001",
@@ -13775,8 +13775,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1071/002",
@@ -13818,8 +13818,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Restrict Web-Based Content"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1102/003",
@@ -13839,9 +13839,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Account Control",
       "User Account Management",
-      "Audit",
-      "User Account Control"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574/010",
@@ -13882,8 +13882,8 @@
     "detection": "",
     "mitigations": [
       "Network Segmentation",
-      "Multi-factor Authentication",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1136/003",
@@ -13923,10 +13923,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
+      "Execution Prevention",
       "User Account Management",
-      "Antivirus/Antimalware",
-      "Execution Prevention"
+      "Privileged Account Management",
+      "Antivirus/Antimalware"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1547/006",
@@ -13967,9 +13967,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
+      "User Account Management",
       "Audit",
-      "User Account Management"
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1686/002",
@@ -14009,9 +14009,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
       "Limit Hardware Installation",
-      "Data Loss Prevention"
+      "Data Loss Prevention",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1052/001",
@@ -14052,8 +14052,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
       "User Account Management",
+      "Restrict File and Directory Permissions",
       "Privileged Account Management"
     ],
     "data_sources": [],
@@ -14074,9 +14074,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Network Intrusion Prevention",
       "Boot Integrity",
-      "Audit",
-      "Network Intrusion Prevention"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1542/004",
@@ -14199,8 +14199,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1137/003",
@@ -14284,8 +14284,8 @@
     "detection": "",
     "mitigations": [
       "Limit Software Installation",
-      "Audit",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/011",
@@ -14324,9 +14324,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Code Signing",
       "Network Intrusion Prevention",
       "User Training",
+      "Code Signing",
       "Audit"
     ],
     "data_sources": [],
@@ -14347,8 +14347,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Software Configuration",
-      "User Account Management"
+      "User Account Management",
+      "Software Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1543/005",
@@ -14434,10 +14434,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Account Use Policies",
       "Password Policies",
       "User Account Management",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Account Use Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1110/004",
@@ -14465,8 +14465,8 @@
     "detection": "",
     "mitigations": [
       "User Account Management",
-      "Audit",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/006",
@@ -14487,8 +14487,8 @@
     "detection": "",
     "mitigations": [
       "Out-of-Band Communications Channel",
-      "Encrypt Sensitive Information",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1114/002",
@@ -14507,10 +14507,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
       "Execution Prevention",
-      "Audit",
-      "Code Signing"
+      "Code Signing",
+      "Privileged Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505/004",
@@ -14552,9 +14552,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
+      "Execution Prevention",
       "Audit",
-      "Execution Prevention"
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1564/006",
@@ -14814,8 +14814,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
       "User Training",
+      "User Account Management",
       "Software Configuration",
       "Audit"
     ],
@@ -14875,8 +14875,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
-      "Vulnerability Scanning"
+      "Vulnerability Scanning",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1195/002",
@@ -14919,8 +14919,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Restrict Web-Based Content"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1102/002",
@@ -14939,8 +14939,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Pre-compromise"
+      "Pre-compromise",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1595/003",
@@ -14960,8 +14960,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1137/004",
@@ -15027,9 +15027,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
       "Execution Prevention",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574/009",
@@ -15106,8 +15106,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/013",
@@ -15213,11 +15213,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Multi-factor Authentication",
-      "Privileged Account Management",
       "User Training",
-      "Password Policies"
+      "Password Policies",
+      "User Account Management",
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1078/002",
@@ -15278,8 +15278,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Software Configuration",
-      "Operating System Configuration"
+      "Operating System Configuration",
+      "Software Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1553/004",
@@ -15359,8 +15359,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1127/001",
@@ -15424,12 +15424,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Encrypt Sensitive Information",
       "Network Intrusion Prevention",
+      "Limit Access to Resource Over Network",
+      "Filter Network Traffic",
       "User Training",
       "Disable or Remove Feature or Program",
-      "Limit Access to Resource Over Network",
-      "Filter Network Traffic"
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1557/002",
@@ -15470,8 +15470,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Limit Software Installation"
+      "Limit Software Installation",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1564/003",
@@ -15491,9 +15491,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
       "Restrict Web-Based Content",
-      "Code Signing"
+      "Code Signing",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1127/002",
@@ -15515,10 +15515,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "Antivirus/Antimalware",
       "Limit Software Installation",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Antivirus/Antimalware",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/006",
@@ -15664,8 +15664,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "User Account Management"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1578/002",
@@ -15704,9 +15704,9 @@
     "detection": "",
     "mitigations": [
       "User Training",
-      "Audit",
       "User Account Management",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1213/003",
@@ -15746,8 +15746,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Password Policies"
+      "Password Policies",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1003/008",
@@ -15826,12 +15826,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Boot Integrity",
-      "Code Signing",
       "Credential Access Protection",
+      "Code Signing",
+      "Boot Integrity",
+      "Password Policies",
       "Privileged Account Management",
-      "Multi-factor Authentication",
-      "Password Policies"
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1601/001",
@@ -15874,8 +15874,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
-      "Remote Data Storage"
+      "Remote Data Storage",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1070/009",
@@ -15937,8 +15937,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "User Account Management"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1036/010",
@@ -15959,9 +15959,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
       "Filter Network Traffic",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1219/002",
@@ -16004,10 +16004,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
+      "User Training",
       "Privileged Process Integrity",
-      "Multi-factor Authentication",
-      "User Training"
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/001",
@@ -16049,8 +16049,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Password Policies"
+      "Password Policies",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/005",
@@ -16239,11 +16239,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Antivirus/Antimalware",
+      "Restrict Web-Based Content",
       "Execution Prevention",
       "Behavior Prevention on Endpoint",
-      "Restrict Web-Based Content"
+      "Antivirus/Antimalware",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/005",
@@ -16282,10 +16282,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Limit Software Installation",
       "User Account Management",
       "Restrict File and Directory Permissions",
-      "Privileged Account Management",
-      "Limit Software Installation"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1543/002",
@@ -16305,12 +16305,12 @@
     "detection": "",
     "mitigations": [
       "Limit Access to Resource Over Network",
-      "Network Segmentation",
       "Operating System Configuration",
+      "Network Segmentation",
       "User Account Management",
+      "Privileged Account Management",
       "Audit",
-      "Disable or Remove Feature or Program",
-      "Privileged Account Management"
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1563/002",
@@ -16330,9 +16330,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
+      "Limit Software Installation",
       "User Account Management",
-      "Limit Software Installation"
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1547/013",
@@ -16372,9 +16372,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
       "Network Intrusion Prevention",
-      "Restrict Web-Based Content"
+      "Restrict Web-Based Content",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1204/004",
@@ -16451,8 +16451,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "User Training"
+      "User Training",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1547/007",
@@ -16490,10 +16490,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Update Software",
       "User Account Control",
       "User Account Management",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1550/002",
@@ -16573,9 +16573,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Restrict File and Directory Permissions",
       "Privileged Account Management",
-      "Audit",
-      "Restrict File and Directory Permissions"
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1548/006",
@@ -16651,14 +16651,14 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
       "Limit Access to Resource Over Network",
-      "Network Segmentation",
       "Operating System Configuration",
-      "Disable or Remove Feature or Program",
+      "Network Segmentation",
       "User Account Management",
+      "Privileged Account Management",
       "Multi-factor Authentication",
-      "Privileged Account Management"
+      "Audit",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/001",
@@ -16755,8 +16755,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "User Account Management"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1578/001",
@@ -16795,8 +16795,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Software Configuration",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Software Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1137/002",
@@ -16815,9 +16815,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Training",
       "Password Policies",
       "Privileged Account Management",
-      "User Training",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -16837,8 +16837,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "User Account Management"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1686/001",
@@ -16857,12 +16857,12 @@
     ],
     "detection": "",
     "mitigations": [
+      "Network Intrusion Prevention",
+      "Filter Network Traffic",
+      "Network Segmentation",
       "Software Configuration",
       "Update Software",
-      "Encrypt Sensitive Information",
-      "Network Intrusion Prevention",
-      "Network Segmentation",
-      "Filter Network Traffic"
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1602/001",
@@ -16906,8 +16906,8 @@
     "detection": "",
     "mitigations": [
       "Network Intrusion Prevention",
-      "User Training",
-      "Restrict Web-Based Content"
+      "Restrict Web-Based Content",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1204/001",
@@ -16930,10 +16930,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Account Use Policies",
-      "Audit",
       "Restrict Web-Based Content",
       "Application Developer Guidance",
+      "Audit",
+      "Account Use Policies",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -16954,8 +16954,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Process Integrity",
       "Credential Access Protection",
+      "Privileged Process Integrity",
       "Restrict Library Loading"
     ],
     "data_sources": [],
@@ -16975,9 +16975,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
       "Behavior Prevention on Endpoint",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1569/002",
@@ -17002,13 +17002,13 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Training",
       "Password Policies",
-      "Active Directory Configuration",
+      "User Account Management",
       "Privileged Account Management",
       "Multi-factor Authentication",
-      "Account Use Policies",
-      "User Training",
-      "User Account Management"
+      "Active Directory Configuration",
+      "Account Use Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1078/004",
@@ -17068,8 +17068,8 @@
     "detection": "",
     "mitigations": [
       "Password Policies",
-      "Encrypt Sensitive Information",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Encrypt Sensitive Information"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1558/003",
@@ -17114,9 +17114,9 @@
     "detection": "",
     "mitigations": [
       "Operating System Configuration",
-      "Audit",
       "User Account Management",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1053/002",
@@ -17232,10 +17232,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Restrict Web-Based Content",
       "User Training",
       "User Account Management",
       "Antivirus/Antimalware",
-      "Restrict Web-Based Content",
       "Audit"
     ],
     "data_sources": [],
@@ -17281,8 +17281,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
-      "Network Intrusion Prevention"
+      "Network Intrusion Prevention",
+      "Restrict Web-Based Content"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1102/001",
@@ -17342,8 +17342,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Boot Integrity",
       "Code Signing",
+      "Boot Integrity",
       "Audit"
     ],
     "data_sources": [],
@@ -17363,10 +17363,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
       "Limit Access to Resource Over Network",
       "Network Segmentation",
-      "User Account Management"
+      "User Account Management",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552/007",
@@ -17405,9 +17405,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
       "Code Signing",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505/001",
@@ -17472,8 +17472,8 @@
     "detection": "",
     "mitigations": [
       "User Training",
-      "Audit",
-      "Out-of-Band Communications Channel"
+      "Out-of-Band Communications Channel",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1213/005",
@@ -17497,8 +17497,8 @@
     "detection": "",
     "mitigations": [
       "Network Intrusion Prevention",
-      "Data Loss Prevention",
       "Filter Network Traffic",
+      "Data Loss Prevention",
       "Network Segmentation"
     ],
     "data_sources": [],
@@ -17559,12 +17559,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Multi-factor Authentication",
-      "Code Signing",
       "Credential Access Protection",
-      "Privileged Account Management",
+      "Code Signing",
+      "Boot Integrity",
       "Password Policies",
-      "Boot Integrity"
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1601/002",
@@ -17613,10 +17613,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Multi-factor Authentication",
       "Password Policies",
-      "User Account Management"
+      "User Account Management",
+      "Privileged Account Management",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1078/003",
@@ -17635,8 +17635,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Disable or Remove Feature or Program",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/014",
@@ -17673,9 +17673,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Registry Permissions",
       "Execution Prevention",
-      "User Account Management"
+      "User Account Management",
+      "Restrict Registry Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574/012",
