@@ -11,10 +11,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
+      "Privileged Account Management",
       "Behavior Prevention on Endpoint",
       "User Account Management",
-      "Privileged Account Management"
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1047",
@@ -78,8 +78,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
-      "Restrict Registry Permissions"
+      "Restrict Registry Permissions",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1037",
@@ -128,13 +128,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Limit Access to Resource Over Network",
       "Filter Network Traffic",
-      "User Training",
-      "Network Segmentation",
+      "Encrypt Sensitive Information",
+      "Limit Access to Resource Over Network",
       "Disable or Remove Feature or Program",
-      "Encrypt Sensitive Information"
+      "User Training",
+      "Network Intrusion Prevention",
+      "Network Segmentation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1557",
@@ -254,8 +254,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Access to Resource Over Network",
       "Network Segmentation",
+      "Limit Access to Resource Over Network",
       "User Account Management"
     ],
     "data_sources": [],
@@ -406,11 +406,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic",
-      "Network Segmentation",
-      "Software Configuration",
       "Update Software",
+      "Software Configuration",
+      "Network Segmentation",
+      "Filter Network Traffic",
+      "Network Intrusion Prevention",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -462,8 +462,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
       "Software Configuration",
+      "User Account Management",
       "Audit"
     ],
     "data_sources": [],
@@ -525,15 +525,15 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Software Installation",
-      "Operating System Configuration",
-      "Code Signing",
-      "Behavior Prevention on Endpoint",
       "User Account Management",
-      "Restrict File and Directory Permissions",
+      "Behavior Prevention on Endpoint",
+      "Limit Software Installation",
       "Privileged Account Management",
+      "Operating System Configuration",
+      "Audit",
       "Software Configuration",
-      "Audit"
+      "Restrict File and Directory Permissions",
+      "Code Signing"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1543",
@@ -582,11 +582,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Access to Resource Over Network",
       "Restrict Web-Based Content",
       "Network Segmentation",
-      "Multi-factor Authentication",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Limit Access to Resource Over Network",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1133",
@@ -609,12 +609,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
-      "User Training",
-      "Multi-factor Authentication",
-      "Software Configuration",
       "Audit",
-      "Update Software"
+      "Software Configuration",
+      "Restrict Web-Based Content",
+      "Multi-factor Authentication",
+      "Update Software",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1539",
@@ -741,10 +741,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Out-of-Band Communications Channel",
       "Multi-factor Authentication",
-      "Audit",
-      "Encrypt Sensitive Information"
+      "Out-of-Band Communications Channel",
+      "Encrypt Sensitive Information",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1114",
@@ -993,11 +993,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Out-of-Band Communications Channel",
       "Network Segmentation",
       "User Account Management",
-      "Restrict File and Directory Permissions",
-      "Restrict Registry Permissions"
+      "Out-of-Band Communications Channel",
+      "Restrict Registry Permissions",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1489",
@@ -1041,8 +1041,8 @@
     "mitigations": [
       "Limit Software Installation",
       "Application Developer Guidance",
-      "Antivirus/Antimalware",
-      "Audit"
+      "Audit",
+      "Antivirus/Antimalware"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1564",
@@ -1136,9 +1136,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Antivirus/Antimalware",
       "Execution Prevention",
       "Restrict File and Directory Permissions",
-      "Antivirus/Antimalware",
       "Exploit Protection"
     ],
     "data_sources": [],
@@ -1159,10 +1159,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Disable or Remove Feature or Program",
       "Behavior Prevention on Endpoint",
-      "Software Configuration",
       "Update Software",
-      "Disable or Remove Feature or Program"
+      "Software Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1137",
@@ -1321,10 +1321,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
       "User Account Management",
       "Multi-factor Authentication",
-      "Encrypt Sensitive Information"
+      "Encrypt Sensitive Information",
+      "Network Segmentation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1040",
@@ -1345,12 +1345,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
       "User Account Management",
+      "Encrypt Sensitive Information",
       "Restrict File and Directory Permissions",
-      "Multi-factor Authentication",
+      "Filter Network Traffic",
       "Audit",
-      "Encrypt Sensitive Information"
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1530",
@@ -1488,8 +1488,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
       "User Account Management",
+      "Operating System Configuration",
       "Restrict File and Directory Permissions",
       "Privileged Account Management",
       "Audit"
@@ -1540,10 +1540,10 @@
     "detection": "",
     "mitigations": [
       "Limit Software Installation",
-      "User Training",
-      "Execution Prevention",
       "Audit",
-      "Update Software"
+      "User Training",
+      "Update Software",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1176",
@@ -1613,9 +1613,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Disable or Remove Feature or Program",
       "Limit Hardware Installation",
-      "Behavior Prevention on Endpoint",
-      "Disable or Remove Feature or Program"
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1091",
@@ -1680,12 +1680,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Vulnerability Scanning",
-      "Limit Software Installation",
-      "Application Developer Guidance",
       "Boot Integrity",
+      "Application Developer Guidance",
+      "Update Software",
       "User Account Management",
-      "Update Software"
+      "Vulnerability Scanning",
+      "Limit Software Installation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1195",
@@ -1726,13 +1726,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "Vulnerability Scanning",
-      "Limit Access to Resource Over Network",
+      "Application Isolation and Sandboxing",
       "Filter Network Traffic",
       "Network Segmentation",
+      "Vulnerability Scanning",
       "Privileged Account Management",
-      "Application Isolation and Sandboxing",
       "Exploit Protection",
+      "Limit Access to Resource Over Network",
       "Update Software"
     ],
     "data_sources": [],
@@ -1807,9 +1807,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
       "Privileged Account Management",
-      "Update Software"
+      "Update Software",
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1555",
@@ -1907,10 +1907,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
+      "Execution Prevention",
       "Filter Network Traffic",
       "Limit Hardware Installation",
-      "Execution Prevention",
+      "Network Intrusion Prevention",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -1950,9 +1950,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
+      "Account Use Policies",
       "Audit",
-      "Account Use Policies"
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1684",
@@ -1986,14 +1986,14 @@
     ],
     "detection": "",
     "mitigations": [
+      "Audit",
+      "User Account Management",
       "User Training",
-      "Execution Prevention",
       "Code Signing",
       "Behavior Prevention on Endpoint",
-      "User Account Management",
       "Restrict File and Directory Permissions",
       "Antivirus/Antimalware",
-      "Audit"
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1036",
@@ -2081,17 +2081,17 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Access to Resource Over Network",
-      "Filter Network Traffic",
-      "User Training",
-      "Operating System Configuration",
-      "Password Policies",
-      "Restrict File and Directory Permissions",
-      "Privileged Account Management",
-      "Audit",
-      "Active Directory Configuration",
+      "Encrypt Sensitive Information",
       "Update Software",
-      "Encrypt Sensitive Information"
+      "User Training",
+      "Active Directory Configuration",
+      "Password Policies",
+      "Operating System Configuration",
+      "Filter Network Traffic",
+      "Restrict File and Directory Permissions",
+      "Limit Access to Resource Over Network",
+      "Audit",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552",
@@ -2177,8 +2177,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1055",
@@ -2296,12 +2296,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Restrict Web-Based Content",
-      "Execution Prevention",
-      "Privileged Account Management",
       "Exploit Protection",
-      "Disable or Remove Feature or Program"
+      "Filter Network Traffic",
+      "Privileged Account Management",
+      "Execution Prevention",
+      "Disable or Remove Feature or Program",
+      "Restrict Web-Based Content"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218",
@@ -2413,10 +2413,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Privileged Account Management",
-      "Application Isolation and Sandboxing",
       "Update Software",
+      "Execution Prevention",
+      "Application Isolation and Sandboxing",
+      "Privileged Account Management",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -2446,7 +2446,7 @@
   {
     "id": "T1029",
     "name": "Scheduled Transfer",
-    "description": "Adversaries may schedule data exfiltration to be performed only at certain times of day or at certain intervals. This could be done to blend traffic patterns with normal activity or availability.\n\nWhen scheduled exfiltration is used, other exfiltration techniques likely apply as well to transfer the information out of the network, such as [Exfiltration Over C2 Channel](https://attack.mitre.org/techniques/T1041) or [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048).",
+    "description": "Adversaries may schedule data exfiltration to be performed only at certain times of day or at certain intervals. This could be done to blend traffic patterns with normal activity or availability.(Citation: Delay Code Execution in Java)\n\nWhen scheduled exfiltration is used, other exfiltration techniques likely apply as well to transfer the information out of the network, such as [Exfiltration Over C2 Channel](https://attack.mitre.org/techniques/T1041) or [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048).",
     "tactics": [
       "Exfiltration"
     ],
@@ -2501,8 +2501,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic"
+      "Filter Network Traffic",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1572",
@@ -2527,13 +2527,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "Application Developer Guidance",
-      "Password Policies",
-      "User Account Management",
-      "Privileged Account Management",
       "Audit",
+      "Password Policies",
+      "Account Use Policies",
+      "Privileged Account Management",
       "Active Directory Configuration",
-      "Account Use Policies"
+      "Application Developer Guidance",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1550",
@@ -2575,8 +2575,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Operating System Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1011",
@@ -2698,11 +2698,11 @@
     "detection": "",
     "mitigations": [
       "Limit Access to Resource Over Network",
-      "Password Policies",
-      "User Account Management",
-      "Multi-factor Authentication",
       "Audit",
-      "Disable or Remove Feature or Program"
+      "User Account Management",
+      "Disable or Remove Feature or Program",
+      "Multi-factor Authentication",
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021",
@@ -2876,7 +2876,7 @@
   {
     "id": "T1491",
     "name": "Defacement",
-    "description": "Adversaries may modify visual content available internally or externally to an enterprise network, thus affecting the integrity of the original content. Reasons for [Defacement](https://attack.mitre.org/techniques/T1491) include delivering messaging, intimidation, or claiming (possibly false) credit for an intrusion. Disturbing or offensive images may be used as a part of [Defacement](https://attack.mitre.org/techniques/T1491) in order to cause user discomfort, or to pressure compliance with accompanying messages. \n",
+    "description": "Adversaries may modify visual content available internally or externally to an enterprise network, thus affecting the integrity of the original content. Reasons for [Defacement](https://attack.mitre.org/techniques/T1491) include delivering messaging, intimidation, or claiming (possibly false) credit for an intrusion. Disturbing or offensive images may be used as a part of [Defacement](https://attack.mitre.org/techniques/T1491) in order to cause user discomfort, or to pressure compliance with accompanying messages.(Citation: Defacement Attacks)\n",
     "tactics": [
       "Impact"
     ],
@@ -2941,10 +2941,10 @@
     "detection": "",
     "mitigations": [
       "Network Segmentation",
+      "Disable or Remove Feature or Program",
       "Password Policies",
       "User Account Management",
-      "Privileged Account Management",
-      "Disable or Remove Feature or Program"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1563",
@@ -3036,8 +3036,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Operating System Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1092",
@@ -3130,14 +3130,14 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Control",
-      "Operating System Configuration",
       "Execution Prevention",
-      "User Account Management",
-      "Restrict File and Directory Permissions",
+      "Operating System Configuration",
+      "Update Software",
+      "User Account Control",
       "Privileged Account Management",
+      "User Account Management",
       "Audit",
-      "Update Software"
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1548",
@@ -3297,7 +3297,7 @@
   {
     "id": "T1090",
     "name": "Proxy",
-    "description": "Adversaries may use a connection proxy to direct network traffic between systems or act as an intermediary for network communications to a command and control server to avoid direct connections to their infrastructure. Many tools exist that enable traffic redirection through proxies or port redirection, including [HTRAN](https://attack.mitre.org/software/S0040), ZXProxy, and ZXPortMap. (Citation: Trend Micro APT Attack Tools) Adversaries use these types of proxies to manage command and control communications, reduce the number of simultaneous outbound network connections, provide resiliency in the face of connection loss, or to ride over existing trusted communications paths between victims to avoid suspicion. Adversaries may chain together multiple proxies to further disguise the source of malicious traffic.\n\nAdversaries can also take advantage of routing schemes in Content Delivery Networks (CDNs) to proxy command and control traffic.",
+    "description": "Adversaries may use a connection proxy to direct network traffic between systems or act as an intermediary for network communications to a command and control server to avoid direct connections to their infrastructure. Many tools exist that enable traffic redirection through proxies or port redirection, including [HTRAN](https://attack.mitre.org/software/S0040), ZXProxy, and ZXPortMap.(Citation: Trend Micro APT Attack Tools) Adversaries use these types of proxies to manage command and control communications, reduce the number of simultaneous outbound network connections, provide resiliency in the face of connection loss, or to ride over existing trusted communications paths between victims to avoid suspicion. Adversaries may chain together multiple proxies to further disguise the source of malicious traffic.\n\nAdversaries can also take advantage of routing schemes in Content Delivery Networks (CDNs) to proxy command and control traffic.",
     "tactics": [
       "Command and Control"
     ],
@@ -3310,8 +3310,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
       "Filter Network Traffic",
+      "Network Intrusion Prevention",
       "SSL/TLS Inspection"
     ],
     "data_sources": [],
@@ -3361,15 +3361,15 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
       "Limit Software Installation",
-      "Execution Prevention",
       "Code Signing",
-      "Behavior Prevention on Endpoint",
-      "Privileged Account Management",
+      "Disable or Remove Feature or Program",
+      "Execution Prevention",
       "Antivirus/Antimalware",
+      "Privileged Account Management",
       "Audit",
-      "Disable or Remove Feature or Program"
+      "Restrict Web-Based Content",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059",
@@ -3474,8 +3474,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
-      "Audit"
+      "Audit",
+      "Network Segmentation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1482",
@@ -3526,9 +3526,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Encrypt Sensitive Information",
       "Remote Data Storage",
-      "Restrict File and Directory Permissions",
-      "Encrypt Sensitive Information"
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1070",
@@ -3588,11 +3588,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Access to Resource Over Network",
-      "Execution Prevention",
       "User Account Management",
       "Privileged Account Management",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Limit Access to Resource Over Network",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1609",
@@ -3725,10 +3725,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
       "Active Directory Configuration",
       "Disable or Remove Feature or Program",
-      "Encrypt Sensitive Information"
+      "Encrypt Sensitive Information",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1649",
@@ -3834,10 +3834,10 @@
     "detection": "",
     "mitigations": [
       "Limit Access to Resource Over Network",
-      "Boot Integrity",
-      "Privileged Account Management",
       "Audit",
-      "Update Software"
+      "Update Software",
+      "Privileged Account Management",
+      "Boot Integrity"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1542",
@@ -3883,8 +3883,8 @@
     "detection": "",
     "mitigations": [
       "Limit Access to Resource Over Network",
-      "Network Segmentation",
       "Privileged Account Management",
+      "Network Segmentation",
       "Audit"
     ],
     "data_sources": [],
@@ -4048,6 +4048,11 @@
         "id": "T1608.006",
         "name": "SEO Poisoning",
         "url": "https://attack.mitre.org/techniques/T1608/006"
+      },
+      {
+        "id": "T1608.007",
+        "name": "AI Result Poisoning",
+        "url": "https://attack.mitre.org/techniques/T1608/007"
       }
     ],
     "source": "ATT&CK"
@@ -4190,9 +4195,9 @@
     "detection": "",
     "mitigations": [
       "Restrict Web-Based Content",
+      "Audit",
       "User Training",
-      "User Account Management",
-      "Audit"
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1528",
@@ -4215,12 +4220,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Restrict Web-Based Content",
-      "Limit Software Installation",
       "User Training",
       "Execution Prevention",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Restrict Web-Based Content",
+      "Network Intrusion Prevention",
+      "Limit Software Installation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1204",
@@ -4291,16 +4296,16 @@
     ],
     "detection": "",
     "mitigations": [
-      "Remote Data Storage",
-      "Limit Software Installation",
-      "User Training",
-      "Network Segmentation",
-      "Password Policies",
       "User Account Management",
-      "Privileged Account Management",
-      "Multi-factor Authentication",
       "Active Directory Configuration",
-      "Update Software"
+      "Update Software",
+      "Privileged Account Management",
+      "Password Policies",
+      "Limit Software Installation",
+      "Network Segmentation",
+      "User Training",
+      "Multi-factor Authentication",
+      "Remote Data Storage"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1072",
@@ -4310,7 +4315,7 @@
   {
     "id": "T1041",
     "name": "Exfiltration Over C2 Channel",
-    "description": "Adversaries may steal data by exfiltrating it over an existing command and control channel. Stolen data is encoded into the normal communications channel using the same protocol as command and control communications.",
+    "description": "Adversaries may steal data by exfiltrating it over an existing command and control channel. Stolen data is encoded into the normal communications channel using the same protocol as command and control communications.(Citation: C2 FRAMEWORKS)",
     "tactics": [
       "Exfiltration"
     ],
@@ -4388,10 +4393,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
       "Privileged Account Management",
       "Software Configuration",
-      "Audit"
+      "Audit",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1606",
@@ -4427,9 +4432,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
       "Multi-factor Authentication",
-      "Account Use Policies"
+      "Account Use Policies",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1621",
@@ -4490,11 +4495,11 @@
     ],
     "detection": "",
     "mitigations": [
+      "Exploit Protection",
+      "Update Software",
       "Application Developer Guidance",
       "Threat Intelligence Program",
-      "Application Isolation and Sandboxing",
-      "Exploit Protection",
-      "Update Software"
+      "Application Isolation and Sandboxing"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1212",
@@ -4566,14 +4571,14 @@
     ],
     "detection": "",
     "mitigations": [
+      "Disable or Remove Feature or Program",
       "Vulnerability Scanning",
+      "Exploit Protection",
       "Network Segmentation",
       "Threat Intelligence Program",
-      "Privileged Account Management",
       "Application Isolation and Sandboxing",
-      "Exploit Protection",
-      "Update Software",
-      "Disable or Remove Feature or Program"
+      "Privileged Account Management",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1210",
@@ -4619,9 +4624,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
+      "Multi-factor Authentication",
       "User Account Management",
-      "Multi-factor Authentication"
+      "Network Segmentation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1199",
@@ -4640,8 +4645,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Application Developer Guidance",
-      "Audit"
+      "Audit",
+      "Application Developer Guidance"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1593",
@@ -4686,13 +4691,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
       "Network Segmentation",
+      "Disable or Remove Feature or Program",
       "User Account Management",
       "Restrict File and Directory Permissions",
-      "Privileged Account Management",
       "Multi-factor Authentication",
-      "Disable or Remove Feature or Program"
+      "Privileged Account Management",
+      "Operating System Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1098",
@@ -4754,12 +4759,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic",
-      "Data Loss Prevention",
       "Network Segmentation",
-      "User Account Management",
-      "Restrict File and Directory Permissions"
+      "Data Loss Prevention",
+      "Filter Network Traffic",
+      "Network Intrusion Prevention",
+      "Restrict File and Directory Permissions",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1048",
@@ -4834,7 +4839,7 @@
   {
     "id": "T1566",
     "name": "Phishing",
-    "description": "Adversaries may send phishing messages to gain access to victim systems. All forms of phishing are electronically delivered social engineering. Phishing can be targeted, known as spearphishing. In spearphishing, a specific individual, company, or industry will be targeted by the adversary. More generally, adversaries can conduct non-targeted phishing, such as in mass malware spam campaigns.\n\nAdversaries may send victims emails containing malicious attachments or links, typically to execute malicious code on victim systems. Phishing may also be conducted via third-party services, like social media platforms. Phishing may also involve social engineering techniques, such as posing as a trusted source, as well as evasive techniques such as removing or manipulating emails or metadata/headers from compromised accounts being abused to send messages (e.g., [Email Hiding Rules](https://attack.mitre.org/techniques/T1564/008)).(Citation: Microsoft OAuth Spam 2022)(Citation: Palo Alto Unit 42 VBA Infostealer 2014) Another way to accomplish this is by [Email Spoofing](https://attack.mitre.org/techniques/T1684/002)(Citation: Proofpoint-spoof) the identity of the sender, which can be used to fool both the human recipient as well as automated security tools,(Citation: cyberproof-double-bounce) or by including the intended target as a party to an existing email thread that includes malicious files or links (i.e., \"thread hijacking\").(Citation: phishing-krebs)\n\nVictims may also receive phishing messages that instruct them to call a phone number where they are directed to visit a malicious URL, download malware,(Citation: sygnia Luna Month)(Citation: CISA Remote Monitoring and Management Software) or install adversary-accessible remote management tools onto their computer (i.e., [User Execution](https://attack.mitre.org/techniques/T1204)).(Citation: Unit42 Luna Moth)",
+    "description": "Adversaries may send phishing messages to gain access to victim systems. All forms of phishing are electronically delivered social engineering. Phishing can be targeted, known as spearphishing. In spearphishing, a specific individual, company, or industry will be targeted by the adversary. More generally, adversaries can conduct non-targeted phishing, such as in mass malware spam campaigns.\n\nAdversaries may send victims emails containing malicious attachments or links, typically to execute malicious code on victim systems. Phishing may also be conducted via third-party services (like social media platforms) or delivered via calendar invites. Phishing may also involve social engineering techniques, such as posing as a trusted source, as well as evasive techniques such as removing or manipulating emails or metadata/headers from compromised accounts being abused to send messages (e.g., [Email Hiding Rules](https://attack.mitre.org/techniques/T1564/008)).(Citation: Microsoft OAuth Spam 2022)(Citation: Palo Alto Unit 42 VBA Infostealer 2014) Another way to accomplish this is by [Email Spoofing](https://attack.mitre.org/techniques/T1684/002)(Citation: Proofpoint-spoof) the identity of the sender, which can be used to fool both the human recipient as well as automated security tools,(Citation: cyberproof-double-bounce) or by including the intended target as a party to an existing email thread that includes malicious files or links (i.e., \"thread hijacking\").(Citation: phishing-krebs)\n\nVictims may also receive phishing messages that instruct them to call a phone number where they are directed to visit a malicious URL, download malware,(Citation: sygnia Luna Month)(Citation: CISA Remote Monitoring and Management Software) or install adversary-accessible remote management tools onto their computer (i.e., [User Execution](https://attack.mitre.org/techniques/T1204)).(Citation: Unit42 Luna Moth)",
     "tactics": [
       "Initial Access"
     ],
@@ -4848,12 +4853,12 @@
     ],
     "detection": "",
     "mitigations": [
+      "Audit",
       "Network Intrusion Prevention",
-      "Restrict Web-Based Content",
-      "User Training",
-      "Antivirus/Antimalware",
       "Software Configuration",
-      "Audit"
+      "Restrict Web-Based Content",
+      "Antivirus/Antimalware",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1566",
@@ -4902,10 +4907,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
       "User Account Management",
+      "Account Use Policies",
       "Multi-factor Authentication",
-      "Account Use Policies"
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1110",
@@ -4947,10 +4952,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Encrypt Sensitive Information",
       "Remote Data Storage",
       "Network Segmentation",
-      "Restrict File and Directory Permissions",
-      "Encrypt Sensitive Information"
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1565",
@@ -4987,12 +4992,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Application Developer Guidance",
-      "Behavior Prevention on Endpoint",
-      "Privileged Account Management",
+      "Disable or Remove Feature or Program",
       "Software Configuration",
       "Application Isolation and Sandboxing",
-      "Disable or Remove Feature or Program"
+      "Privileged Account Management",
+      "Behavior Prevention on Endpoint",
+      "Application Developer Guidance"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1559",
@@ -5056,7 +5061,7 @@
   {
     "id": "T1039",
     "name": "Data from Network Shared Drive",
-    "description": "Adversaries may search network shares on computers they have compromised to find files of interest. Sensitive data can be collected from remote systems via shared network drives (host shared directory, network file server, etc.) that are accessible from the current system prior to Exfiltration. Interactive command shells may be in use, and common functionality within [cmd](https://attack.mitre.org/software/S0106) may be used to gather information.",
+    "description": "Adversaries may search network shares on computers they have compromised to find files of interest. Sensitive data can be collected from remote systems via shared network drives (host shared directory, network file server, etc.) that are accessible from the current system prior to Exfiltration. Interactive command shells may be in use, and common functionality within [cmd](https://attack.mitre.org/software/S0106) may be used to gather information.(Citation: Net Use)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
     "tactics": [
       "Collection"
     ],
@@ -5075,7 +5080,7 @@
   {
     "id": "T1601",
     "name": "Modify System Image",
-    "description": "Adversaries may make changes to the operating system of embedded network devices to weaken defenses and provide new capabilities for themselves.  On such devices, the operating systems are typically monolithic and most of the device functionality and capabilities are contained within a single file.\n\nTo change the operating system, the adversary typically only needs to affect this one file, replacing or modifying it.  This can either be done live in memory during system runtime for immediate effect, or in storage to implement the change on the next boot of the network device.",
+    "description": "Adversaries may make changes to the operating system of embedded network devices to weaken defenses and provide new capabilities for themselves.  On such devices, the operating systems are typically monolithic and most of the device functionality and capabilities are contained within a single file.(Citation: Cisco Networking Software Product Lines)(Citation: Network Device Integrity Methodology)\n\nTo change the operating system, the adversary typically only needs to affect this one file, replacing or modifying it.  This can either be done live in memory during system runtime for immediate effect, or in storage to implement the change on the next boot of the network device.",
     "tactics": [
       "defense-impairment"
     ],
@@ -5084,12 +5089,12 @@
     ],
     "detection": "",
     "mitigations": [
+      "Multi-factor Authentication",
+      "Password Policies",
       "Credential Access Protection",
       "Code Signing",
       "Boot Integrity",
-      "Password Policies",
-      "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1601",
@@ -5110,7 +5115,7 @@
   {
     "id": "T1574",
     "name": "Hijack Execution Flow",
-    "description": "Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs. Hijacking execution flow can be for the purposes of persistence, since this hijacked execution may reoccur over time. Adversaries may also use these mechanisms to elevate privileges or evade defenses, such as application control or other restrictions on execution.\n\nThere are many ways an adversary may hijack the flow of execution, including by manipulating how the operating system locates programs to be executed. How the operating system locates libraries to be used by a program can also be intercepted. Locations where the operating system looks for programs/resources, such as file directories and in the case of Windows the Registry, could also be poisoned to include malicious payloads.",
+    "description": "Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs. Hijacking execution flow can be for the purposes of persistence, since this hijacked execution may reoccur over time. Adversaries may also use these mechanisms to elevate privileges or evade defenses, such as application control or other restrictions on execution.\n\nThere are many ways an adversary may hijack the flow of execution, including by manipulating how the operating system locates programs to be executed. How the operating system locates libraries to be used by a program can also be intercepted. Locations where the operating system looks for programs/resources, such as file directories and in the case of Windows the Registry, could also be poisoned to include malicious payloads.(Citation: Execution flow hijack attempt)",
     "tactics": [
       "Defense Evasion",
       "Execution"
@@ -5122,16 +5127,16 @@
     ],
     "detection": "",
     "mitigations": [
-      "Application Developer Guidance",
       "User Account Control",
-      "Execution Prevention",
       "Behavior Prevention on Endpoint",
-      "User Account Management",
-      "Restrict File and Directory Permissions",
-      "Restrict Registry Permissions",
+      "Restrict Library Loading",
       "Audit",
+      "Application Developer Guidance",
+      "User Account Management",
       "Update Software",
-      "Restrict Library Loading"
+      "Execution Prevention",
+      "Restrict File and Directory Permissions",
+      "Restrict Registry Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574",
@@ -5223,12 +5228,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Application Developer Guidance",
-      "User Training",
       "Password Policies",
       "User Account Management",
       "Privileged Account Management",
       "Multi-factor Authentication",
+      "Application Developer Guidance",
+      "User Training",
       "Active Directory Configuration",
       "Account Use Policies"
     ],
@@ -5273,8 +5278,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Network Segmentation"
+      "Network Segmentation",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1571",
@@ -5296,11 +5301,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Threat Intelligence Program",
-      "Application Isolation and Sandboxing",
+      "Update Software",
       "Exploit Protection",
-      "Update Software"
+      "Application Isolation and Sandboxing",
+      "Threat Intelligence Program",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1068",
@@ -5346,10 +5351,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
+      "Audit",
       "Behavior Prevention on Endpoint",
-      "Antivirus/Antimalware",
-      "Audit"
+      "User Training",
+      "Antivirus/Antimalware"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1027",
@@ -5632,8 +5637,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Password Policies"
+      "Password Policies",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1187",
@@ -5652,11 +5657,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Credential Access Protection",
+      "Multi-factor Authentication",
       "Password Policies",
       "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Filter Network Traffic",
+      "Credential Access Protection"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1599",
@@ -5685,8 +5690,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Data Backup",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "Data Backup"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1486",
@@ -5709,8 +5714,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
-      "Environment Variable Permissions"
+      "Environment Variable Permissions",
+      "Operating System Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1690",
@@ -5731,8 +5736,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
       "Execution Prevention",
+      "Operating System Configuration",
       "Privileged Account Management",
       "Restrict Registry Permissions",
       "Software Configuration"
@@ -5868,13 +5873,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
       "User Account Management",
-      "Restrict File and Directory Permissions",
-      "Restrict Registry Permissions",
-      "Software Configuration",
       "Audit",
-      "Disable or Remove Feature or Program"
+      "Restrict File and Directory Permissions",
+      "Disable or Remove Feature or Program",
+      "Software Configuration",
+      "Execution Prevention",
+      "Restrict Registry Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1685",
@@ -5908,6 +5913,11 @@
         "id": "T1685.005",
         "name": "Clear Windows Event Logs",
         "url": "https://attack.mitre.org/techniques/T1685/005"
+      },
+      {
+        "id": "T1685.007",
+        "name": "Impair Autonomous Defenses",
+        "url": "https://attack.mitre.org/techniques/T1685/007"
       }
     ],
     "source": "ATT&CK"
@@ -5926,9 +5936,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Application Isolation and Sandboxing",
       "Exploit Protection",
-      "Update Software"
+      "Update Software",
+      "Application Isolation and Sandboxing"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1203",
@@ -5973,8 +5983,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic"
+      "Filter Network Traffic",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1570",
@@ -5998,9 +6008,9 @@
     "detection": "",
     "mitigations": [
       "Network Intrusion Prevention",
+      "Audit",
       "Filter Network Traffic",
-      "Network Segmentation",
-      "Audit"
+      "Network Segmentation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1095",
@@ -6020,8 +6030,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Audit",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1671",
@@ -6048,7 +6058,7 @@
   {
     "id": "T1030",
     "name": "Data Transfer Size Limits",
-    "description": "An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds. This approach may be used to avoid triggering network data transfer threshold alerts.",
+    "description": "An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds. This approach may be used to avoid triggering network data transfer threshold alerts.(Citation: Chunked Encoding)",
     "tactics": [
       "Exfiltration"
     ],
@@ -6123,8 +6133,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Software Configuration"
+      "Software Configuration",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1688",
@@ -6171,9 +6181,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "User Account Management",
       "Filter Network Traffic",
-      "Operating System Configuration",
-      "User Account Management"
+      "Operating System Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1197",
@@ -6183,7 +6193,7 @@
   {
     "id": "T1132",
     "name": "Data Encoding",
-    "description": "Adversaries may encode data to make the content of command and control traffic more difficult to detect. Command and control (C2) information can be encoded using a standard data encoding system. Use of data encoding may adhere to existing protocol specifications and includes use of ASCII, Unicode, Base64, MIME, or other binary-to-text and character encoding systems.(Citation: Wikipedia Binary-to-text Encoding) (Citation: Wikipedia Character Encoding) Some data encoding systems may also result in data compression, such as gzip.",
+    "description": "Adversaries may encode data to make the content of command and control traffic more difficult to detect. Command and control (C2) information can be encoded using a standard data encoding system. Use of data encoding may adhere to existing protocol specifications and includes use of ASCII, Unicode, Base64, MIME, or other binary-to-text and character encoding systems.(Citation: Wikipedia Binary-to-text Encoding)(Citation: Wikipedia Character Encoding) Some data encoding systems may also result in data compression, such as gzip.",
     "tactics": [
       "Command and Control"
     ],
@@ -6401,10 +6411,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
+      "Privileged Account Management",
       "User Account Management",
-      "Restrict File and Directory Permissions",
-      "Privileged Account Management"
+      "Behavior Prevention on Endpoint",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1569",
@@ -6463,11 +6473,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
-      "Out-of-Band Communications Channel",
-      "User Account Management",
       "Multi-factor Authentication",
+      "Out-of-Band Communications Channel",
+      "User Training",
       "Software Configuration",
+      "User Account Management",
       "Audit",
       "Encrypt Sensitive Information"
     ],
@@ -6546,12 +6556,12 @@
     "detection": "",
     "mitigations": [
       "Code Signing",
+      "Audit",
+      "Restrict Registry Permissions",
+      "Disable or Remove Feature or Program",
       "Boot Integrity",
       "User Account Management",
-      "Privileged Account Management",
-      "Restrict Registry Permissions",
-      "Audit",
-      "Disable or Remove Feature or Program"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505",
@@ -6606,9 +6616,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Multi-factor Authentication",
       "Data Backup",
-      "User Account Management",
-      "Multi-factor Authentication"
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1485",
@@ -6635,10 +6645,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
       "Data Loss Prevention",
       "User Account Management",
-      "Software Configuration"
+      "Software Configuration",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1537",
@@ -6660,11 +6670,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
-      "User Training",
-      "Application Isolation and Sandboxing",
       "Exploit Protection",
-      "Update Software"
+      "Update Software",
+      "Application Isolation and Sandboxing",
+      "Restrict Web-Based Content",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1189",
@@ -6736,9 +6746,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Antivirus/Antimalware",
       "Network Intrusion Prevention",
       "User Training",
-      "Antivirus/Antimalware",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -6854,10 +6864,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
       "Network Segmentation",
-      "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Operating System Configuration",
+      "Multi-factor Authentication",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1136",
@@ -6938,9 +6948,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Disable or Remove Feature or Program",
       "Network Intrusion Prevention",
-      "Network Segmentation",
-      "Disable or Remove Feature or Program"
+      "Network Segmentation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1046",
@@ -7024,7 +7034,7 @@
   {
     "id": "T1052",
     "name": "Exfiltration Over Physical Medium",
-    "description": "Adversaries may attempt to exfiltrate data via a physical medium, such as a removable drive. In certain circumstances, such as an air-gapped network compromise, exfiltration could occur via a physical medium or device introduced by a user. Such media could be an external hard drive, USB drive, cellular phone, MP3 player, or other removable storage and processing device. The physical medium or device could be used as the final exfiltration point or to hop between otherwise disconnected systems.",
+    "description": "Adversaries may attempt to exfiltrate data via a physical medium, such as a removable drive. In certain circumstances, such as an air-gapped network compromise, exfiltration could occur via a physical medium or device introduced by a user. Such media could be an external hard drive, USB drive, cellular phone, MP3 player, or other removable storage and processing device. The physical medium or device could be used as the final exfiltration point or to hop between otherwise disconnected systems.(Citation: USB Drives Threaten Enterprise Security)(Citation: Tropic Trooper\u2019s USBferry)(Citation: APT37 Adds New Capabilities for Air-Gapped Networks)",
     "tactics": [
       "Exfiltration"
     ],
@@ -7035,8 +7045,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Hardware Installation",
       "Data Loss Prevention",
+      "Limit Hardware Installation",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -7088,8 +7098,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Account Use Policies"
+      "Account Use Policies",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1648",
@@ -7153,9 +7163,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
+      "Audit",
       "Privileged Account Management",
-      "Audit"
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1484",
@@ -7195,7 +7205,7 @@
   {
     "id": "T1587",
     "name": "Develop Capabilities",
-    "description": "Adversaries may build capabilities that can be used during targeting. Rather than purchasing, freely downloading, or stealing capabilities, adversaries may develop their own capabilities in-house. This is the process of identifying development requirements and building solutions such as malware, exploits, and self-signed certificates. Adversaries may develop capabilities to support their operations throughout numerous phases of the adversary lifecycle.(Citation: Mandiant APT1)(Citation: Kaspersky Sofacy)(Citation: Bitdefender StrongPity June 2020)(Citation: Talos Promethium June 2020)\n\nAs with legitimate development efforts, different skill sets may be required for developing capabilities. The skills needed may be located in-house, or may need to be contracted out. Use of a contractor may be considered an extension of that adversary's development capabilities, provided the adversary plays a role in shaping requirements and maintains a degree of exclusivity to the capability.",
+    "description": "Adversaries may build capabilities that can be used during targeting. Rather than purchasing, freely downloading, or stealing capabilities, adversaries may develop their own capabilities in-house. This is the process of identifying development requirements and building solutions such as malware, exploits, and self-signed certificates. Adversaries may develop capabilities to support their operations throughout numerous phases of the adversary lifecycle.(Citation: Mandiant APT1)(Citation: Kaspersky Sofacy)(Citation: Bitdefender StrongPity June 2020)(Citation: Talos Promethium June 2020)\n\nAs with legitimate development efforts, different skill sets may be required for developing capabilities. The skills needed may be located in-house, or may need to be contracted out. Use of a contractor may be considered an extension of that adversary's development capabilities, provided the adversary plays a role in shaping requirements and maintains a degree of exclusivity to the capability. Adversaries may also employ the use of [Artificial Intelligence](https://attack.mitre.org/techniques/T1588/007) for development.",
     "tactics": [
       "Resource Development"
     ],
@@ -7248,10 +7258,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Restrict File and Directory Permissions",
+      "Audit",
       "Restrict Registry Permissions",
-      "Audit"
+      "Restrict File and Directory Permissions",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1686",
@@ -7359,15 +7369,15 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
-      "Privileged Process Integrity",
-      "Password Policies",
-      "User Account Management",
-      "Restrict File and Directory Permissions",
-      "Privileged Account Management",
       "Restrict Registry Permissions",
       "Multi-factor Authentication",
-      "Audit"
+      "Password Policies",
+      "Restrict File and Directory Permissions",
+      "User Account Management",
+      "Privileged Account Management",
+      "Privileged Process Integrity",
+      "Audit",
+      "Operating System Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556",
@@ -7435,9 +7445,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Boot Integrity",
+      "Update Software",
       "Privileged Account Management",
-      "Update Software"
+      "Boot Integrity"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1495",
@@ -7462,10 +7472,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
-      "Data Backup",
       "Execution Prevention",
-      "User Account Management"
+      "Operating System Configuration",
+      "User Account Management",
+      "Data Backup"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1490",
@@ -7517,8 +7527,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
       "Multi-factor Authentication",
+      "Network Segmentation",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -7542,10 +7552,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Threat Intelligence Program",
-      "Application Isolation and Sandboxing",
       "Exploit Protection",
-      "Update Software"
+      "Update Software",
+      "Threat Intelligence Program",
+      "Application Isolation and Sandboxing"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1211",
@@ -7565,8 +7575,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
       "Execution Prevention",
+      "Restrict Web-Based Content",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -7612,6 +7622,131 @@
     "source": "ATT&CK"
   },
   {
+    "id": "T1696",
+    "name": "Anti-Automation Evasion",
+    "description": "Adversaries may employ various means to evade or complete automation checks. Automation checks distinguish human users from bot traffic and prevent bots from reaching the web pages protected by automation checks. For example, a user may be required to solve a CAPTCHA challenge before accessing a form or login page. Traditional CAPTCHAs ask the user to decipher a string of characters, type the characters into a box, and submit the form. reCAPTCHA asks the user to identify images, click a checkbox, or evaluate the user\u2019s behavior from mouse movement and device cookies.(Citation: CAPTCHAS Cloudflare) \n\nAdversaries may pay for a service that forwards the CAPTCHA challenge to a remote human worker. The human service then solves the CAPTCHA on behalf of the bot.(Citation: CAPTCHA Bypass) AI tools, such as CapSolver, can also be used to automatically solve CAPTCHA challenges.(Citation: Capsolver) ",
+    "tactics": [
+      "Defense Evasion"
+    ],
+    "platforms": [
+      "SaaS"
+    ],
+    "detection": "",
+    "mitigations": [
+      "Filter Network Traffic",
+      "Network Intrusion Prevention"
+    ],
+    "data_sources": [],
+    "url": "https://attack.mitre.org/techniques/T1696",
+    "subtechniques": [
+      {
+        "id": "T1696.001",
+        "name": "Automate CAPTCHA Completion",
+        "url": "https://attack.mitre.org/techniques/T1696/001"
+      },
+      {
+        "id": "T1696.002",
+        "name": "Avoid CAPTCHA",
+        "url": "https://attack.mitre.org/techniques/T1696/002"
+      }
+    ],
+    "source": "ATT&CK"
+  },
+  {
+    "id": "T1697",
+    "name": "Steal Application Specific Passwords",
+    "description": "Adversaries may steal Application Specific Passwords (ASPs) to gain access to [Valid Accounts](https://attack.mitre.org/techniques/T1078), bypassing multifactor authentication (MFA) methods. ASPs are passwords typically used to give third-party applications or legacy devices (which do not support MFA methods) account access.(Citation: Application Specific Passwords)(Citation: Application Specific Passwords Push Sec) \n \nAn adversary may socially engineer a user into providing an ASP(Citation: UNC6293 ASP Creative Phishing Attack)(Citation: Application Specific Passwords Phishing) (using methods like [Phishing for Information](https://attack.mitre.org/techniques/T1598)), generate an ASP for an already compromised account,(Citation: Mandiant APT42-untangling)(Citation: TAG APT42) or obtain an ASP stored on a system. Afterward, adversaries may use the ASP to access [Valid Accounts](https://attack.mitre.org/techniques/T1078) and, in some cases, maintain [Persistence](https://attack.mitre.org/tactics/TA0003), bypassing any form of MFA set on the account. ",
+    "tactics": [
+      "Credential Access"
+    ],
+    "platforms": [
+      "Office Suite",
+      "Identity Provider",
+      "SaaS"
+    ],
+    "detection": "",
+    "mitigations": [
+      "User Training",
+      "Disable or Remove Feature or Program",
+      "Account Use Policies",
+      "User Account Management"
+    ],
+    "data_sources": [],
+    "url": "https://attack.mitre.org/techniques/T1697",
+    "subtechniques": [],
+    "source": "ATT&CK"
+  },
+  {
+    "id": "T1698",
+    "name": "Indirect Prompt Injection",
+    "description": "Adversaries may deliver malicious prompts to an LLM indirectly by embedding the prompts in content that the adversary expects may be processed by an LLM.(Citation: NIST indirect prompt injection) These prompts can be included in web pages,(Citation: Palo Alto Indirect Prompt Injection ITW) documents, emails, tickets,(Citation: Snyk Indirect Prompt Injection) code, or other sources that an agent, copilot, or other AI system may retrieve and process. When an LLM processes this content, the embedded instructions may cause the system to perform unintended behaviors.(Citation: GTIG AI Threats Sep 2026) \n\nAdversaries may use indirect prompt injection to [Impair Autonomous Defenses](https://attack.mitre.org/techniques/T1685/007), and for unauthorized execution of any capabilities available to the LLM. ",
+    "tactics": [
+      "Execution"
+    ],
+    "platforms": [
+      "Windows",
+      "SaaS"
+    ],
+    "detection": "",
+    "mitigations": [
+      "Restrict File and Directory Permissions",
+      "Privileged Account Management",
+      "Execution Prevention",
+      "Network Segmentation",
+      "User Account Management",
+      "User Training"
+    ],
+    "data_sources": [],
+    "url": "https://attack.mitre.org/techniques/T1698",
+    "subtechniques": [],
+    "source": "ATT&CK"
+  },
+  {
+    "id": "T1699",
+    "name": "Direct Prompt Injection",
+    "description": "Adversaries may input malicious prompts directly into an LLM\u2019s user interface.(Citation: NIST Direct Prompt Injection) The prompts can be designed to bypass safeguards, manipulate context, override previous instructions, or coerce the LLM into unauthorized behavior.(Citation: OWASP Prompt Injection) \n\nAdversaries may use direct prompt injection to [Generate Content](https://attack.mitre.org/techniques/T1683) prohibited by the LLM's guardrails or to induce the system to utilize its capabilities in unintended or prohibited ways.(Citation: Gemini AI Misuse Jan 2025)(Citation: Palo Alto Prompt Injection) Adversaries may achieve this by instructing the LLM to ignore previous instructions or safety rules, or by impersonating a role such as a researcher or privileged user.(Citation: Cybersec Guru Prompt Injection) ",
+    "tactics": [
+      "Execution"
+    ],
+    "platforms": [
+      "Windows",
+      "SaaS"
+    ],
+    "detection": "",
+    "mitigations": [
+      "User Account Management",
+      "Execution Prevention",
+      "User Training",
+      "Privileged Account Management"
+    ],
+    "data_sources": [],
+    "url": "https://attack.mitre.org/techniques/T1699",
+    "subtechniques": [],
+    "source": "ATT&CK"
+  },
+  {
+    "id": "T1700",
+    "name": "AI-Enabled Exfiltration",
+    "description": "Adversaries may utilize [Direct Prompt Injection](https://attack.mitre.org/techniques/T1699), [Indirect Prompt Injection](https://attack.mitre.org/techniques/T1698) or other methods to instruct enterprise AI agents to exfiltrate data.(Citation: Prompt-Injection Exfil)(Citation: Anthropic Report Sep 2026) When enterprise systems incorporate the use of AI assistants or other AI agents, adversaries may abuse these systems to weaponize sanctioned tools available to the agent.(Citation: Google Security State of Prompt Injections) \n\nAs an AI agent processes queries or ingests data, an injected prompt can cause the agent to use its tool connections in unauthorized or unintended ways. When AI agents are induced to exfiltrate data, other exfiltration techniques likely apply as well to transfer the information out of the network, such as [Exfiltration to Code Repository](https://attack.mitre.org/techniques/T1567/001) or [Exfiltration Over Web Service](https://attack.mitre.org/techniques/T1567).(Citation: Google Cloud AI Risk Sep 2026)(Citation: Barracuda Prompt Injection Phishing Emails)",
+    "tactics": [
+      "Exfiltration"
+    ],
+    "platforms": [
+      "Windows",
+      "SaaS"
+    ],
+    "detection": "",
+    "mitigations": [
+      "User Training",
+      "Application Isolation and Sandboxing",
+      "Restrict File and Directory Permissions"
+    ],
+    "data_sources": [],
+    "url": "https://attack.mitre.org/techniques/T1700",
+    "subtechniques": [],
+    "source": "ATT&CK"
+  },
+  {
     "id": "T1055.011",
     "name": "Extra Window Memory Injection",
     "description": "Adversaries may inject malicious code into process via Extra Window Memory (EWM) in order to evade process-based defenses as well as possibly elevate privileges. EWM injection is a method of executing arbitrary code in the address space of a separate live process. \n\nBefore creating a window, graphical Windows-based processes must prescribe to or register a windows class, which stipulate appearance and behavior (via windows procedures, which are functions that handle input/output of data).(Citation: Microsoft Window Classes) Registration of new windows classes can include a request for up to 40 bytes of EWM to be appended to the allocated memory of each instance of that class. This EWM is intended to store data specific to that window and has specific application programming interface (API) functions to set and get its value. (Citation: Microsoft GetWindowLong function) (Citation: Microsoft SetWindowLong function)\n\nAlthough small, the EWM is large enough to store a 32-bit pointer and is often used to point to a windows procedure. Malware may possibly utilize this memory location in part of an attack chain that includes writing code to shared sections of the process\u2019s memory, placing a pointer to the code in EWM, then invoking execution by returning execution control to the address in the process\u2019s EWM.\n\nExecution granted through EWM injection may allow access to both the target process's memory and possibly elevated privileges. Writing payloads to shared sections also avoids the use of highly monitored API calls such as <code>WriteProcessMemory</code> and <code>CreateRemoteThread</code>.(Citation: Elastic Process Injection July 2017) More sophisticated malware samples may also potentially bypass protection mechanisms such as data execution prevention (DEP) by triggering a combination of windows procedures and other system functions that will rewrite the malicious payload inside an executable portion of the target process.  (Citation: MalwareTech Power Loader Aug 2013) (Citation: WeLiveSecurity Gapz and Redyms Mar 2013)\n\nRunning code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via EWM injection may also evade detection from security products since the execution is masked under a legitimate process. ",
@@ -7645,10 +7780,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
-      "User Account Management",
       "Privileged Account Management",
-      "Audit"
+      "User Account Management",
+      "Audit",
+      "Operating System Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1053/005",
@@ -7713,10 +7848,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Disable or Remove Feature or Program",
       "Filter Network Traffic",
-      "Limit Software Installation",
       "Audit",
-      "Disable or Remove Feature or Program"
+      "Limit Software Installation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/005",
@@ -7817,8 +7952,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
-      "Antivirus/Antimalware"
+      "Antivirus/Antimalware",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1027/009",
@@ -7840,8 +7975,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/003",
@@ -7919,8 +8054,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Application Developer Guidance",
-      "Antivirus/Antimalware"
+      "Antivirus/Antimalware",
+      "Application Developer Guidance"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1564/012",
@@ -7969,9 +8104,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
-      "Multi-factor Authentication",
       "Update Software",
+      "Multi-factor Authentication",
+      "Password Policies",
       "Account Use Policies"
     ],
     "data_sources": [],
@@ -8077,8 +8212,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
       "Restrict File and Directory Permissions",
+      "Execution Prevention",
       "Audit"
     ],
     "data_sources": [],
@@ -8089,7 +8224,7 @@
   {
     "id": "T1213.002",
     "name": "Sharepoint",
-    "description": "Adversaries may leverage the SharePoint repository as a source to mine valuable information. SharePoint will often contain useful information for an adversary to learn about the structure and functionality of the internal network and systems. For example, the following is a list of example information that may hold potential value to an adversary and may also be found on SharePoint:\n\n* Policies, procedures, and standards\n* Physical / logical network diagrams\n* System architecture diagrams\n* Technical system documentation\n* Testing / development credentials (i.e., [Unsecured Credentials](https://attack.mitre.org/techniques/T1552))\n* Work / project schedules\n* Source code snippets\n* Links to network shares and other internal resources\n",
+    "description": "Adversaries may leverage the SharePoint repository as a source to mine valuable information.(Citation: Information architecture guidance for SharePoint Online portals) SharePoint will often contain useful information for an adversary to learn about the structure and functionality of the internal network and systems. For example, the following is a list of example information that may hold potential value to an adversary and may also be found on SharePoint:\n\n* Policies, procedures, and standards\n* Physical / logical network diagrams\n* System architecture diagrams\n* Technical system documentation\n* Testing / development credentials (i.e., [Unsecured Credentials](https://attack.mitre.org/techniques/T1552))\n* Work / project schedules\n* Source code snippets\n* Links to network shares and other internal resources\n",
     "tactics": [
       "Collection"
     ],
@@ -8099,9 +8234,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
+      "Audit",
       "User Account Management",
-      "Audit"
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1213/002",
@@ -8111,7 +8246,7 @@
   {
     "id": "T1588.007",
     "name": "Artificial Intelligence",
-    "description": "Adversaries may obtain access to generative artificial intelligence tools, such as large language models (LLMs), to aid various techniques during targeting. These tools may be used to inform, bolster, and enable a variety of malicious tasks, including conducting [Reconnaissance](https://attack.mitre.org/tactics/TA0043), creating basic scripts, assisting social engineering, and even developing payloads.(Citation: MSFT-AI) \n\nFor example, by utilizing a publicly available LLM an adversary is essentially outsourcing or automating certain tasks to the tool. Using AI, the adversary may draft and generate content in a variety of written languages to be used in [Phishing](https://attack.mitre.org/techniques/T1566)/[Phishing for Information](https://attack.mitre.org/techniques/T1598) campaigns. The same publicly available tool may further enable vulnerability or other offensive research supporting [Develop Capabilities](https://attack.mitre.org/techniques/T1587). AI tools may also automate technical tasks by generating, refining, or otherwise enhancing (e.g., [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027)) malicious scripts and payloads.(Citation: OpenAI-CTI) Finally, AI-generated text, images, audio, and video may be used for fraud, [Impersonation](https://attack.mitre.org/techniques/T1684/001), and other malicious activities.(Citation: Google-Vishing24)(Citation: IC3-AI24)(Citation: WSJ-Vishing-AI24)\n",
+    "description": "Adversaries may obtain access to generative artificial intelligence (AI) tools, such as large language models (LLMs), to aid various techniques during targeting. These tools may be used to inform, bolster, and enable a variety of malicious tasks, including creating scripts, assisting social engineering, developing payloads, and to [Query Public AI Services](https://attack.mitre.org/techniques/T1682) in support of [Reconnaissance](https://attack.mitre.org/tactics/TA0043).(Citation: MSFT-AI) \n\nFor example, by utilizing a publicly available LLM an adversary is essentially outsourcing or automating certain tasks to the tool. Using AI, the adversary may draft and [Generate Content](https://attack.mitre.org/techniques/T1683) in a variety of written languages to be used in [Phishing](https://attack.mitre.org/techniques/T1566)/[Phishing for Information](https://attack.mitre.org/techniques/T1598) campaigns. The same publicly available tool may further enable vulnerability or other offensive research supporting [Develop Capabilities](https://attack.mitre.org/techniques/T1587). AI tools may also automate technical tasks by generating, refining, or otherwise enhancing (e.g., [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027)) malicious scripts and payloads.(Citation: OpenAI-CTI) Finally, AI-generated text, images, audio, and video may be used for fraud, [Impersonation](https://attack.mitre.org/techniques/T1684/001), and other malicious activities.(Citation: Google-Vishing24)(Citation: IC3-AI24)(Citation: WSJ-Vishing-AI24)\n",
     "tactics": [
       "Resource Development"
     ],
@@ -8185,8 +8320,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
-      "Antivirus/Antimalware"
+      "Antivirus/Antimalware",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1027/013",
@@ -8269,10 +8404,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
-      "Execution Prevention",
       "Behavior Prevention on Endpoint",
-      "Disable or Remove Feature or Program"
+      "Execution Prevention",
+      "Disable or Remove Feature or Program",
+      "Restrict Web-Based Content"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/007",
@@ -8331,8 +8466,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Data Backup",
-      "User Account Management"
+      "User Account Management",
+      "Data Backup"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1485/001",
@@ -8352,9 +8487,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Audit",
       "Execution Prevention",
-      "Code Signing",
-      "Audit"
+      "Code Signing"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1546/006",
@@ -8438,10 +8573,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Control",
-      "Privileged Account Management",
+      "Update Software",
       "Audit",
-      "Update Software"
+      "User Account Control",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1548/002",
@@ -8500,8 +8635,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
       "Restrict File and Directory Permissions",
+      "Operating System Configuration",
       "Privileged Account Management"
     ],
     "data_sources": [],
@@ -8522,9 +8657,9 @@
     "detection": "",
     "mitigations": [
       "User Account Management",
-      "Restrict File and Directory Permissions",
+      "Audit",
       "Restrict Registry Permissions",
-      "Audit"
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1685/001",
@@ -8600,10 +8735,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
-      "Operating System Configuration",
       "Password Policies",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Operating System Configuration",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1003/002",
@@ -8644,8 +8779,8 @@
     "detection": "",
     "mitigations": [
       "Boot Integrity",
-      "Privileged Account Management",
-      "Update Software"
+      "Update Software",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1542/001",
@@ -8736,7 +8871,7 @@
   {
     "id": "T1195.001",
     "name": "Compromise Software Dependencies and Development Tools",
-    "description": "Adversaries may manipulate software dependencies and development tools prior to receipt by a final consumer for the purpose of data or system compromise. Applications often depend on external software to function properly. Popular open source projects that are used as dependencies in many applications, such as pip and NPM packages, may be targeted as a means to add malicious code to users of the dependency.(Citation: Trendmicro NPM Compromise)(Citation: Bitdefender NPM Repositories Compromised 2021)(Citation: MANDVI Malicious npm and PyPI Packages Disguised) This may also include abandoned packages, which in some cases could be re-registered by threat actors after being removed by adversaries.(Citation: The Hacker News PyPi Revival Hijack 2024) Adversaries may also employ \"typosquatting\" or name-confusion by choosing names similar to existing popular libraries or packages in order to deceive a user.(Citation: Ahmed Backdoors in Python and NPM Packages)(Citation: Meyer PyPI Supply Chain Attack Uncovered)(Citation: Checkmarx-oss-seo)\n\nAdditionally, CI/CD pipeline components, such as GitHub Actions, may be targeted in order to gain access to the building, testing, and deployment cycles of an application.(Citation: Unit 42 Palo Alto GitHub Actions Supply Chain Attack 2025) By adding malicious code into a GitHub action, a threat actor may be able to collect runtime credentials (e.g., via [Proc Filesystem](https://attack.mitre.org/techniques/T1003/007)) or insert further malicious components into the build pipelines for a second-order supply chain compromise.(Citation: OWASP CICD-SEC-4) As GitHub Actions are often dependent on other GitHub Actions, threat actors may be able to infect a large number of repositories via the compromise of a single Action.(Citation: Palo Alto Networks GitHub Actions Worm 2023)\n\nTargeting may be specific to a desired victim set or may be distributed to a broad set of consumers but only move on to additional tactics on specific victims. ",
+    "description": "Adversaries may manipulate software dependencies and development tools prior to receipt by a final consumer for the purpose of data or system compromise. Applications often depend on external software to function properly. Popular open source projects that are used as dependencies in many applications, such as pip and NPM packages, may be targeted as a means to add malicious code to users of the dependency.(Citation: Trendmicro NPM Compromise)(Citation: Bitdefender NPM Repositories Compromised 2021)(Citation: MANDVI Malicious npm and PyPI Packages Disguised) This may also include abandoned packages, which in some cases could be re-registered by threat actors after being removed by adversaries.(Citation: The Hacker News PyPi Revival Hijack 2024) Adversaries may also employ \"typosquatting\" or name-confusion by choosing names similar to existing popular libraries or packages in order to deceive a user.(Citation: Ahmed Backdoors in Python and NPM Packages)(Citation: Meyer PyPI Supply Chain Attack Uncovered)(Citation: Checkmarx-oss-seo)\n\nAdditionally, CI/CD pipeline components, such as GitHub Actions, may be targeted in order to gain access to the building, testing, and deployment cycles of an application.(Citation: Unit 42 Palo Alto GitHub Actions Supply Chain Attack 2025) By adding malicious code into a GitHub action, a threat actor may be able to collect runtime credentials (e.g., via [Proc Filesystem](https://attack.mitre.org/techniques/T1003/007)) or insert further malicious components into the build pipelines for a second-order supply chain compromise.(Citation: OWASP CICD-SEC-4) As GitHub Actions are often dependent on other GitHub Actions, threat actors may be able to infect a large number of repositories via the compromise of a single Action.(Citation: Palo Alto Networks GitHub Actions Worm 2023)\n\nAdversaries may also target the configuration and instruction files consumed by integrated development environments and AI coding agents. Project files such as tasks.json may execute commands when a developer opens or builds a project, while agent skill files (SKILL.md) supply an agent with instructions and resources that it loads on demand and runs with the permissions of the agent process.(Citation: Microsoft - Agent Skills Docs)(Citation: Google Agent Files May 2026)(Citation: CrowdStrike Threat Hunting Report 2026)(Citation: Microsoft Contagious Interview March 2026) To encourage downloads, adversaries may publish these files under benign-appearing or typo-squatted names, upload unmodified copies of the genuine skills first so the listings accumulate installs before the content behind them is weaponized, or may place the malicious instructions in a secondary document that the reviewed entry point references.(Citation: Zenity Skill Supply Chain August 2026)(Citation: ESET Agent Skills March 2026) Because these artifacts are natural language or configuration rather than executable code, they may pass registry screening and signature-based scanning.(Citation: ESET Agent Skills March 2026)(Citation: TrendMicro - OpenClaw Skills Distribute ATMOS) \n\nTargeting may be specific to a desired victim set or may be distributed to a broad set of consumers but only move on to additional tactics on specific victims. ",
     "tactics": [
       "Initial Access"
     ],
@@ -8747,10 +8882,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Vulnerability Scanning",
       "Limit Software Installation",
-      "Application Developer Guidance",
-      "Update Software"
+      "Vulnerability Scanning",
+      "Update Software",
+      "Application Developer Guidance"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1195/001",
@@ -8811,8 +8946,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic"
+      "Filter Network Traffic",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1071/004",
@@ -8832,8 +8967,8 @@
     "detection": "",
     "mitigations": [
       "Limit Access to Resource Over Network",
-      "Filter Network Traffic",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552/005",
@@ -8892,8 +9027,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/013",
@@ -8936,9 +9071,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Restrict File and Directory Permissions",
       "Execution Prevention",
-      "Code Signing",
-      "Restrict File and Directory Permissions"
+      "Code Signing"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1036/005",
@@ -8948,7 +9083,7 @@
   {
     "id": "T1587.003",
     "name": "Digital Certificates",
-    "description": "Adversaries may create self-signed SSL/TLS certificates that can be used during targeting. SSL/TLS certificates are designed to instill trust. They include information about the key, information about its owner's identity, and the digital signature of an entity that has verified the certificate's contents are correct. If the signature is valid, and the person examining the certificate trusts the signer, then they know they can use that key to communicate with its owner. In the case of self-signing, digital certificates will lack the element of trust associated with the signature of a third-party certificate authority (CA).\n\nAdversaries may create self-signed SSL/TLS certificates that can be used to further their operations, such as encrypting C2 traffic (ex: [Asymmetric Cryptography](https://attack.mitre.org/techniques/T1573/002) with [Web Protocols](https://attack.mitre.org/techniques/T1071/001)) or even enabling [Adversary-in-the-Middle](https://attack.mitre.org/techniques/T1557) if added to the root of trust (i.e. [Install Root Certificate](https://attack.mitre.org/techniques/T1553/004)).\n\nAfter creating a digital certificate, an adversary may then install that certificate (see [Install Digital Certificate](https://attack.mitre.org/techniques/T1608/003)) on infrastructure under their control.",
+    "description": "Adversaries may create self-signed SSL/TLS certificates that can be used during targeting. SSL/TLS certificates are designed to instill trust. They include information about the key, information about its owner's identity, and the digital signature of an entity that has verified the certificate's contents are correct. If the signature is valid, and the person examining the certificate trusts the signer, then they know they can use that key to communicate with its owner. In the case of self-signing, digital certificates will lack the element of trust associated with the signature of a third-party certificate authority (CA).(Citation: Spice Works Digital Certificates)\n\nAdversaries may create self-signed SSL/TLS certificates that can be used to further their operations, such as encrypting C2 traffic (ex: [Asymmetric Cryptography](https://attack.mitre.org/techniques/T1573/002) with [Web Protocols](https://attack.mitre.org/techniques/T1071/001)) or even enabling [Adversary-in-the-Middle](https://attack.mitre.org/techniques/T1557) if added to the root of trust (i.e. [Install Root Certificate](https://attack.mitre.org/techniques/T1553/004)).\n\nAfter creating a digital certificate, an adversary may then install that certificate (see [Install Digital Certificate](https://attack.mitre.org/techniques/T1608/003)) on infrastructure under their control.",
     "tactics": [
       "Resource Development"
     ],
@@ -8978,8 +9113,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Remote Data Storage",
       "Restrict File and Directory Permissions",
+      "Remote Data Storage",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -9063,9 +9198,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
       "Password Policies",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1003/004",
@@ -9088,10 +9223,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Privileged Account Management",
+      "Active Directory Configuration",
       "Audit",
-      "Active Directory Configuration"
+      "User Account Management",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1606/002",
@@ -9112,9 +9247,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
       "Behavior Prevention on Endpoint",
-      "Antivirus/Antimalware"
+      "Antivirus/Antimalware",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1036/008",
@@ -9192,8 +9327,8 @@
     "detection": "",
     "mitigations": [
       "Behavior Prevention on Endpoint",
-      "Software Configuration",
       "Application Isolation and Sandboxing",
+      "Software Configuration",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -9215,9 +9350,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
       "Execution Prevention",
-      "Behavior Prevention on Endpoint"
+      "Behavior Prevention on Endpoint",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1204/002",
@@ -9278,8 +9413,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic"
+      "Filter Network Traffic",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1071/005",
@@ -9319,8 +9454,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1484/002",
@@ -9344,10 +9479,10 @@
     "detection": "",
     "mitigations": [
       "User Training",
-      "User Account Management",
+      "Encrypt Sensitive Information",
       "Software Configuration",
-      "Audit",
-      "Encrypt Sensitive Information"
+      "User Account Management",
+      "Audit"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1213/006",
@@ -9357,7 +9492,7 @@
   {
     "id": "T1573.001",
     "name": "Symmetric Cryptography",
-    "description": "Adversaries may employ a known symmetric encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol. Symmetric encryption algorithms use the same key for plaintext encryption and ciphertext decryption. Common symmetric encryption algorithms include AES, DES, 3DES, Blowfish, and RC4.",
+    "description": "Adversaries may employ a known symmetric encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol. Symmetric encryption algorithms use the same key for plaintext encryption and ciphertext decryption. Common symmetric encryption algorithms include AES, DES, 3DES, Blowfish, and RC4.(Citation: Destination Certification)(Citation: Symmetric vs Asymmetric Cryptography)",
     "tactics": [
       "Command and Control"
     ],
@@ -9433,10 +9568,10 @@
     "detection": "",
     "mitigations": [
       "Limit Software Installation",
-      "User Training",
-      "Execution Prevention",
       "Audit",
-      "Update Software"
+      "Update Software",
+      "User Training",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1176/001",
@@ -9457,11 +9592,11 @@
     "detection": "",
     "mitigations": [
       "Network Intrusion Prevention",
-      "Limit Access to Resource Over Network",
       "Operating System Configuration",
-      "Boot Integrity",
       "Privileged Account Management",
-      "Audit"
+      "Limit Access to Resource Over Network",
+      "Audit",
+      "Boot Integrity"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1542/005",
@@ -9480,9 +9615,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
       "Restrict File and Directory Permissions",
       "Restrict Registry Permissions",
+      "User Account Management",
       "Audit"
     ],
     "data_sources": [],
@@ -9503,11 +9638,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
-      "Code Signing",
       "Behavior Prevention on Endpoint",
-      "User Account Management",
-      "Audit"
+      "Operating System Configuration",
+      "Audit",
+      "Code Signing",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1543/003",
@@ -9570,8 +9705,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Audit"
+      "Audit",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1053/003",
@@ -9633,11 +9768,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
-      "User Training",
-      "User Account Management",
       "Software Configuration",
-      "Audit"
+      "Restrict Web-Based Content",
+      "Audit",
+      "User Account Management",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1566/002",
@@ -9709,20 +9844,21 @@
   {
     "id": "T1021.004",
     "name": "SSH",
-    "description": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into remote machines using Secure Shell (SSH). The adversary may then perform actions as the logged-on user.\n\nSSH is a protocol that allows authorized users to open remote shells on other computers. Many Linux and macOS versions come with SSH installed by default, although typically disabled until the user enables it. On ESXi, SSH can be enabled either directly on the host (e.g., via `vim-cmd hostsvc/enable_ssh`) or via vCenter.(Citation: Sygnia ESXi Ransomware 2025)(Citation: TrendMicro ESXI Ransomware)(Citation: Sygnia Abyss Locker 2025) The SSH server can be configured to use standard password authentication or public-private keypairs in lieu of or in addition to a password. In this authentication scenario, the user\u2019s public key must be in a special file on the computer running the server that lists which keypairs are allowed to login as that user (i.e., [SSH Authorized Keys](https://attack.mitre.org/techniques/T1098/004)).",
+    "description": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into remote machines using Secure Shell (SSH). The adversary may then perform actions as the logged-on user.\n\nSSH is a protocol that allows authorized users to open remote shells on other computers. Many Linux and macOS versions come with SSH installed by default, although typically disabled until the user enables it. On ESXi, SSH can be enabled either directly on the host (e.g., via `vim-cmd hostsvc/enable_ssh`) or via vCenter.(Citation: Sygnia ESXi Ransomware 2025)(Citation: TrendMicro ESXI Ransomware)(Citation: Sygnia Abyss Locker 2025) Modern versions of Windows include a built-in SSH server and client.(Citation: Windows SSH) The SSH server can be configured to use standard password authentication or public-private keypairs in lieu of or in addition to a password. In this authentication scenario, the user\u2019s public key must be in a special file on the computer running the server that lists which keypairs are allowed to login as that user (i.e., [SSH Authorized Keys](https://attack.mitre.org/techniques/T1098/004)).",
     "tactics": [
       "Lateral Movement"
     ],
     "platforms": [
       "ESXi",
       "Linux",
-      "macOS"
+      "macOS",
+      "Windows"
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
+      "Disable or Remove Feature or Program",
       "Multi-factor Authentication",
-      "Disable or Remove Feature or Program"
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/004",
@@ -9745,9 +9881,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
       "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1098/003",
@@ -9788,13 +9924,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Restrict Web-Based Content",
-      "User Training",
-      "User Account Management",
       "Antivirus/Antimalware",
+      "User Account Management",
+      "Audit",
+      "Network Intrusion Prevention",
       "Software Configuration",
-      "Audit"
+      "User Training",
+      "Restrict Web-Based Content"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1566/001",
@@ -9854,11 +9990,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Application Developer Guidance",
       "Execution Prevention",
-      "Audit",
+      "Restrict Library Loading",
       "Update Software",
-      "Restrict Library Loading"
+      "Audit",
+      "Application Developer Guidance"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574/001",
@@ -9918,11 +10054,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
-      "Password Policies",
+      "Update Software",
       "User Account Management",
+      "User Training",
       "Software Configuration",
-      "Update Software"
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1555/005",
@@ -10096,8 +10232,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1222/001",
@@ -10159,9 +10295,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Code Signing",
       "Privileged Account Management",
-      "Audit"
+      "Audit",
+      "Code Signing"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505/002",
@@ -10222,8 +10358,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1098/006",
@@ -10242,8 +10378,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/007",
@@ -10324,8 +10460,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Registry Permissions",
-      "Audit"
+      "Audit",
+      "Restrict Registry Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505/005",
@@ -10344,8 +10480,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Code Signing"
+      "Code Signing",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/002",
@@ -10451,8 +10587,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
       "Audit",
+      "Password Policies",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -10532,8 +10668,8 @@
     "detection": "",
     "mitigations": [
       "Remote Data Storage",
-      "Environment Variable Permissions",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Environment Variable Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1070/003",
@@ -10553,8 +10689,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
-      "Update Software"
+      "Update Software",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1137/005",
@@ -10750,9 +10886,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Remote Data Storage",
       "Restrict File and Directory Permissions",
-      "Audit"
+      "Audit",
+      "Remote Data Storage"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1070/008",
@@ -10955,8 +11091,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
       "User Account Management",
+      "Execution Prevention",
       "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
@@ -11054,10 +11190,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
       "Restrict File and Directory Permissions",
-      "Privileged Account Management",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Password Policies",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1563/001",
@@ -11076,10 +11212,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Privileged Account Management",
       "Limit Access to Resource Over Network",
       "Filter Network Traffic",
-      "Password Policies",
-      "Privileged Account Management"
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/002",
@@ -11098,8 +11234,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/002",
@@ -11118,11 +11254,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
-      "Credential Access Protection",
       "Password Policies",
+      "Credential Access Protection",
+      "Multi-factor Authentication",
       "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1599/001",
@@ -11216,12 +11352,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic",
+      "Encrypt Sensitive Information",
       "Network Segmentation",
+      "Network Intrusion Prevention",
       "Software Configuration",
-      "Update Software",
-      "Encrypt Sensitive Information"
+      "Filter Network Traffic",
+      "Update Software"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1602/002",
@@ -11241,8 +11377,8 @@
     "detection": "",
     "mitigations": [
       "Execution Prevention",
-      "Restrict File and Directory Permissions",
-      "Restrict Registry Permissions"
+      "Restrict Registry Permissions",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1553/003",
@@ -11264,8 +11400,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic"
+      "Filter Network Traffic",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1071/003",
@@ -11290,9 +11426,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
       "Multi-factor Authentication",
-      "Audit"
+      "Audit",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/007",
@@ -11355,9 +11491,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
       "Exploit Protection",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/015",
@@ -11377,8 +11513,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Boot Integrity",
       "Privileged Account Management",
+      "Boot Integrity",
       "Restrict Registry Permissions"
     ],
     "data_sources": [],
@@ -11421,11 +11557,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
-      "User Training",
-      "Password Policies",
+      "Update Software",
       "User Account Management",
-      "Update Software"
+      "User Training",
+      "Restrict Web-Based Content",
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1555/003",
@@ -11469,8 +11605,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic"
+      "Filter Network Traffic",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1557/003",
@@ -11528,8 +11664,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505/003",
@@ -11549,8 +11685,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Audit"
+      "Audit",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1484/001",
@@ -11570,8 +11706,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Remote Data Storage",
       "Restrict File and Directory Permissions",
+      "Remote Data Storage",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -11635,9 +11771,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
+      "Disable or Remove Feature or Program",
       "Privileged Account Management",
-      "Disable or Remove Feature or Program"
+      "Network Segmentation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/006",
@@ -11690,8 +11826,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1078/001",
@@ -11711,8 +11847,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
-      "Restrict Registry Permissions"
+      "Restrict Registry Permissions",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1547/003",
@@ -11777,8 +11913,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1136/001",
@@ -11817,10 +11953,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Disable or Remove Feature or Program",
       "Network Intrusion Prevention",
-      "Filter Network Traffic",
       "Network Segmentation",
-      "Disable or Remove Feature or Program"
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1557/001",
@@ -11839,13 +11975,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
       "Operating System Configuration",
       "Credential Access Protection",
       "Privileged Process Integrity",
-      "Password Policies",
+      "Privileged Account Management",
+      "User Training",
       "Behavior Prevention on Endpoint",
-      "Privileged Account Management"
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1003/001",
@@ -11866,11 +12002,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Software Installation",
-      "User Training",
       "Execution Prevention",
+      "Update Software",
       "Audit",
-      "Update Software"
+      "Limit Software Installation",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1176/002",
@@ -11911,8 +12047,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1134/002",
@@ -11972,10 +12108,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
-      "Privileged Account Management",
+      "Disable or Remove Feature or Program",
       "Application Isolation and Sandboxing",
-      "Disable or Remove Feature or Program"
+      "Network Segmentation",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/003",
@@ -12003,8 +12139,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
       "Multi-factor Authentication",
+      "Password Policies",
       "Account Use Policies"
     ],
     "data_sources": [],
@@ -12015,7 +12151,7 @@
   {
     "id": "T1090.002",
     "name": "External Proxy",
-    "description": "Adversaries may use an external proxy to act as an intermediary for network communications to a command and control server to avoid direct connections to their infrastructure. Many tools exist that enable traffic redirection through proxies or port redirection, including [HTRAN](https://attack.mitre.org/software/S0040), ZXProxy, and ZXPortMap. (Citation: Trend Micro APT Attack Tools) Adversaries use these types of proxies to manage command and control communications, to provide resiliency in the face of connection loss, or to ride over existing trusted communications paths to avoid suspicion.\n\nExternal connection proxies are used to mask the destination of C2 traffic and are typically implemented with port redirectors. Compromised systems outside of the victim environment may be used for these purposes, as well as purchased infrastructure such as cloud-based resources or virtual private servers. Proxies may be chosen based on the low likelihood that a connection to them from a compromised system would be investigated. Victim systems would communicate directly with the external proxy on the Internet and then the proxy would forward communications to the C2 server.",
+    "description": "Adversaries may use an external proxy to act as an intermediary for network communications to a command and control server to avoid direct connections to their infrastructure. Many tools exist that enable traffic redirection through proxies or port redirection, including [HTRAN](https://attack.mitre.org/software/S0040), ZXProxy, and ZXPortMap.(Citation: Trend Micro APT Attack Tools) Adversaries use these types of proxies to manage command and control communications, to provide resiliency in the face of connection loss, or to ride over existing trusted communications paths to avoid suspicion.\n\nExternal connection proxies are used to mask the destination of C2 traffic and are typically implemented with port redirectors. Compromised systems outside of the victim environment may be used for these purposes, as well as purchased infrastructure such as cloud-based resources or virtual private servers. Proxies may be chosen based on the low likelihood that a connection to them from a compromised system would be investigated. Victim systems would communicate directly with the external proxy on the Internet and then the proxy would forward communications to the C2 server.",
     "tactics": [
       "Command and Control"
     ],
@@ -12127,11 +12263,11 @@
     ],
     "detection": "",
     "mitigations": [
+      "Active Directory Configuration",
       "User Training",
-      "Operating System Configuration",
       "Password Policies",
-      "Privileged Account Management",
-      "Active Directory Configuration"
+      "Operating System Configuration",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1003/005",
@@ -12213,8 +12349,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/008",
@@ -12353,9 +12489,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Audit",
       "User Account Control",
-      "User Account Management",
-      "Audit"
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574/005",
@@ -12419,8 +12555,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
       "Limit Software Installation",
+      "Network Intrusion Prevention",
       "User Training"
     ],
     "data_sources": [],
@@ -12441,8 +12577,8 @@
     "detection": "",
     "mitigations": [
       "Remote Data Storage",
-      "Restrict File and Directory Permissions",
-      "Encrypt Sensitive Information"
+      "Encrypt Sensitive Information",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1685/005",
@@ -12463,10 +12599,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Multi-factor Authentication",
       "Operating System Configuration",
       "Network Segmentation",
-      "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1136/002",
@@ -12594,7 +12730,7 @@
   {
     "id": "T1588.001",
     "name": "Malware",
-    "description": "Adversaries may buy, steal, or download malware that can be used during targeting. Malicious software can include payloads, droppers, post-compromise tools, backdoors, packers, and C2 protocols. Adversaries may acquire malware to support their operations, obtaining a means for maintaining control of remote machines, evading defenses, and executing post-compromise behaviors.\n\nIn addition to downloading free malware from the internet, adversaries may purchase these capabilities from third-party entities. Third-party entities can include technology companies that specialize in malware development, criminal marketplaces (including Malware-as-a-Service, or MaaS), or from individuals. In addition to purchasing malware, adversaries may steal and repurpose malware from third-party entities (including other adversaries).",
+    "description": "Adversaries may buy, steal, or download malware that can be used during targeting. Malicious software can include payloads, droppers, post-compromise tools, backdoors, packers, and C2 protocols. Adversaries may acquire malware to support their operations, obtaining a means for maintaining control of remote machines, evading defenses, and executing post-compromise behaviors.\n\nIn addition to downloading free malware from the internet, adversaries may purchase these capabilities from third-party entities. Third-party entities can include technology companies that specialize in malware development, criminal marketplaces (including Malware-as-a-Service, or MaaS), or from individuals.(Citation: BITSIGHT Malware Analysis) In addition to purchasing malware, adversaries may steal and repurpose malware from third-party entities (including other adversaries).",
     "tactics": [
       "Resource Development"
     ],
@@ -12656,7 +12792,7 @@
   {
     "id": "T1048.001",
     "name": "Exfiltration Over Symmetric Encrypted Non-C2 Protocol",
-    "description": "Adversaries may steal data by exfiltrating it over a symmetrically encrypted network protocol other than that of the existing command and control channel. The data may also be sent to an alternate network location from the main command and control server. \n\nSymmetric encryption algorithms are those that use shared or the same keys/secrets on each end of the channel. This requires an exchange or pre-arranged agreement/possession of the value used to encrypt and decrypt data. \n\nNetwork protocols that use asymmetric encryption often utilize symmetric encryption once keys are exchanged, but adversaries may opt to manually share keys and implement symmetric cryptographic algorithms (ex: RC4, AES) vice using mechanisms that are baked into a protocol. This may result in multiple layers of encryption (in protocols that are natively encrypted such as HTTPS) or encryption in protocols that not typically encrypted (such as HTTP or FTP). ",
+    "description": "Adversaries may steal data by exfiltrating it over a symmetrically encrypted network protocol other than that of the existing command and control channel. The data may also be sent to an alternate network location from the main command and control server. \n\nSymmetric encryption algorithms are those that use shared or the same keys/secrets on each end of the channel. This requires an exchange or pre-arranged agreement/possession of the value used to encrypt and decrypt data.(Citation: Exfiltration Over Symmetric Encrypted Non-C2 Protocol)\n\nNetwork protocols that use asymmetric encryption often utilize symmetric encryption once keys are exchanged, but adversaries may opt to manually share keys and implement symmetric cryptographic algorithms (ex: RC4, AES) vice using mechanisms that are baked into a protocol. This may result in multiple layers of encryption (in protocols that are natively encrypted such as HTTPS) or encryption in protocols that not typically encrypted (such as HTTP or FTP). ",
     "tactics": [
       "Exfiltration"
     ],
@@ -12668,8 +12804,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
       "Filter Network Traffic",
+      "Network Intrusion Prevention",
       "Network Segmentation"
     ],
     "data_sources": [],
@@ -12720,7 +12856,7 @@
   {
     "id": "T1213.001",
     "name": "Confluence",
-    "description": "\nAdversaries may leverage Confluence repositories to mine valuable information. Often found in development environments alongside Atlassian JIRA, Confluence is generally used to store development-related documentation, however, in general may contain more diverse categories of useful information, such as:\n\n* Policies, procedures, and standards\n* Physical / logical network diagrams\n* System architecture diagrams\n* Technical system documentation\n* Testing / development credentials (i.e., [Unsecured Credentials](https://attack.mitre.org/techniques/T1552))\n* Work / project schedules\n* Source code snippets\n* Links to network shares and other internal resources\n",
+    "description": "\nAdversaries may leverage Confluence repositories to mine valuable information.(Citation: Confluence Standards in Data Engineering) Often found in development environments alongside Atlassian JIRA, Confluence is generally used to store development-related documentation, however, in general may contain more diverse categories of useful information, such as:\n\n* Policies, procedures, and standards\n* Physical / logical network diagrams\n* System architecture diagrams\n* Technical system documentation\n* Testing / development credentials (i.e., [Unsecured Credentials](https://attack.mitre.org/techniques/T1552))\n* Work / project schedules\n* Source code snippets\n* Links to network shares and other internal resources\n",
     "tactics": [
       "Collection"
     ],
@@ -12730,8 +12866,8 @@
     "detection": "",
     "mitigations": [
       "User Training",
-      "User Account Management",
-      "Audit"
+      "Audit",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1213/001",
@@ -12750,9 +12886,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Privileged Account Management",
       "Password Policies",
       "User Account Management",
-      "Privileged Account Management",
       "Active Directory Configuration"
     ],
     "data_sources": [],
@@ -12812,9 +12948,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Data Loss Prevention",
+      "Encrypt Sensitive Information",
       "User Account Management",
-      "Encrypt Sensitive Information"
+      "Data Loss Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1020/001",
@@ -12877,10 +13013,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Out-of-Band Communications Channel",
-      "Audit",
       "Disable or Remove Feature or Program",
-      "Encrypt Sensitive Information"
+      "Encrypt Sensitive Information",
+      "Audit",
+      "Out-of-Band Communications Channel"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1114/003",
@@ -12920,8 +13056,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1553/005",
@@ -12977,8 +13113,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Filter Network Traffic",
       "Execution Prevention",
+      "Filter Network Traffic",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -13037,8 +13173,8 @@
     "detection": "",
     "mitigations": [
       "Execution Prevention",
-      "User Account Management",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/008",
@@ -13102,9 +13238,9 @@
     "detection": "",
     "mitigations": [
       "User Training",
-      "Password Policies",
+      "Audit",
       "Restrict File and Directory Permissions",
-      "Audit"
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552/001",
@@ -13204,8 +13340,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Software Configuration",
-      "Audit"
+      "Audit",
+      "Software Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1606/001",
@@ -13270,8 +13406,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/007",
@@ -13314,8 +13450,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
-      "Antivirus/Antimalware"
+      "Antivirus/Antimalware",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1027/012",
@@ -13364,7 +13500,7 @@
   {
     "id": "T1098.001",
     "name": "Additional Cloud Credentials",
-    "description": "Adversaries may add adversary-controlled credentials to a cloud account to maintain persistent access to victim accounts and instances within the environment.\n\nFor example, adversaries may add credentials for Service Principals and Applications in addition to existing legitimate credentials in Azure / Entra ID.(Citation: Microsoft SolarWinds Customer Guidance)(Citation: Blue Cloud of Death)(Citation: Blue Cloud of Death Video) These credentials include both x509 keys and passwords.(Citation: Microsoft SolarWinds Customer Guidance) With sufficient permissions, there are a variety of ways to add credentials including the Azure Portal, Azure command line interface, and Azure or Az PowerShell modules.(Citation: Demystifying Azure AD Service Principals)\n\nIn infrastructure-as-a-service (IaaS) environments, after gaining access through [Cloud Accounts](https://attack.mitre.org/techniques/T1078/004), adversaries may generate or import their own SSH keys using either the <code>CreateKeyPair</code> or <code>ImportKeyPair</code> API in AWS or the <code>gcloud compute os-login ssh-keys add</code> command in GCP.(Citation: GCP SSH Key Add) This allows persistent access to instances within the cloud environment without further usage of the compromised cloud accounts.(Citation: Expel IO Evil in AWS)(Citation: Expel Behind the Scenes)\n\nAdversaries may also use the <code>CreateAccessKey</code> API in AWS or the <code>gcloud iam service-accounts keys create</code> command in GCP to add access keys to an account. Alternatively, they may use the <code>CreateLoginProfile</code> API in AWS to add a password that can be used to log into the AWS Management Console for [Cloud Service Dashboard](https://attack.mitre.org/techniques/T1538).(Citation: Permiso Scattered Spider 2023)(Citation: Lacework AI Resource Hijacking 2024) If the target account has different permissions from the requesting account, the adversary may also be able to escalate their privileges in the environment (i.e. [Cloud Accounts](https://attack.mitre.org/techniques/T1078/004)).(Citation: Rhino Security Labs AWS Privilege Escalation)(Citation: Sysdig ScarletEel 2.0) For example, in Entra ID environments, an adversary with the Application Administrator role can add a new set of credentials to their application's service principal. In doing so the adversary would be able to access the service principal\u2019s roles and permissions, which may be different from those of the Application Administrator.(Citation: SpecterOps Azure Privilege Escalation) \n\nIn AWS environments, adversaries with the appropriate permissions may also use the `sts:GetFederationToken` API call to create a temporary set of credentials to [Forge Web Credentials](https://attack.mitre.org/techniques/T1606) tied to the permissions of the original user account. These temporary credentials may remain valid for the duration of their lifetime even if the original account\u2019s API credentials are deactivated.\n(Citation: Crowdstrike AWS User Federation Persistence)\n\nIn Entra ID environments with the app password feature enabled, adversaries may be able to add an app password to a user account.(Citation: Mandiant APT42 Operations 2024) As app passwords are intended to be used with legacy devices that do not support multi-factor authentication (MFA), adding an app password can allow an adversary to bypass MFA requirements. Additionally, app passwords may remain valid even if the user\u2019s primary password is reset.(Citation: Microsoft Entra ID App Passwords)",
+    "description": "Adversaries may add adversary-controlled credentials to a cloud account to maintain persistent access to victim accounts and instances within the environment.\n\nFor example, adversaries may add credentials for Service Principals and Applications in addition to existing legitimate credentials in Azure / Entra ID.(Citation: Microsoft SolarWinds Customer Guidance)(Citation: Blue Cloud of Death)(Citation: Blue Cloud of Death Video) These credentials include both x509 keys and passwords.(Citation: Microsoft SolarWinds Customer Guidance) With sufficient permissions, there are a variety of ways to add credentials including the Azure Portal, Azure command line interface, and Azure or Az PowerShell modules.(Citation: Demystifying Azure AD Service Principals)\n\nIn infrastructure-as-a-service (IaaS) environments, after gaining access through [Cloud Accounts](https://attack.mitre.org/techniques/T1078/004), adversaries may generate or import their own SSH keys using either the <code>CreateKeyPair</code> or <code>ImportKeyPair</code> API in AWS or the <code>gcloud compute os-login ssh-keys add</code> command in GCP.(Citation: GCP SSH Key Add) This allows persistent access to instances within the cloud environment without further usage of the compromised cloud accounts.(Citation: Expel IO Evil in AWS)(Citation: Expel Behind the Scenes)\n\nAdversaries may also use the <code>CreateAccessKey</code> API in AWS or the <code>gcloud iam service-accounts keys create</code> command in GCP to add access keys to an account. Alternatively, they may use the <code>CreateLoginProfile</code> API in AWS to add a password that can be used to log into the AWS Management Console for [Cloud Service Dashboard](https://attack.mitre.org/techniques/T1538).(Citation: Permiso Scattered Spider 2023)(Citation: Lacework AI Resource Hijacking 2024) If the target account has different permissions from the requesting account, the adversary may also be able to escalate their privileges in the environment (i.e. [Cloud Accounts](https://attack.mitre.org/techniques/T1078/004)).(Citation: Rhino Security Labs AWS Privilege Escalation)(Citation: Sysdig ScarletEel 2.0) For example, in Entra ID environments, an adversary with the Application Administrator role can add a new set of credentials to their application's service principal. In doing so the adversary would be able to access the service principal\u2019s roles and permissions, which may be different from those of the Application Administrator.(Citation: SpecterOps Azure Privilege Escalation) \n\nIn AWS environments, adversaries with the appropriate permissions may also use the `sts:GetFederationToken` API call to create a temporary set of credentials to [Forge Web Credentials](https://attack.mitre.org/techniques/T1606) tied to the permissions of the original user account. These temporary credentials may remain valid for the duration of their lifetime even if the original account\u2019s API credentials are deactivated.\n(Citation: Crowdstrike AWS User Federation Persistence)\n\nIn Entra ID environments with the app password feature enabled, adversaries may be able to add an app password to a user account.(Citation: Mandiant APT42-untangling) As app passwords are intended to be used with legacy devices that do not support multi-factor authentication (MFA), adding an app password can allow an adversary to bypass MFA requirements. Additionally, app passwords may remain valid even if the user\u2019s primary password is reset.(Citation: Microsoft Entra ID App Passwords)",
     "tactics": [
       "Persistence",
       "Privilege Escalation"
@@ -13376,10 +13512,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Segmentation",
-      "User Account Management",
-      "Privileged Account Management",
       "Multi-factor Authentication",
+      "User Account Management",
+      "Network Segmentation",
+      "Privileged Account Management",
       "Disable or Remove Feature or Program"
     ],
     "data_sources": [],
@@ -13443,8 +13579,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1134/003",
@@ -13464,8 +13600,8 @@
     "detection": "",
     "mitigations": [
       "Audit",
-      "Active Directory Configuration",
-      "Update Software"
+      "Update Software",
+      "Active Directory Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552/006",
@@ -13475,7 +13611,7 @@
   {
     "id": "T1048.002",
     "name": "Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
-    "description": "Adversaries may steal data by exfiltrating it over an asymmetrically encrypted network protocol other than that of the existing command and control channel. The data may also be sent to an alternate network location from the main command and control server. \n\nAsymmetric encryption algorithms are those that use different keys on each end of the channel. Also known as public-key cryptography, this requires pairs of cryptographic keys that can encrypt/decrypt data from the corresponding key. Each end of the communication channels requires a private key (only in the procession of that entity) and the public key of the other entity. The public keys of each entity are exchanged before encrypted communications begin. \n\nNetwork protocols that use asymmetric encryption (such as HTTPS/TLS/SSL) often utilize symmetric encryption once keys are exchanged. Adversaries may opt to use these encrypted mechanisms that are baked into a protocol. ",
+    "description": "Adversaries may steal data by exfiltrating it over an asymmetrically encrypted network protocol other than that of the existing command and control channel. The data may also be sent to an alternate network location from the main command and control server. \n\nAsymmetric encryption algorithms are those that use different keys on each end of the channel. Also known as public-key cryptography, this requires pairs of cryptographic keys that can encrypt/decrypt data from the corresponding key. Each end of the communication channels requires a private key (only in the procession of that entity) and the public key of the other entity. The public keys of each entity are exchanged before encrypted communications begin. \n\nNetwork protocols that use asymmetric encryption (such as HTTPS/TLS/SSL) often utilize symmetric encryption once keys are exchanged.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021) Adversaries may opt to use these encrypted mechanisms that are baked into a protocol. ",
     "tactics": [
       "Exfiltration"
     ],
@@ -13488,9 +13624,9 @@
     "detection": "",
     "mitigations": [
       "Network Intrusion Prevention",
+      "Network Segmentation",
       "Filter Network Traffic",
-      "Data Loss Prevention",
-      "Network Segmentation"
+      "Data Loss Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1048/002",
@@ -13512,8 +13648,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Audit"
+      "Audit",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1087/004",
@@ -13553,9 +13689,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
       "Restrict Registry Permissions",
-      "Audit"
+      "Audit",
+      "Operating System Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/008",
@@ -13575,9 +13711,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
       "User Account Management",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1546/003",
@@ -13690,8 +13826,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
-      "Audit"
+      "Audit",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552/008",
@@ -13701,20 +13837,22 @@
   {
     "id": "T1059.001",
     "name": "PowerShell",
-    "description": "Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system.(Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).\n\nPowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.\n\nA number of PowerShell-based offensive testing tools are available, including [Empire](https://attack.mitre.org/software/S0363),  [PowerSploit](https://attack.mitre.org/software/S0194), [PoshC2](https://attack.mitre.org/software/S0378), and PSAttack.(Citation: Github PSAttack)\n\nPowerShell commands/scripts can also be executed without directly invoking the <code>powershell.exe</code> binary through interfaces to PowerShell's underlying <code>System.Management.Automation</code> assembly DLL exposed through the .NET framework and Windows Common Language Interface (CLI).(Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)(Citation: Microsoft PSfromCsharp APR 2014)",
+    "description": "Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system.(Citation: TechNet PowerShell) PowerShell can also be installed on Linux and macOS.(Citation: Powershell installation) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).\n\nPowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.\n\nA number of PowerShell-based offensive testing tools are available, including [Empire](https://attack.mitre.org/software/S0363),  [PowerSploit](https://attack.mitre.org/software/S0194), [PoshC2](https://attack.mitre.org/software/S0378), and PSAttack.(Citation: Github PSAttack)\n\nPowerShell commands/scripts can also be executed without directly invoking the <code>powershell.exe</code> binary through interfaces to PowerShell's underlying <code>System.Management.Automation</code> assembly DLL exposed through the .NET framework and Windows Common Language Interface (CLI).(Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)(Citation: Microsoft PSfromCsharp APR 2014)",
     "tactics": [
       "Execution"
     ],
     "platforms": [
-      "Windows"
+      "Windows",
+      "Linux",
+      "macOS"
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
+      "Disable or Remove Feature or Program",
+      "Antivirus/Antimalware",
       "Code Signing",
       "Privileged Account Management",
-      "Antivirus/Antimalware",
-      "Disable or Remove Feature or Program"
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/001",
@@ -13775,8 +13913,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic"
+      "Filter Network Traffic",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1071/002",
@@ -13818,8 +13956,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Restrict Web-Based Content"
+      "Restrict Web-Based Content",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1102/003",
@@ -13839,9 +13977,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Control",
       "User Account Management",
-      "Audit"
+      "Audit",
+      "User Account Control"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574/010",
@@ -13882,8 +14020,8 @@
     "detection": "",
     "mitigations": [
       "Network Segmentation",
-      "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1136/003",
@@ -13923,10 +14061,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "User Account Management",
       "Privileged Account Management",
-      "Antivirus/Antimalware"
+      "User Account Management",
+      "Antivirus/Antimalware",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1547/006",
@@ -13967,9 +14105,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
+      "Update Software",
       "Audit",
-      "Update Software"
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1686/002",
@@ -13998,7 +14136,7 @@
   {
     "id": "T1052.001",
     "name": "Exfiltration over USB",
-    "description": "Adversaries may attempt to exfiltrate data over a USB connected physical device. In certain circumstances, such as an air-gapped network compromise, exfiltration could occur via a USB device introduced by a user. The USB device could be used as the final exfiltration point or to hop between otherwise disconnected systems.",
+    "description": "Adversaries may attempt to exfiltrate data over a USB connected physical device. In certain circumstances, such as an air-gapped network compromise, exfiltration could occur via a USB device introduced by a user. The USB device could be used as the final exfiltration point or to hop between otherwise disconnected systems.(Citation: A USB data exfiltration case study)",
     "tactics": [
       "Exfiltration"
     ],
@@ -14009,9 +14147,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Disable or Remove Feature or Program",
       "Limit Hardware Installation",
-      "Data Loss Prevention",
-      "Disable or Remove Feature or Program"
+      "Data Loss Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1052/001",
@@ -14052,8 +14190,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
       "Restrict File and Directory Permissions",
+      "User Account Management",
       "Privileged Account Management"
     ],
     "data_sources": [],
@@ -14074,9 +14212,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
       "Boot Integrity",
-      "Audit"
+      "Audit",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1542/004",
@@ -14199,8 +14337,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
-      "Update Software"
+      "Update Software",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1137/003",
@@ -14284,8 +14422,8 @@
     "detection": "",
     "mitigations": [
       "Limit Software Installation",
-      "Execution Prevention",
-      "Audit"
+      "Audit",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/011",
@@ -14295,7 +14433,7 @@
   {
     "id": "T1027.005",
     "name": "Indicator Removal from Tools",
-    "description": "Adversaries may remove indicators from tools if they believe their malicious tool was detected, quarantined, or otherwise curtailed. They can modify the tool by removing the indicator and using the updated version that is no longer detected by the target's defensive systems or subsequent targets that may use similar systems.\n\nA good example of this is when malware is detected with a file signature and quarantined by anti-virus software. An adversary who can determine that the malware was quarantined because of its file signature may modify the file to explicitly avoid that signature, and then re-use the malware.",
+    "description": "Adversaries may remove indicators from tools if they believe their malicious tool was detected, quarantined, or otherwise curtailed. They can modify the tool by removing the indicator and using the updated version that is no longer detected by the target's defensive systems or subsequent targets that may use similar systems.\n\nA good example of this is when malware is detected with a file signature and quarantined by anti-virus software. An adversary who can determine that the malware was quarantined because of its file signature may modify the file to explicitly avoid that signature, and then re-use the malware.(Citation: Files and Antivirus Detection)",
     "tactics": [
       "Defense Evasion"
     ],
@@ -14324,9 +14462,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Code Signing",
       "Network Intrusion Prevention",
       "User Training",
-      "Code Signing",
       "Audit"
     ],
     "data_sources": [],
@@ -14347,8 +14485,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Software Configuration"
+      "Software Configuration",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1543/005",
@@ -14434,10 +14572,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Account Use Policies",
       "Password Policies",
       "User Account Management",
-      "Multi-factor Authentication",
-      "Account Use Policies"
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1110/004",
@@ -14465,8 +14603,8 @@
     "detection": "",
     "mitigations": [
       "User Account Management",
-      "Multi-factor Authentication",
-      "Audit"
+      "Audit",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/006",
@@ -14476,7 +14614,7 @@
   {
     "id": "T1114.002",
     "name": "Remote Email Collection",
-    "description": "Adversaries may target an Exchange server, Office 365, or Google Workspace to collect sensitive information. Adversaries may leverage a user's credentials and interact directly with the Exchange server to acquire information from within a network. Adversaries may also access externally facing Exchange services, Office 365, or Google Workspace to access email using credentials or access tokens. Tools such as [MailSniper](https://attack.mitre.org/software/S0413) can be used to automate searches for specific keywords.",
+    "description": "Adversaries may target an Exchange server, Office 365, or Google Workspace to collect sensitive information. Adversaries may leverage a user's credentials and interact directly with the Exchange server to acquire information from within a network. Adversaries may also access externally facing Exchange services, Office 365, or Google Workspace to access email using credentials or access tokens. Tools such as [MailSniper](https://attack.mitre.org/software/S0413) can be used to automate searches for specific keywords.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
     "tactics": [
       "Collection"
     ],
@@ -14487,8 +14625,8 @@
     "detection": "",
     "mitigations": [
       "Out-of-Band Communications Channel",
-      "Multi-factor Authentication",
-      "Encrypt Sensitive Information"
+      "Encrypt Sensitive Information",
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1114/002",
@@ -14507,10 +14645,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Code Signing",
       "Privileged Account Management",
-      "Audit"
+      "Execution Prevention",
+      "Audit",
+      "Code Signing"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505/004",
@@ -14552,9 +14690,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
+      "Disable or Remove Feature or Program",
       "Audit",
-      "Disable or Remove Feature or Program"
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1564/006",
@@ -14814,8 +14952,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
       "User Account Management",
+      "User Training",
       "Software Configuration",
       "Audit"
     ],
@@ -14875,8 +15013,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Vulnerability Scanning",
-      "Update Software"
+      "Update Software",
+      "Vulnerability Scanning"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1195/002",
@@ -14919,8 +15057,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Restrict Web-Based Content"
+      "Restrict Web-Based Content",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1102/002",
@@ -14939,8 +15077,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Pre-compromise",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Pre-compromise"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1595/003",
@@ -14960,8 +15098,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
-      "Update Software"
+      "Update Software",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1137/004",
@@ -14971,7 +15109,7 @@
   {
     "id": "T1573.002",
     "name": "Asymmetric Cryptography",
-    "description": "Adversaries may employ a known asymmetric encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol. Asymmetric cryptography, also known as public key cryptography, uses a keypair per party: one public that can be freely distributed, and one private. Due to how the keys are generated, the sender encrypts data with the receiver\u2019s public key and the receiver decrypts the data with their private key. This ensures that only the intended recipient can read the encrypted data. Common public key encryption algorithms include RSA and ElGamal.\n\nFor efficiency, many protocols (including SSL/TLS) use symmetric cryptography once a connection is established, but use asymmetric cryptography to establish or transmit a key. As such, these protocols are classified as [Asymmetric Cryptography](https://attack.mitre.org/techniques/T1573/002).",
+    "description": "Adversaries may employ a known asymmetric encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol. Asymmetric cryptography, also known as public key cryptography, uses a keypair per party: one public that can be freely distributed, and one private. Due to how the keys are generated, the sender encrypts data with the receiver\u2019s public key and the receiver decrypts the data with their private key. This ensures that only the intended recipient can read the encrypted data. Common public key encryption algorithms include RSA and ElGamal.\n\nFor efficiency, many protocols (including SSL/TLS) use symmetric cryptography once a connection is established, but use asymmetric cryptography to establish or transmit a key. As such, these protocols are classified as [Asymmetric Cryptography](https://attack.mitre.org/techniques/T1573/002).(Citation: What is asymmetric encryption)(Citation: Symmetric vs Asymmetric Cryptography)",
     "tactics": [
       "Command and Control"
     ],
@@ -15027,9 +15165,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Audit",
       "Execution Prevention",
-      "Restrict File and Directory Permissions",
-      "Audit"
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574/009",
@@ -15106,8 +15244,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/013",
@@ -15213,11 +15351,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
-      "Password Policies",
       "User Account Management",
+      "Multi-factor Authentication",
       "Privileged Account Management",
-      "Multi-factor Authentication"
+      "User Training",
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1078/002",
@@ -15278,8 +15416,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Operating System Configuration",
-      "Software Configuration"
+      "Software Configuration",
+      "Operating System Configuration"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1553/004",
@@ -15359,8 +15497,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1127/001",
@@ -15424,12 +15562,12 @@
     ],
     "detection": "",
     "mitigations": [
+      "Encrypt Sensitive Information",
       "Network Intrusion Prevention",
-      "Limit Access to Resource Over Network",
-      "Filter Network Traffic",
       "User Training",
       "Disable or Remove Feature or Program",
-      "Encrypt Sensitive Information"
+      "Limit Access to Resource Over Network",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1557/002",
@@ -15470,8 +15608,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Software Installation",
-      "Execution Prevention"
+      "Execution Prevention",
+      "Limit Software Installation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1564/003",
@@ -15491,9 +15629,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Disable or Remove Feature or Program",
       "Restrict Web-Based Content",
-      "Code Signing",
-      "Disable or Remove Feature or Program"
+      "Code Signing"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1127/002",
@@ -15515,10 +15653,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Software Installation",
-      "Execution Prevention",
+      "Audit",
       "Antivirus/Antimalware",
-      "Audit"
+      "Limit Software Installation",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/006",
@@ -15664,8 +15802,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Audit"
+      "Audit",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1578/002",
@@ -15704,9 +15842,9 @@
     "detection": "",
     "mitigations": [
       "User Training",
+      "Audit",
       "User Account Management",
-      "Multi-factor Authentication",
-      "Audit"
+      "Multi-factor Authentication"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1213/003",
@@ -15746,8 +15884,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1003/008",
@@ -15826,12 +15964,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Credential Access Protection",
-      "Code Signing",
       "Boot Integrity",
-      "Password Policies",
+      "Code Signing",
+      "Credential Access Protection",
       "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1601/001",
@@ -15874,8 +16012,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Remote Data Storage",
-      "Restrict File and Directory Permissions"
+      "Restrict File and Directory Permissions",
+      "Remote Data Storage"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1070/009",
@@ -15937,8 +16075,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Audit"
+      "Audit",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1036/010",
@@ -15959,9 +16097,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Disable or Remove Feature or Program",
       "Filter Network Traffic",
-      "Execution Prevention",
-      "Disable or Remove Feature or Program"
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1219/002",
@@ -16004,10 +16142,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
-      "Privileged Process Integrity",
       "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Privileged Process Integrity",
+      "Multi-factor Authentication",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/001",
@@ -16049,8 +16187,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Password Policies"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1556/005",
@@ -16239,11 +16377,11 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
+      "Disable or Remove Feature or Program",
+      "Antivirus/Antimalware",
       "Execution Prevention",
       "Behavior Prevention on Endpoint",
-      "Antivirus/Antimalware",
-      "Disable or Remove Feature or Program"
+      "Restrict Web-Based Content"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1059/005",
@@ -16282,10 +16420,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Software Installation",
       "User Account Management",
       "Restrict File and Directory Permissions",
-      "Privileged Account Management"
+      "Privileged Account Management",
+      "Limit Software Installation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1543/002",
@@ -16305,12 +16443,12 @@
     "detection": "",
     "mitigations": [
       "Limit Access to Resource Over Network",
-      "Operating System Configuration",
       "Network Segmentation",
+      "Operating System Configuration",
       "User Account Management",
-      "Privileged Account Management",
       "Audit",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1563/002",
@@ -16330,9 +16468,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Software Installation",
+      "Restrict File and Directory Permissions",
       "User Account Management",
-      "Restrict File and Directory Permissions"
+      "Limit Software Installation"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1547/013",
@@ -16372,9 +16510,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Execution Prevention",
       "Network Intrusion Prevention",
-      "Restrict Web-Based Content",
-      "Execution Prevention"
+      "Restrict Web-Based Content"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1204/004",
@@ -16451,8 +16589,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "User Training"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1547/007",
@@ -16490,10 +16628,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Update Software",
       "User Account Control",
       "User Account Management",
-      "Privileged Account Management",
-      "Update Software"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1550/002",
@@ -16573,9 +16711,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict File and Directory Permissions",
       "Privileged Account Management",
-      "Audit"
+      "Audit",
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1548/006",
@@ -16651,14 +16789,14 @@
     ],
     "detection": "",
     "mitigations": [
-      "Limit Access to Resource Over Network",
-      "Operating System Configuration",
-      "Network Segmentation",
-      "User Account Management",
-      "Privileged Account Management",
-      "Multi-factor Authentication",
       "Audit",
-      "Disable or Remove Feature or Program"
+      "Limit Access to Resource Over Network",
+      "Network Segmentation",
+      "Operating System Configuration",
+      "Disable or Remove Feature or Program",
+      "User Account Management",
+      "Multi-factor Authentication",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1021/001",
@@ -16755,8 +16893,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Audit"
+      "Audit",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1578/001",
@@ -16795,8 +16933,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Behavior Prevention on Endpoint",
-      "Software Configuration"
+      "Software Configuration",
+      "Behavior Prevention on Endpoint"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1137/002",
@@ -16815,9 +16953,9 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
       "Password Policies",
       "Privileged Account Management",
+      "User Training",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -16837,8 +16975,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Account Management",
-      "Audit"
+      "Audit",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1686/001",
@@ -16857,12 +16995,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Filter Network Traffic",
-      "Network Segmentation",
       "Software Configuration",
       "Update Software",
-      "Encrypt Sensitive Information"
+      "Encrypt Sensitive Information",
+      "Network Intrusion Prevention",
+      "Network Segmentation",
+      "Filter Network Traffic"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1602/001",
@@ -16906,8 +17044,8 @@
     "detection": "",
     "mitigations": [
       "Network Intrusion Prevention",
-      "Restrict Web-Based Content",
-      "User Training"
+      "User Training",
+      "Restrict Web-Based Content"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1204/001",
@@ -16930,10 +17068,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Account Use Policies",
+      "Audit",
       "Restrict Web-Based Content",
       "Application Developer Guidance",
-      "Audit",
-      "Account Use Policies",
       "Encrypt Sensitive Information"
     ],
     "data_sources": [],
@@ -16954,8 +17092,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Credential Access Protection",
       "Privileged Process Integrity",
+      "Credential Access Protection",
       "Restrict Library Loading"
     ],
     "data_sources": [],
@@ -16975,9 +17113,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Privileged Account Management",
       "Behavior Prevention on Endpoint",
-      "Restrict File and Directory Permissions",
-      "Privileged Account Management"
+      "Restrict File and Directory Permissions"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1569/002",
@@ -17002,13 +17140,13 @@
     ],
     "detection": "",
     "mitigations": [
-      "User Training",
       "Password Policies",
-      "User Account Management",
+      "Active Directory Configuration",
       "Privileged Account Management",
       "Multi-factor Authentication",
-      "Active Directory Configuration",
-      "Account Use Policies"
+      "Account Use Policies",
+      "User Training",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1078/004",
@@ -17068,8 +17206,8 @@
     "detection": "",
     "mitigations": [
       "Password Policies",
-      "Privileged Account Management",
-      "Encrypt Sensitive Information"
+      "Encrypt Sensitive Information",
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1558/003",
@@ -17114,9 +17252,9 @@
     "detection": "",
     "mitigations": [
       "Operating System Configuration",
+      "Audit",
       "User Account Management",
-      "Privileged Account Management",
-      "Audit"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1053/002",
@@ -17232,10 +17370,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Restrict Web-Based Content",
       "User Training",
       "User Account Management",
       "Antivirus/Antimalware",
+      "Restrict Web-Based Content",
       "Audit"
     ],
     "data_sources": [],
@@ -17246,7 +17384,7 @@
   {
     "id": "T1090.001",
     "name": "Internal Proxy",
-    "description": "Adversaries may use an internal proxy to direct command and control traffic between two or more systems in a compromised environment. Many tools exist that enable traffic redirection through proxies or port redirection, including [HTRAN](https://attack.mitre.org/software/S0040), ZXProxy, and ZXPortMap. (Citation: Trend Micro APT Attack Tools) Adversaries use internal proxies to manage command and control communications inside a compromised environment, to reduce the number of simultaneous outbound network connections, to provide resiliency in the face of connection loss, or to ride over existing trusted communications paths between infected systems to avoid suspicion. Internal proxy connections may use common peer-to-peer (p2p) networking protocols, such as SMB, to better blend in with the environment.\n\nBy using a compromised internal system as a proxy, adversaries may conceal the true destination of C2 traffic while reducing the need for numerous connections to external systems.",
+    "description": "Adversaries may use an internal proxy to direct command and control traffic between two or more systems in a compromised environment. Many tools exist that enable traffic redirection through proxies or port redirection, including [HTRAN](https://attack.mitre.org/software/S0040), ZXProxy, and ZXPortMap.(Citation: Trend Micro APT Attack Tools) Adversaries use internal proxies to manage command and control communications inside a compromised environment, to reduce the number of simultaneous outbound network connections, to provide resiliency in the face of connection loss, or to ride over existing trusted communications paths between infected systems to avoid suspicion. Internal proxy connections may use common peer-to-peer (p2p) networking protocols, such as SMB, to better blend in with the environment.\n\nBy using a compromised internal system as a proxy, adversaries may conceal the true destination of C2 traffic while reducing the need for numerous connections to external systems.",
     "tactics": [
       "Command and Control"
     ],
@@ -17269,7 +17407,7 @@
   {
     "id": "T1102.001",
     "name": "Dead Drop Resolver",
-    "description": "Adversaries may use an existing, legitimate external Web service to host information that points to additional command and control (C2) infrastructure. Adversaries may post content, known as a dead drop resolver, on Web services with embedded (and often obfuscated/encoded) domains or IP addresses. Once infected, victims will reach out to and be redirected by these resolvers.\n\nPopular websites and social media acting as a mechanism for C2 may give a significant amount of cover due to the likelihood that hosts within a network are already communicating with them prior to a compromise. Using common services, such as those offered by Google or Twitter, makes it easier for adversaries to hide in expected noise. Web service providers commonly use SSL/TLS encryption, giving adversaries an added level of protection.\n\nUse of a dead drop resolver may also protect back-end C2 infrastructure from discovery through malware binary analysis while also enabling operational resiliency (since this infrastructure may be dynamically changed).",
+    "description": "Adversaries may use an existing, legitimate external Web service to host information that points to additional command and control (C2) infrastructure. Adversaries may post content, known as a dead drop resolver, on Web services with embedded (and often obfuscated/encoded) domains or IP addresses. Once infected, victims will reach out to and be redirected by these resolvers.(Citation: Dead Drop Resolver)\n\nPopular websites and social media acting as a mechanism for C2 may give a significant amount of cover due to the likelihood that hosts within a network are already communicating with them prior to a compromise. Using common services, such as those offered by Google or Twitter, makes it easier for adversaries to hide in expected noise. Web service providers commonly use SSL/TLS encryption, giving adversaries an added level of protection.\n\nUse of a dead drop resolver may also protect back-end C2 infrastructure from discovery through malware binary analysis while also enabling operational resiliency (since this infrastructure may be dynamically changed).",
     "tactics": [
       "Command and Control"
     ],
@@ -17281,8 +17419,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Network Intrusion Prevention",
-      "Restrict Web-Based Content"
+      "Restrict Web-Based Content",
+      "Network Intrusion Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1102/001",
@@ -17342,8 +17480,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Code Signing",
       "Boot Integrity",
+      "Code Signing",
       "Audit"
     ],
     "data_sources": [],
@@ -17363,10 +17501,10 @@
     ],
     "detection": "",
     "mitigations": [
+      "Privileged Account Management",
       "Limit Access to Resource Over Network",
       "Network Segmentation",
-      "User Account Management",
-      "Privileged Account Management"
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1552/007",
@@ -17405,9 +17543,9 @@
     ],
     "detection": "",
     "mitigations": [
+      "Audit",
       "Code Signing",
-      "Privileged Account Management",
-      "Audit"
+      "Privileged Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1505/001",
@@ -17472,8 +17610,8 @@
     "detection": "",
     "mitigations": [
       "User Training",
-      "Out-of-Band Communications Channel",
-      "Audit"
+      "Audit",
+      "Out-of-Band Communications Channel"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1213/005",
@@ -17497,8 +17635,8 @@
     "detection": "",
     "mitigations": [
       "Network Intrusion Prevention",
-      "Filter Network Traffic",
       "Data Loss Prevention",
+      "Filter Network Traffic",
       "Network Segmentation"
     ],
     "data_sources": [],
@@ -17559,12 +17697,12 @@
     ],
     "detection": "",
     "mitigations": [
-      "Credential Access Protection",
+      "Multi-factor Authentication",
       "Code Signing",
-      "Boot Integrity",
-      "Password Policies",
+      "Credential Access Protection",
       "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Password Policies",
+      "Boot Integrity"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1601/002",
@@ -17613,10 +17751,10 @@
     ],
     "detection": "",
     "mitigations": [
-      "Password Policies",
-      "User Account Management",
       "Privileged Account Management",
-      "Multi-factor Authentication"
+      "Multi-factor Authentication",
+      "Password Policies",
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1078/003",
@@ -17635,8 +17773,8 @@
     ],
     "detection": "",
     "mitigations": [
-      "Execution Prevention",
-      "Disable or Remove Feature or Program"
+      "Disable or Remove Feature or Program",
+      "Execution Prevention"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1218/014",
@@ -17673,12 +17811,95 @@
     ],
     "detection": "",
     "mitigations": [
+      "Restrict Registry Permissions",
       "Execution Prevention",
-      "User Account Management",
-      "Restrict Registry Permissions"
+      "User Account Management"
     ],
     "data_sources": [],
     "url": "https://attack.mitre.org/techniques/T1574/012",
+    "subtechniques": [],
+    "source": "ATT&CK"
+  },
+  {
+    "id": "T1608.007",
+    "name": "AI Result Poisoning",
+    "description": "Adversaries may manipulate publicly accessible web content to influence generative AI systems or AI-powered search engines into retrieving, citing, or recommending attacker-controlled information.(Citation: Digiday AI Result Poisoning)(Citation: Netcraft AI Summaries)\n\nUnlike traditional [SEO Poisoning](https://attack.mitre.org/techniques/T1608/006), which primarily attempts to influence the ordering of conventional search results, AI Result Poisoning targets systems that synthesize information from multiple sources and provide a direct answer to the user. Adversaries may create malicious or misleading websites, publish fabricated claims, generate supporting articles, or establish multiple apparently independent sources that reinforce the same information. These sources may then be retrieved by AI systems using web search or retrieval-augmented generation and incorporated into generated responses. \n\nAdversaries may use this technique to recommend or link to phishing sites, fraudulent online stores, malicious downloads, impersonation pages, or other attacker-controlled infrastructure.(Citation: dev.to Abusing AI Chatbot Recommendations)(Citation: darkreading geo poisoning)(Citation: darkreading ai result poisoning) It can also be used to promote misinformation or fabricated claims without requiring access to the underlying AI model, system prompt, or application infrastructure.(Citation: Lasso Security AI Engine Poisoning) Because the malicious content can resemble ordinary marketing, editorial, or informational material, traditional prompt injection and malware-focused detections may not identify the activity. ",
+    "tactics": [
+      "Resource Development"
+    ],
+    "platforms": [
+      "PRE"
+    ],
+    "detection": "",
+    "mitigations": [
+      "Pre-compromise"
+    ],
+    "data_sources": [],
+    "url": "https://attack.mitre.org/techniques/T1608/007",
+    "subtechniques": [],
+    "source": "ATT&CK"
+  },
+  {
+    "id": "T1696.001",
+    "name": "Automate CAPTCHA Completion",
+    "description": "Adversaries may attempt to use bots to successfully solve CAPTCHA challenges. CAPTCHA challenges are typically used by defenders to detect and prevent bot and spam traffic from accessing protected webpages. CAPTCHAs are automated tests often placed before login screens or form fields. Traditional CAPTCHAs ask the user to decipher a string of characters, type the characters into a box, and submit the form. reCAPTCHA asks the user to identify images, click a checkbox, or evaluate the user\u2019s behavior from mouse movement and device cookies.(Citation: CAPTCHAS Cloudflare) \n\nAdversaries may use scripts or toolkits to automatically solve the CAPTCHA puzzle. For example, adversaries may develop a script that uses the ImageMagick toolkit to solve the CAPTCHA puzzles to then create multiple valid accounts. ImageMagick tool can convert the images into a RGB complemented image. The CAPTCHA challenge may be solved by identifying and comparing attributes of the RGB images to select the expected image.(Citation: Free Trial PurpleUrchin) Once the CAPTCHA challenge is solved, the adversary\u2019s script may access the protected page. After accessing the protected the page, the adversary may submit valid forms to the target. ",
+    "tactics": [
+      "Defense Evasion"
+    ],
+    "platforms": [
+      "SaaS"
+    ],
+    "detection": "",
+    "mitigations": [
+      "Network Intrusion Prevention",
+      "Filter Network Traffic"
+    ],
+    "data_sources": [],
+    "url": "https://attack.mitre.org/techniques/T1696/001",
+    "subtechniques": [],
+    "source": "ATT&CK"
+  },
+  {
+    "id": "T1696.002",
+    "name": "Avoid CAPTCHA",
+    "description": "Adversaries may avoid CAPTCHA challenges by mimicking human behavior. Automation tests, such as CAPTCHA, are typically used by defenders to detect and prevent bot and spam traffic from accessing protected webpages. CAPTCHAs are often placed before login screens or form fields. Traditional CAPTCHAs ask the user to decipher a string of characters, type the characters into a box, and submit the form. reCAPTCHA asks the user to identify images, click a checkbox, or evaluate the user\u2019s behavior from mouse movement and device cookies.(Citation: CAPTCHAS Cloudflare) \n\nAdversaries may attempt to avoid CAPTCHA challenges by constructing a bot that mimics human behavior through browser automation. The automated browser may mimic a human by [Masquerading](https://attack.mitre.org/techniques/T1036) a [Browser Fingerprint](https://attack.mitre.org/techniques/T1036/012) and through attributes such as session history, IP reputation, and the use of browser APIs.(Citation: CAPTCHA Bypass Olostep) For example, adversaries may use Selenium browsers to simulate a human user. In the Selenium browsers, JavaScript is injected into the website\u2019s Document Object Model (DOM). The injected script may modify browser attributes such as Audio Context and Voice engines, graphic rendering, installed fonts, and browser navigator objects.(Citation: Sentinel CAPTCHA Bypass)",
+    "tactics": [
+      "Defense Evasion"
+    ],
+    "platforms": [
+      "SaaS"
+    ],
+    "detection": "",
+    "mitigations": [
+      "Filter Network Traffic",
+      "Network Intrusion Prevention"
+    ],
+    "data_sources": [],
+    "url": "https://attack.mitre.org/techniques/T1696/002",
+    "subtechniques": [],
+    "source": "ATT&CK"
+  },
+  {
+    "id": "T1685.007",
+    "name": "Impair Autonomous Defenses",
+    "description": "Adversaries may use methods like [Indirect Prompt Injection](https://attack.mitre.org/techniques/T1698) to disrupt, disable, or otherwise impair autonomous defensive capabilities such as LLM-assisted processing of malware, artifacts, or activity.(Citation: Prompt Injection LLM-Powered SOC Assistants) This behavior may cause a system to ignore data, fail to alert on malicious activity, abort analysis, or to be disabled completely. \n\nAdversaries may include content in malware implants that mimic an LLM prompt scaffold that contains fake system messages in order to convince the LLM that it has encountered an error.(Citation: MacOS.Gaslight Prompt Injection)(Citation: Gaslight AI triage prompt injection) Depending on the type of error, the LLM may abort analysis, truncate, or refuse to continue. Adversaries may also embed prompts in malware intended to stop agents or systems from analyzing the malware.(Citation: Shai-Hulud May 2026) ",
+    "tactics": [
+      "defense-impairment"
+    ],
+    "platforms": [
+      "Windows",
+      "SaaS"
+    ],
+    "detection": "",
+    "mitigations": [
+      "Execution Prevention",
+      "Restrict File and Directory Permissions",
+      "Audit",
+      "Privileged Account Management",
+      "User Account Management"
+    ],
+    "data_sources": [],
+    "url": "https://attack.mitre.org/techniques/T1685/007",
     "subtechniques": [],
     "source": "ATT&CK"
   }
